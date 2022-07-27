@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on IPSY Docs</title>
+    <link>https://ipsy-md.github.io/docs/tools/</link>
+    <description>Recent content in Tools on IPSY Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://ipsy-md.github.io/docs/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BIDS</title>
+      <link>https://ipsy-md.github.io/docs/tools/bids/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/bids/</guid>
+      <description>The Brain Imaging Data Structure (BIDS) is a set of rules to organize and describe the data from neuroimaging and behavioral experiments. Following this practice makes it easier for scientists to work with each other&#39;s data, for both collaborative and reproducible-science purposes. A standard data layout also makes it easier to write analysis tools, and a growing number of tools (see BIDS Apps) require that input data be BIDS formatted.</description>
+    </item>
+    
+    <item>
+      <title>The Command Line</title>
+      <link>https://ipsy-md.github.io/docs/tools/cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/cli/</guid>
+      <description>The shell (sometimes also called a terminal, console, or CLI) is an interactive, text based interface. If you have used Matlab or IPython, then you are already familiar with the basics of a command line interface.
+While the initial learning curve can be steep, the rewards are well worth it. Command line programs tend to be faster, more flexible, and more scalable than their GUI counterparts.
+Syntax Commands are case sensitive and follow the syntax of: command [options.</description>
+    </item>
+    
+    <item>
+      <title>DAGMan</title>
+      <link>https://ipsy-md.github.io/docs/tools/dagman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/dagman/</guid>
+      <description>DAGMan is a HTCondor tool that allows multiple jobs to be organized in workflows. A DAGMan workflow automatically submits jobs in a particular order, such that certain jobs need to complete before others start running.
+Once you are familiar with how to create, submit, and monitor HTCondor jobs, creating DAGMan workflows is relatively easy. The official documentation describes comprehensively the overall structure and available scripting of the dag-file.
+A simple dag file consists of a list of nodes (which are jobs plus optional pre- and post-processing scripts).</description>
+    </item>
+    
+    <item>
+      <title>DataLad</title>
+      <link>https://ipsy-md.github.io/docs/tools/datalad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/datalad/</guid>
+      <description>DataLad is a data management tool to share, search, obtain, extend, and version data.
+Beware that the underlying git annex calls (e.g. when calling datalad save) can be CPU-intensive if a dataset contains many files (e.g. a typical fMRI dataset). Thus, it is important to work on such datasets via an interactive job.
+Resources The DataLad Handbook is the most comprehensive effort to document DataLad. However, it is still very much a work in progress as currently the content changes almost daily.</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://ipsy-md.github.io/docs/tools/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/git/</guid>
+      <description>Git enables you to track the changes made to files over time — specifically: what changed, by whom, when, and why. It also gives you the capability to revert files back to a previous state. Over time, as your project evolves, you can edit your files with confidence knowing that at any point you can look back and recover a previous version.
+Install Debian/Ubuntu sudo apt install git   macOS Download the installer at: https://git-scm.</description>
+    </item>
+    
+    <item>
+      <title>HTCondor</title>
+      <link>https://ipsy-md.github.io/docs/tools/htcondor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/htcondor/</guid>
+      <description>HTCondor (also known as condor) is a job scheduler. It is powerful, but conceptually quite simple. Condor:
+runs the jobs you tell it to finds places to run those jobs makes sure everyone has fair access to resources  There are two aspects when teaching people how to use Condor:
+Using Condor itself (useful commands, the .submit file). This is relatively easy, and is what this document focuses on. Understanding the problems your scripts are trying to solve, and how to break those up into conceptually discrete steps and units.</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://ipsy-md.github.io/docs/tools/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/python/</guid>
+      <description>Debian Packages If you&#39;re running Debian, it&#39;s often easiest to use the official Debian packages (when present) to install python modules. Search for them via apt. For example:
+apt search mvpa2  Once you&#39;ve found the package, install it:
+apt install python-mvpa2  If you can&#39;t find a Debian package for the module you want installed, then you can to install it using pip — preferably in a virtual environment (see below).</description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://ipsy-md.github.io/docs/tools/R/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/R/</guid>
+      <description>Debian Packages If you&#39;re running Debian, it&#39;s easiest to use the official Debian packages (when present) to install R packages. Search for them via apt. For example:
+apt search tidyr  Once you&#39;ve found the package, install it:
+apt install r-cran-tidyr  If you can&#39;t find a Debian package for the R module you want installed, then you can install it directly from CRAN (see below).
+ CRAN CRAN is the main repository for community projects.</description>
+    </item>
+    
+    <item>
+      <title>sixel</title>
+      <link>https://ipsy-md.github.io/docs/tools/sixel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/sixel/</guid>
+      <description>Sixel allows displaying graphics at the command line; it&#39;s technology from the 80s that never made it — until quite recently.
+A picture is worth a thousand words:
+Utilities img2sixel niicat (not yet installed on Medusa; users should install in a venv for now)   Setup Currently, very few terminals support sixel.
+macOS Download and install iTerm2. The built-in terminal does not support sixel. Linux xterm is the recommended terminal for using sixel.</description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>https://ipsy-md.github.io/docs/tools/ssh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/ssh/</guid>
+      <description>SSH is used to securely login to a machine over the network. It is most commonly used to start an interactive shell on the remote server, but many commands (such as rsync and scp) are capable of using the SSH protocol to securely transfer bulk data.
+SSH comes installed by default on all modern machines (Linux, macOS, and Windows 10).
+Using SSH Logging into a remote machine is quite simple with SSH:</description>
+    </item>
+    
+    <item>
+      <title>tmux</title>
+      <link>https://ipsy-md.github.io/docs/tools/tmux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/tmux/</guid>
+      <description>tmux is a tool to manage terminal sessions. For those familiar with screen, tmux is a more featureful and better maintained alternative.
+The primary functionality discussed here is tmux&#39;s ability to detach and re-attach sessions, without affecting the programs running within the session. When using unstable network connections (such as bad wifi), this can save you significant frustration. If the VPN or SSH connection drops, you can just reconnect and reattach the tmux session without losing any of your work.</description>
+    </item>
+    
+  </channel>
+</rss>
