@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experimental Labs on IPSY Docs</title>
+    <link>https://ipsy-md.github.io/docs/labs/</link>
+    <description>Recent content in Experimental Labs on IPSY Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://ipsy-md.github.io/docs/labs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>G23-R010: EEG</title>
+      <link>https://ipsy-md.github.io/docs/labs/g23_r010_eeg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/labs/g23_r010_eeg/</guid>
+      <description>This lab is operated by the Ullsperger Lab.
+For questions, problems, or scheduling, contact Christina Becker.
+Overview The lab has two soundproof cabins with Faraday cages for EEG experiments. Each cabin has its own KVM matrix, which allows for nearly complete flexibility over which computer (EEG recorder, Eye Tracker, Presentation Machine, or researcher supplied Laptop) displays to any screen — and routes both audio and USB.
+The KVM matrices are also interconnected, so one machine can display to both cabins.</description>
+    </item>
+    
+    <item>
+      <title>G24-K010: Behavioral</title>
+      <link>https://ipsy-md.github.io/docs/labs/g24_k010_behavioral/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/labs/g24_k010_behavioral/</guid>
+      <description>This lab is operated shared among IPSY.
+For questions, problems, or scheduling, contact Christina Becker.
+Overview The lab has three open cabins, a table with a divider for head-to-head experiments, and a desk for those overseeing experiments.
+ Software Open Cabins These 3 computers all run Debian Jessie (8). All machines have Matlab (2012b), PsychoPy, and Psychtoolbox installed. All machines have been configured to match the timing/configuration requirements of both PsychoPy and Psychtoolbox.</description>
+    </item>
+    
+    <item>
+      <title>G24-K012: Eye Tracker</title>
+      <link>https://ipsy-md.github.io/docs/labs/g24_k012_eyetracker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/labs/g24_k012_eyetracker/</guid>
+      <description>This lab is operated by the Pollmann Lab.
+For questions, problems, or scheduling, contact Mikaella Sarrou.
+NOTE: This lab is due to be overhauled in 2018. Thus this documentation is limited — at best.
+Overview The lab is used primarily for behavioral and eye tracking experiments.
+TODO: mention back projected screen
+ Software There are two Presentation Computers. One is a legacy, Windows XP machine (with &amp;quot;some version&amp;quot; of Matlab installed).</description>
+    </item>
+    
+    <item>
+      <title>G24-K013: Soundproof</title>
+      <link>https://ipsy-md.github.io/docs/labs/g24_k013_soundproof/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/labs/g24_k013_soundproof/</guid>
+      <description>This lab is operated by the Pollmann Lab.
+For questions, problems, or scheduling, contact Mikaella Sarrou.
+Overview The lab has one soundproof lab for eye tracking experiments. It is also equipped with a KVM matrix, which allows for nearly complete flexibility over which computer (EEG recorder, Eye Tracker, Presentation Machine, or researcher supplied Laptop) displays to any screen — and routes both audio and USB.
+ Software The Presentation Computer runs Debian Jessie (8) with Matlab (2012b), PsychoPy, and Psychtoolbox installed.</description>
+    </item>
+    
+    <item>
+      <title>EXFA: Skyra</title>
+      <link>https://ipsy-md.github.io/docs/labs/EXFA_skyra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/labs/EXFA_skyra/</guid>
+      <description>NOTE: This documentation is in progress.
+Overview TODO: add contact info
+ Software There is one presentation computer, provided by the biopsych lab. It runs both Windows XP and Debian Jessie.
+Debian This is the standard experiment machine setup. Matlab (2012b), PsychoPy, and Psychtoolbox are installed. The machine has been configured to match the timing/configuration requirements of both PsychoPy and Psychtoolbox. Windows An ancient Windows XP install. It is, for obvious reasons, deprecated, but it is functional.</description>
+    </item>
+    
+  </channel>
+</rss>
