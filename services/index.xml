@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on IPSY Docs</title>
+    <link>https://ipsy-md.github.io/docs/services/</link>
+    <description>Recent content in Services on IPSY Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://ipsy-md.github.io/docs/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Communication</title>
+      <link>https://ipsy-md.github.io/docs/services/communication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/services/communication/</guid>
+      <description>These are the primary methods of communication in the lab:
+OvGU Email Once your account is setup, you can access your email via many ways:
+Webmail via email client of your choice. A detailed description on the configuration can be found here   Mailing Lists exppsy&amp;#64;ovgu.de Subscribe to exppsy neuropsy-list&amp;#64;ovgu.de Subscribe to neuropsy biopsy-l&amp;#64;ovgu.de Subscribe to biopsy brazi-l&amp;#64;ovgu An IPSY-wide mailing list that emails directly to the above three lists, plus members of other IPSY labs which don&#39;t have a mailing list.</description>
+    </item>
+    
+    <item>
+      <title>Hosted</title>
+      <link>https://ipsy-md.github.io/docs/services/hosted/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/services/hosted/</guid>
+      <description>Webspace Web servers are available for:
+Lab/Project Websites such as studyforrest.org, howdoyouscience.net, etc Data Distribution such as psydata.ovgu.de Personal Websites Every IPSY user has a public_html/ folder in their home directory on kumo.ovgu.de. Any files placed in that folder will be made available at http://kumo.ovgu.de/~&amp;lt;username&amp;gt;/.   DNS Some projects have their own domain names, but the majority of systems will live under the following namespaces.
+ipsymd.de For convenience and brevity.</description>
+    </item>
+    
+    <item>
+      <title>Network</title>
+      <link>https://ipsy-md.github.io/docs/services/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/services/network/</guid>
+      <description>Wired Network Most network jacks are activated. If you need network access and the jack isn&#39;t active, contact Nico Marek and he will ask for it to be enabled.
+ Wireless Network There are many WiFi networks available on campus. We recommend the following networks:
+eduroam Uses your OvGU email address and password to authenticate. Can be used at any institution participating in the eduroam network. OvGU-802.1X Uses your OvGU account.</description>
+    </item>
+    
+    <item>
+      <title>Printing</title>
+      <link>https://ipsy-md.github.io/docs/services/printing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/services/printing/</guid>
+      <description>When in doubt, use the drivers bundled with your OS. Otherwise, the links below will help you find the appropriate drivers.
+Ullsperger Lab Kyocera FS-C5400DN 141.44.98.7 Room G24-003   Pollmann Lab Kyocera ECOSYS P6035CDN 141.44.98.9 Room G24-010   Joachim Lab Kyocera FS-C5250DN 141.44.98.12 Room G22A-329   005 MFP Brother MFC-9450CDN 141.44.98.11 Room G24-005   005 Color Kyocera FS-C5150CDN 141.44.98.13 Room G24-005   Junior XXIII Kyocera FS-C5150CDN 141.</description>
+    </item>
+    
+  </channel>
+</rss>
