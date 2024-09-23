@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome on IPSY Docs</title>
+    <link>https://ipsy-md.github.io/docs/</link>
+    <description>Recent content in Welcome on IPSY Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://ipsy-md.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Code of Conduct</title>
+      <link>https://ipsy-md.github.io/docs/medusa/code_of_conduct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/medusa/code_of_conduct/</guid>
+      <description>Sharing is caring. —Wise Person Medusa is a shared resource, and therefore should be used with awareness and empathy for the work of others. Specific points to pay attention to are:
+Use Condor for analysis All computational jobs are to be submitted to the HTCondor queue. The head node is meant for interactive use and quick computations, otherwise it negatively affects other people&#39;s work. Anything bigger should be submitted as an HTCondor Job, either as an interactive job or as a non-interactive job.</description>
+    </item>
+    
+    <item>
+      <title>Accessing</title>
+      <link>https://ipsy-md.github.io/docs/medusa/access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/medusa/access/</guid>
+      <description>Command Line The easiest and most reliable way of connecting to Medusa is via SSH.
+Connecting is as simple as running the following in your terminal:
+ssh username&amp;#64;medusa.ovgu.de  NOTE: Users with unstable internet connections will likely find tmux to be a helpful tool.
+ VPN You need a VPN connection to be able to log in to medusa. A description how to configure a VPN client can be found on the OVGU URZ page</description>
+    </item>
+    
+    <item>
+      <title>HTCondor</title>
+      <link>https://ipsy-md.github.io/docs/medusa/htcondor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/medusa/htcondor/</guid>
+      <description>This document focuses on how HTCondor is configured and intended to be used on our cluster. To learn about Condor and how to use it, you should read the Tools &amp;gt; HTCondor page.
+HTCondor jobs come in two versions: interactive and non-interactive. Whenever possible, a non-interactive job should be used for computations.
+TODO: This page needs some love.
+The &amp;quot;Ideal&amp;quot; Job The &amp;quot;ideal&amp;quot; job is [1 CPU × 4 GiB] and runs for 1-3 hours.</description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://ipsy-md.github.io/docs/medusa/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/medusa/data/</guid>
+      <description>Folder Hierarchy All data in the /home directory is available across the entire cluster.
+/home/&amp;lt;user_name&amp;gt; This directory is for all of your personal files. /home/data/&amp;lt;project_name&amp;gt; This directory is for data shared across the group/project. /home/&amp;lt;user_name&amp;gt;/scratch or /home/data/&amp;lt;project_name&amp;gt;/scratch This directory is not backed-up and should be used to store interim results which can be easily regenerated. Storing data here helps relieve the burden on backups. /home/data/archive/&amp;lt;project_name&amp;gt; Read-only and heavily compressed (via cool transparent compression mojo), this directory stores data for projects which are completed.</description>
+    </item>
+    
+    <item>
+      <title>Software stacks</title>
+      <link>https://ipsy-md.github.io/docs/medusa/software/software_stacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/medusa/software/software_stacks/</guid>
+      <description>The software stacks are shared for the whole cluster and are generated using the Spack package manager
+Types of available software stacks Currently there are two types of stacks available.
+current  stable stack throughout the semester new stack every semester (build from stratch) &amp;ldquo;old&amp;rdquo; stacks still valid with current_&amp;lt;date&amp;gt; 3 ways to access (further details see Usage):  directly with spack commands via modules via environment    Paths:</description>
+    </item>
+    
+    <item>
+      <title>Data Center</title>
+      <link>https://ipsy-md.github.io/docs/medusa/data_center/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/medusa/data_center/</guid>
+      <description>We have 5U in one of the racks in the G26 data center. It houses the backup server (Thunk).
+  PWR U# Name Inventory # Overview   &amp;nbsp; 4 JBOD (Thunk) (likely part of 264097,000) 9x 4TB drives / 12x bays  5  &amp;nbsp; 6 Thunk 261309,000 2x 6-core 2.4 GHz Xeon E5645 96 GiB RAM
+12x 4TB drives / 16x bays
+  7  8    Also in G26, the URZ provided us with 2x 42U racks.</description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://ipsy-md.github.io/docs/medusa/hardware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/medusa/hardware/</guid>
+      <description>Summary As of July 2020, the cluster comprises 15 nodes with over 250 CPU cores and 2.25 TiB of RAM. Centralized storage features more than 40 TiB of high performance SSD and 11 TiB of HDD capacity, and is accessed by cluster nodes via 10Gb Ethernet.
+ Head Node (Medusa) 4x 8-core 2.8 GHz Opteron 6320 256 GiB RAM (16x 16GiB DDR3 ECC reg) 1x 10Gb NIC  Purchased 2013.12. Supermicro&#39;s specs: A+ Server 2042G-TRF.</description>
+    </item>
+    
+    <item>
+      <title>G23-R010: EEG</title>
+      <link>https://ipsy-md.github.io/docs/labs/g23_r010_eeg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/labs/g23_r010_eeg/</guid>
+      <description>This lab is operated by the Ullsperger Lab.
+For questions, problems, or scheduling, contact Christina Becker.
+Overview The lab has two soundproof cabins with Faraday cages for EEG experiments. Each cabin has its own KVM matrix, which allows for nearly complete flexibility over which computer (EEG recorder, Eye Tracker, Presentation Machine, or researcher supplied Laptop) displays to any screen — and routes both audio and USB.
+The KVM matrices are also interconnected, so one machine can display to both cabins.</description>
+    </item>
+    
+    <item>
+      <title>BIDS</title>
+      <link>https://ipsy-md.github.io/docs/tools/bids/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/bids/</guid>
+      <description>The Brain Imaging Data Structure (BIDS) is a set of rules to organize and describe the data from neuroimaging and behavioral experiments. Following this practice makes it easier for scientists to work with each other&#39;s data, for both collaborative and reproducible-science purposes. A standard data layout also makes it easier to write analysis tools, and a growing number of tools (see BIDS Apps) require that input data be BIDS formatted.</description>
+    </item>
+    
+    <item>
+      <title>G24-K010: Behavioral</title>
+      <link>https://ipsy-md.github.io/docs/labs/g24_k010_behavioral/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/labs/g24_k010_behavioral/</guid>
+      <description>This lab is operated shared among IPSY.
+For questions, problems, or scheduling, contact Christina Becker.
+Overview The lab has three open cabins, a table with a divider for head-to-head experiments, and a desk for those overseeing experiments.
+ Software Open Cabins These 3 computers all run Debian Jessie (8). All machines have Matlab (2012b), PsychoPy, and Psychtoolbox installed. All machines have been configured to match the timing/configuration requirements of both PsychoPy and Psychtoolbox.</description>
+    </item>
+    
+    <item>
+      <title>G24-K012: Eye Tracker</title>
+      <link>https://ipsy-md.github.io/docs/labs/g24_k012_eyetracker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/labs/g24_k012_eyetracker/</guid>
+      <description>This lab is operated by the Pollmann Lab.
+For questions, problems, or scheduling, contact Mikaella Sarrou.
+NOTE: This lab is due to be overhauled in 2018. Thus this documentation is limited — at best.
+Overview The lab is used primarily for behavioral and eye tracking experiments.
+TODO: mention back projected screen
+ Software There are two Presentation Computers. One is a legacy, Windows XP machine (with &amp;quot;some version&amp;quot; of Matlab installed).</description>
+    </item>
+    
+    <item>
+      <title>The Command Line</title>
+      <link>https://ipsy-md.github.io/docs/tools/cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/cli/</guid>
+      <description>The shell (sometimes also called a terminal, console, or CLI) is an interactive, text based interface. If you have used Matlab or IPython, then you are already familiar with the basics of a command line interface.
+While the initial learning curve can be steep, the rewards are well worth it. Command line programs tend to be faster, more flexible, and more scalable than their GUI counterparts.
+Below you can find a basic overview of how a command line program works, if you want a hand on tutorial, you can find good ones for example on Software Carpentry or HPC Carpentry</description>
+    </item>
+    
+    <item>
+      <title>DAGMan</title>
+      <link>https://ipsy-md.github.io/docs/tools/dagman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/dagman/</guid>
+      <description>DAGMan is a HTCondor tool that allows multiple jobs to be organized in workflows. A DAGMan workflow automatically submits jobs in a particular order, such that certain jobs need to complete before others start running.
+Once you are familiar with how to create, submit, and monitor HTCondor jobs, creating DAGMan workflows is relatively easy. The official documentation describes comprehensively the overall structure and available scripting of the dag-file.
+A simple dag file consists of a list of nodes (which are jobs plus optional pre- and post-processing scripts).</description>
+    </item>
+    
+    <item>
+      <title>DataLad</title>
+      <link>https://ipsy-md.github.io/docs/tools/datalad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/datalad/</guid>
+      <description>DataLad is a data management tool to share, search, obtain, extend, and version data.
+Beware that the underlying git annex calls (e.g. when calling datalad save) can be CPU-intensive if a dataset contains many files (e.g. a typical fMRI dataset). Thus, it is important to work on such datasets via an interactive job.
+Resources The DataLad Handbook is the most comprehensive effort to document DataLad. However, it is still very much a work in progress as currently the content changes almost daily.</description>
+    </item>
+    
+    <item>
+      <title>G24-K013: Soundproof</title>
+      <link>https://ipsy-md.github.io/docs/labs/g24_k013_soundproof/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/labs/g24_k013_soundproof/</guid>
+      <description>This lab is operated by the Pollmann Lab.
+For questions, problems, or scheduling, contact Mikaella Sarrou.
+Overview The lab has one soundproof lab for eye tracking experiments. It is also equipped with a KVM matrix, which allows for nearly complete flexibility over which computer (EEG recorder, Eye Tracker, Presentation Machine, or researcher supplied Laptop) displays to any screen — and routes both audio and USB.
+ Software The Presentation Computer runs Debian Jessie (8) with Matlab (2012b), PsychoPy, and Psychtoolbox installed.</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://ipsy-md.github.io/docs/tools/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/git/</guid>
+      <description>Git enables you to track the changes made to files over time — specifically: what changed, by whom, when, and why. It also gives you the capability to revert files back to a previous state. Over time, as your project evolves, you can edit your files with confidence knowing that at any point you can look back and recover a previous version.
+Install Debian/Ubuntu sudo apt install git   macOS Download the installer at: https://git-scm.</description>
+    </item>
+    
+    <item>
+      <title>HTCondor</title>
+      <link>https://ipsy-md.github.io/docs/tools/htcondor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/htcondor/</guid>
+      <description>HTCondor (also known as condor) is a job scheduler. It is powerful, but conceptually quite simple. Condor:
+runs the jobs you tell it to finds places to run those jobs makes sure everyone has fair access to resources  There are two aspects when teaching people how to use Condor:
+Using Condor itself (useful commands, the .submit file). This is relatively easy, and is what this document focuses on. Understanding the problems your scripts are trying to solve, and how to break those up into conceptually discrete steps and units.</description>
+    </item>
+    
+    <item>
+      <title>EXFA: Skyra</title>
+      <link>https://ipsy-md.github.io/docs/labs/EXFA_skyra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/labs/EXFA_skyra/</guid>
+      <description>NOTE: This documentation is in progress.
+Overview TODO: add contact info
+ Software There is one presentation computer, provided by the biopsych lab. It runs both Windows XP and Debian Jessie.
+Debian This is the standard experiment machine setup. Matlab (2012b), PsychoPy, and Psychtoolbox are installed. The machine has been configured to match the timing/configuration requirements of both PsychoPy and Psychtoolbox. Windows An ancient Windows XP install. It is, for obvious reasons, deprecated, but it is functional.</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://ipsy-md.github.io/docs/tools/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/python/</guid>
+      <description>Debian Packages If you&#39;re running Debian, it&#39;s often easiest to use the official Debian packages (when present) to install python modules. Search for them via apt. For example:
+apt search mvpa2  Once you&#39;ve found the package, install it:
+apt install python-mvpa2  If you can&#39;t find a Debian package for the module you want installed, then you can to install it using pip — preferably in a virtual environment (see below).</description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://ipsy-md.github.io/docs/tools/R/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/R/</guid>
+      <description>Debian Packages If you&#39;re running Debian, it&#39;s easiest to use the official Debian packages (when present) to install R packages. Search for them via apt. For example:
+apt search tidyr  Once you&#39;ve found the package, install it:
+apt install r-cran-tidyr  If you can&#39;t find a Debian package for the R module you want installed, then you can install it directly from CRAN (see below).
+ CRAN CRAN is the main repository for community projects.</description>
+    </item>
+    
+    <item>
+      <title>sixel</title>
+      <link>https://ipsy-md.github.io/docs/tools/sixel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/sixel/</guid>
+      <description>Sixel allows displaying graphics at the command line; it&#39;s technology from the 80s that never made it — until quite recently.
+A picture is worth a thousand words:
+Utilities img2sixel niicat (not yet installed on Medusa; users should install in a venv for now)   Setup Currently, very few terminals support sixel.
+macOS Download and install iTerm2. The built-in terminal does not support sixel. Linux xterm is the recommended terminal for using sixel.</description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>https://ipsy-md.github.io/docs/tools/ssh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/ssh/</guid>
+      <description>SSH is used to securely login to a machine over the network. It is most commonly used to start an interactive shell on the remote server, but many commands (such as rsync and scp) are capable of using the SSH protocol to securely transfer bulk data.
+SSH comes installed by default on all modern machines (Linux, macOS, and Windows 10).
+Using SSH Logging into a remote machine is quite simple with SSH:</description>
+    </item>
+    
+    <item>
+      <title>tmux</title>
+      <link>https://ipsy-md.github.io/docs/tools/tmux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/tools/tmux/</guid>
+      <description>tmux is a tool to manage terminal sessions. For those familiar with screen, tmux is a more featureful and better maintained alternative.
+The primary functionality discussed here is tmux&#39;s ability to detach and re-attach sessions, without affecting the programs running within the session. When using unstable network connections (such as bad wifi), this can save you significant frustration. If the VPN or SSH connection drops, you can just reconnect and reattach the tmux session without losing any of your work.</description>
+    </item>
+    
+    <item>
+      <title>Communication</title>
+      <link>https://ipsy-md.github.io/docs/services/communication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/services/communication/</guid>
+      <description>These are the primary methods of communication in the lab:
+OvGU Email Once your account is setup, you can access your email via many ways:
+Webmail via email client of your choice. A detailed description on the configuration can be found here   Mailing Lists exppsy&amp;#64;ovgu.de Subscribe to exppsy neuropsy-list&amp;#64;ovgu.de Subscribe to neuropsy biopsy-l&amp;#64;ovgu.de Subscribe to biopsy brazi-l&amp;#64;ovgu An IPSY-wide mailing list that emails directly to the above three lists, plus members of other IPSY labs which don&#39;t have a mailing list.</description>
+    </item>
+    
+    <item>
+      <title>Hosted</title>
+      <link>https://ipsy-md.github.io/docs/services/hosted/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/services/hosted/</guid>
+      <description>Webspace Web servers are available for:
+Lab/Project Websites such as studyforrest.org, howdoyouscience.net, etc Data Distribution such as psydata.ovgu.de Personal Websites Every IPSY user has a public_html/ folder in their home directory on kumo.ovgu.de. Any files placed in that folder will be made available at http://kumo.ovgu.de/~&amp;lt;username&amp;gt;/.   DNS Some projects have their own domain names, but the majority of systems will live under the following namespaces.
+ipsymd.de For convenience and brevity.</description>
+    </item>
+    
+    <item>
+      <title>Network</title>
+      <link>https://ipsy-md.github.io/docs/services/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/services/network/</guid>
+      <description>Wired Network Most network jacks are activated. If you need network access and the jack isn&#39;t active, contact Nico Marek and he will ask for it to be enabled.
+ Wireless Network There are many WiFi networks available on campus. We recommend the following networks:
+eduroam Uses your OvGU email address and password to authenticate. Can be used at any institution participating in the eduroam network. OvGU-802.1X Uses your OvGU account.</description>
+    </item>
+    
+    <item>
+      <title>Printing</title>
+      <link>https://ipsy-md.github.io/docs/services/printing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ipsy-md.github.io/docs/services/printing/</guid>
+      <description>When in doubt, use the drivers bundled with your OS. Otherwise, the links below will help you find the appropriate drivers.
+Ullsperger Lab Kyocera FS-C5400DN 141.44.98.7 Room G24-003   Pollmann Lab Kyocera ECOSYS P6035CDN 141.44.98.9 Room G24-010   Joachim Lab Kyocera FS-C5250DN 141.44.98.12 Room G22A-329   005 MFP Brother MFC-9450CDN 141.44.98.11 Room G24-005   005 Color Kyocera FS-C5150CDN 141.44.98.13 Room G24-005   Junior XXIII Kyocera FS-C5150CDN 141.</description>
+    </item>
+    
+  </channel>
+</rss>
