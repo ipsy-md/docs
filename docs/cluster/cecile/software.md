@@ -69,8 +69,8 @@ Instead of loading every package individually, you can activate an evironment co
 
 ### Via modules
 
-For every installed package spack generates a module file in addition, this allows to use the `module` cammand to load specific softwares.
-Unlike the environment method, this method is extremely fast and it allows you to specify the version of the software that you prefere.
+For every installed package spack generates a module file in addition, this allows you to use the `module` command to load specific software.
+Unlike the environment method, this method is extremely fast and it allows you to specify the version of the software you prefere.
 
 !!! note "Software names in the stack"
     Before loading a module it is advisable to check how the software you are interested in is named in the stack. 
