@@ -45,8 +45,9 @@ There are different types of jobs in slurm (e.g. single jobs, interactive jobs e
 
 3. Create a folder called `slurm-logs` (or you can give it another meaningful name), in the same directory as the scripts are or in the `scratch` of your project. Slurm will use it to dump the logs reporting error files and printed outputs. 
 
-4. Activate the [software stack] environment or load the modules that you need for your code. [software stack]: ../software/##how-to-use-the-stacks 
-   This needs to be done inside the script used to run your slurm jobs (see in the script examples). 
+4. Activate the [software stack] environment or load the modules that you need for your code.  
+   This needs to be done inside the script used to run your slurm jobs (see in the script examples).
+   [software stack]: ../software/##how-to-use-the-stacks 
 
 In order to specify a job in Slurm, you need to make a few decisions and provide a few essential information to the system beforehand. 
 
