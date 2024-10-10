@@ -17,16 +17,19 @@ Currently there are **two kinds of stacks** available:
 
 
 
-!!! note "Why two different stacks (use case):"
+!!! note "Why two different stacks"
     If you need to use a software that is not yet available on Cecile (in the `current stack`), after your request, the missing software is going to be installed in the `experimental stack`
 
 ## How to use the stacks
 
 There are multiple ways to access the stack depending on the control you want over the versions of softwares you would like to use:
 
-### Load the Ipsy environment (recommended method)
+### Load the Ipsy environment
 
-Instead of loading every package individually, you can activate an evironment containing only the newest version of each package. 
+Instead of loading every package individually, you can activate an evironment containing only the newest version of each package.
+
+!!! Warning "Loading environments takes time"
+    Due to some changes in the package manager (Spack) currently loading an environment is a slow process that could take up to 5 minutes. 
 
 === "Current stack"
 
