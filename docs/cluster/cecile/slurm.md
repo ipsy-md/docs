@@ -59,7 +59,7 @@ In order to specify a job in Slurm, you need to make a few decisions and provide
 
 The following parameters are not all mandatory, but we **strongly recommend** to define all of them. If you do not define them properly your job might not run as expected, might stop or even fail and you might involuntarily take resources away from other users.
 
-Here it is how you turn the previous questions in parameters for slurm.
+Here it is how you turn the previous questions in parameters for slurm script.
 
 ```bash title="Setting Slurm parameters" linenums="1"
 #!/bin/sh 
@@ -71,13 +71,13 @@ Here it is how you turn the previous questions in parameters for slurm.
 #SBATCH --nodes=1                             
 #SBATCH --mem-per-cpu=1g                     
 #SBATCH --time=01:00:00                       
-#SBATCH --output=slurm_logs/output-%A-%a.out  
-#SBATCH --error=slurm_logs/error-%A-%a.err   
+#SBATCH --output=slurm-logs/%x-%A-%a.out 
+#SBATCH --error=slurm-logs/%x-%A-%a.err  
 
 ```
 
 !!! note "# is not a comment in SLURM"
-    Keep in mind that for your slurm script the # before any slurm command is not interpreted as a shell comment
+    Keep in mind that for your slurm script the # before `SBATCH` is not interpreted as a shell comment
 
 - `#SBATCH --job-name=my_job`: the name you provide for your job
 - `#SBATCH --mail-user=<name.lastname>@ovgu.de`: your email address, in case you want to receive a job feedback by email.
@@ -86,8 +86,8 @@ Here it is how you turn the previous questions in parameters for slurm.
 - `#SBATCH --nodes=1`: number of requested nodes, keep it to 1, it is fine for our type of analyses.
 - `#SBATCH --mem-per-cpu=1g`: amount of memory you request per cpu. 
 - `#SBATCH --time=01:00:00`: maximum duration you assign to a job (D-HH:MM:SS, for example `--time=00:01:00` is a one minute job).
-- `#SBATCH --output=slurm_logs/output-%A-%a.out`: here you specify where job printed output should be saved, specifically in the folder `slurm_logs`. 
-- `#SBATCH --error=slurm_logs/error-%A-%a.err`: here you specify where job related errors should be saved, again in the folder `slurm_logs`.
+- `#SBATCH --output=slurm-logs/%x-%A-%a.out`: here you specify where job printed output should be saved, specifically in the folder `slurm-logs`. 
+- `#SBATCH --error=slurm-logs/%x-%A-%a.err`: here you specify where job related errors should be saved, again in the folder `slurm-logs`.
 
 Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the amount of RAM you request in a node.
 
@@ -97,7 +97,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
 
 
 !!! note "Job ID"
-    The job ID is the identification number relative to a job that can use it to acquire information about your job, or to abort your job. It might look something like this `217379_5`, where the prefix number before the underscore indicates the general job session, while the number after the underscore indicates the specific number of a job. You might have multiple jobs sharing the session number.   
+    The job ID is the identification number relative to a job that can be used to acquire information about your job, or to abort your job. It might look something like this `217379_5`, where the prefix number before the underscore indicates the general job session, while the number after the underscore indicates the specific number of a job. You might have multiple jobs sharing the session number.   
 
 ## Types of Slurm jobs
 
@@ -107,6 +107,8 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
 
     **Use case:** It is ideal when you want to test a specific analysis and test it on one subject, or when you need to run just one analysis like a group statistical analysis.
 
+    The following is a prototypical slurm script. You can use the name and the extension you prefer, we recommend to use `<filename>.slurm`
+
     ```bash title="Slurm single job"
     #!/bin/sh
  
@@ -115,14 +117,19 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --nodes=1
     #SBATCH --mem-per-cpu=1g
     #SBATCH --time=01:00:00
-    #SBATCH --output=slurm_logs/output-%A-%a.out
-    #SBATCH --error=slurm_logs/error-%A-%a.err
+    #SBATCH --output=slurm-logs/%x-%A-%a.out
+    #SBATCH --error=slurm-logs/%x-%A-%a.err
 
     ./my_script.sh 
     ```
+    
+    To run a job you use the following command:
 
-    You can now run `squeue` to see the status of your job, let's understand the output:
+    ```bash
+    sbatch <filename>.slurm
+    ```
 
+    You can now run `squeue` to see the status of your job, let's understand the `squeue` output:
 
     **A running job**
     ```
@@ -150,7 +157,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     - `ST`: Status of your job:
     - `R`: running job
     - `PD`: pending job, it is waiting for resources to be freed
-    - `IDLE`: idled job, there might be multiple reasons for an idled job, check the error logs and your slurm scripts.
+    - `IDLE`: idled job, there might be multiple reasons for an idled job, check the error logs and your slurm script.
     - `TIME`: Time since the job started running
     - `NODES`: Number of nodes
     - `NODELIST` : Nodes name 
@@ -166,9 +173,11 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem-per-cpu=1G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
-    #SBATCH --output=slurm_logs/output-%A-%a.out   # printed output
-    #SBATCH --error=slurm_logs/error-%A-%a.err     # errors
+    #SBATCH --output=slurm-logs/%x-%A-%a.out   # printed output
+    #SBATCH --error=slurm-logs/%x-%A-%a.err     # errors
 
+    ## load the software stack
+    . /software/current/env.sh
     ## you need to load matlab even if you have loaded already all the modules
     ## from the software stack 
     module load matlab
@@ -190,18 +199,19 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem-per-cpu=1G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
-    #SBATCH --output=slurm_logs/output-%A-%a.out   # printed output
-    #SBATCH --error=slurm_logs/error-%A-%a.err     # errors
+    #SBATCH --output=slurm-logs/%x-%A-%a.out   # printed output
+    #SBATCH --error=slurm-logs/%x-%A-%a.err     # errors
 
-    ## you need to load python even if you have loaded already all the modules
-    ## from the software stack 
-    module load python3
+    # load the stack and the module you need
+    . /software/current/env.sh
+    module load python
+
     subject=01
 
     python -u python_script ${subject}
     ```
 
-    In case you made your python code executable you can remove the line `module load python` and call the script as follows: `./python_script ${subject}` without prepending `python -u`
+    In case you made your python script executable you can remove the line `module load python` and call the script as follows: `./python_script ${subject}` without prepending `python -u`
 
 === "Array job"
 
