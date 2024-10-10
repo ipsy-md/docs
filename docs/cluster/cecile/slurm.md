@@ -18,9 +18,7 @@ If you are using Cecile, you would most likely need to run multiple similar jobs
 There are different types of jobs in slurm (e.g. single jobs, interactive jobs etc.), but before talking about the specific jobs there are a few things you need to take care of:
 
 1. Make sure that the code you want to use for your jobs works properly. Especially at the beginning it might difficult to identify the reason why a job is failing, thus by making sure that your scripts run as intended you can restrict your error space.
-2. Activate the [software stack] environment or load the module that you need for your code.
-   [software stack]: ../software/##how-to-use-the-stacks
-3. Make sure your scripts (e.g. in bash) are executable.
+2. Make sure your scripts (e.g. in bash) are executable.
    
     ??? note "Making a file executable"
 
@@ -45,8 +43,10 @@ There are different types of jobs in slurm (e.g. single jobs, interactive jobs e
         chmod +x <script.py>
         ```
 
-4. Create a folder called `slurm_logs` (or you can give it another meaningful name), in the same directory as the scripts are. Slurm will use it to dump the logs reporting error files and outputs. 
+3. Create a folder called `slurm-logs` (or you can give it another meaningful name), in the same directory as the scripts are or in the `scratch` of your project. Slurm will use it to dump the logs reporting error files and printed outputs. 
 
+4. Activate the [software stack] environment or load the modules that you need for your code. [software stack]: ../software/##how-to-use-the-stacks 
+   This needs to be done inside the script used to run your slurm jobs (see in the script examples). 
 
 In order to specify a job in Slurm, you need to make a few decisions and provide a few essential information to the system beforehand. 
 
