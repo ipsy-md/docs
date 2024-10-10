@@ -224,10 +224,11 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     In an array job the crucial parameter is `#SBATCH --array` which specifies the number of jobs we would like to run simultaneously. You define the array of jobs indicating the range of the jobs, e.g. `1-5` (see highlightened line in the script below)
 
     !!! note How to define the `--array` parameter
-        - Define a range: ```#SBATCH --array 0-5```  from 0 to 5 for 6 total jobs.
-        - Define specific numbers: ```#SBATCH --array 1, 4, 6, 10```  (e.g. they might be specific subject IDs) for 4 total jobs
-        - Define a range with specific intervals ```#SBATCH --array 1-20:2``` 
-        - Define a range and specify the number of parallel jobs ```#SBATCH -- array 1-400%100``` only 100 jobs are run simultaneously
+
+        - Define a range: ```#SBATCH --array 0-5```  from 0 to 5 for 6 total jobs.</b>  
+        - Define specific numbers: ```#SBATCH --array 1, 4, 6, 10```  (e.g. they might be specific subject IDs) for 4 total jobs.</b>  
+        - Define a range with specific intervals ```#SBATCH --array 1-20:2```</b>  
+        - Define a range and specify the number of parallel jobs ```#SBATCH -- array 1-400%100``` only 100 jobs are run simultaneously.</b>  
 
 
     ```bash linenums="1" hl_lines="10"
