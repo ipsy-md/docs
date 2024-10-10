@@ -70,17 +70,43 @@ Instead of loading every package individually, you can activate an evironment co
 ### Via modules
 
 For every installed package spack generates a module file in addition, this allows to use the `module` cammand to load specific softwares.
+Unlike the environment method, this method is extremely fast and it allows you to specify the version of the software that you prefere.
 
-```bash
-. /software/experimental/spack/share/spack/setup-env.sh
-```
+!!! note "Software names in the stack"
+    Before loading a module it is advisable to check how the software you are interested in is named in the stack. 
+    For example all python software are preceded by `py-`, thus to load `pandas` you need to type: `module load py-pandas`.
+    This naming convention is limited to stack, in your code software must have their usual names.    
 
-To see what packages are installed run
-```bash
-module avail
-```
+=== "Current stack"
 
-To load a package (in case a specific version is needed, load the version of the software shown by `module avail`)
-```bash
-module load python
-```
+
+    ```bash
+    . /software/current/env.sh
+    ```
+
+    To see what packages are installed run
+    ```bash
+    module avail
+    ```
+
+    To load a package (in case a specific version is needed, load the version of the software shown by `module avail`)
+    ```bash
+    module load python
+    ```
+
+
+=== "Experimental stack"
+
+    ```bash
+    . /software/experimental/env.sh
+    ```
+
+    To see what packages are installed run
+    ```bash
+    module avail
+    ```
+
+    To load a package (in case a specific version is needed, load the version of the software shown by `module avail`)
+    ```bash
+    module load python
+    ```
