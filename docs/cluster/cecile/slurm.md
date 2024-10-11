@@ -374,7 +374,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     In case you made your python code executable you can remove the line `module load python` and call the script as follows: `./python_script ${subjects[idx]}` without prepending `python -u`
 
 
-    #### Job array with more a complicated structure
+    #### Job array with a more complicated structure
 
     A typical analysis might require to analyze different subjects with different sessions or different parameters. The following scripts exmplifies a similar case in which each subject needs to be run for three different sessions.
 
@@ -402,11 +402,11 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     3. To assign each session to each subject we can leverage on the modulus operator (take a look at [modular arythmetic](https://en.wikipedia.org/wiki/Modular_arithmetic)) to provide the correct index for all the combinations. See in the example below how the modulus allows you to obtain all the index combinations.
 
         <figure markdown="span">
-          ![Getting indeces through the modulus operator](images/modulus_example.png){ width="300" }
+          ![Indices](images/modulus_example.png){ width="300" }
           <figcaption></figcaption>
         </figure>
 
-    4. Then extract subject IDs and sessions by using the related indeces.
+    4. Then extract subject IDs and sessions by using the related indices.
 
 === "Interactive job"
 
