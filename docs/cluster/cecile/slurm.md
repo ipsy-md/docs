@@ -427,6 +427,8 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
 
     **Use case:** It is ideal if you need to do some testing, or you just need to run some analyses interactively. Using an interactive job you avoid to work on the head node and take precious resources that are shared among all users.
 
+    You can launch an interactive job in the following way:
+
     ```bash
     srun --mem=1G --time=01:00:00 --pty bash
     ```
@@ -436,7 +438,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
 
     In case you do not specify time and memory requirements, by default the time will be **24 hours** and the **memory 4G**
 
-    If you need to use a software with a GUI in an interactive job you should use start the job using the following command:
+    If you need to use a software with a GUI within an interactive session you should start the job using the following command:
 
     ```bash
     srun --pty --x11 bash
