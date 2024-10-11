@@ -7,7 +7,7 @@ The job scheduler allows you to specify computational tasks, known as **jobs**, 
 [restrictions]: #job-restrictions-and-defaults
 
 <figure markdown="span">
-  ![Slurm](images/slurm.png){ width="500" }
+  ![Slurm](../images/slurm.png){ width="500" }
   <figcaption></figcaption>
 </figure>
 
