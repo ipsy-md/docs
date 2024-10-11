@@ -399,7 +399,14 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
 
     1. Set the array range according to the total number of jobs you need to run. In this example we have 4 subjects and 3 different sessions per subject, thus we can set the `--array` range as `0-11`, which amounts to 12 jobs.
     2. Set up one array that defines the subject IDs `SUBJECTS` and another array that defines the session names `SESSIONS`.
-    3. To assign each session to each subject we can leverage on the modulus operator (take a look at [modular arythmetic](https://en.wikipedia.org/wiki/Modular_arithmetic)) to provide the correct index for all the combinations. For example, let's consider subject 4,  
+    3. To assign each session to each subject we can leverage on the modulus operator (take a look at [modular arythmetic](https://en.wikipedia.org/wiki/Modular_arithmetic)) to provide the correct index for all the combinations. See in the example below how the modulus allows you to obtain all the index combinations.
+
+        <figure markdown="span">
+          ![Getting indeces through the modulus operator](images/modulus_example.png){ width="300" }
+          <figcaption></figcaption>
+        </figure>
+
+    4. Then extract subject IDs and sessions by using the related index.
 
 === "Interactive job"
 
