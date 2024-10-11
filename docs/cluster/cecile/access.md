@@ -56,10 +56,13 @@
     If you want to use any software with a Graphical User Interface (GUI) in Cecile (e.g. Matlab), you need to use the so-called **X fowarding**. Keep in mind that this usage mode is very sensitive to latency, thus outside the OvGU network you will likely experience a poor performance in softwares with GUI.
 
     !!! Warning "Issues with Windows"
-        X fowarding does not currently work natively on Windows, in order to be able to use it, you need to follow the next steps: 
-        1. Install [VcXsrv](https://github.com/marchaesen/vcxsrv), once installed it will be called `Xlaunch`.</b>  
-        2. Install the Windows Subsystem for Linux (WSL, see the next paragraph).
-        3. Launch `Xlaunch` open the WSL terminal and type the following command:</b>  
+        X fowarding does not currently work natively on Windows, in order to be able to use it, you need to follow the next steps:</b>   
+        1. Install [VcXsrv](https://github.com/marchaesen/vcxsrv), once installed it will be called `Xlaunch` on your machine.</b>  
+        2. Install the Windows Subsystem for Linux (WSL) by opening your power shall and typing the following command (see the next paragraph for more details):</b>  
+            ```bash
+            wsl --install
+            ```
+        3. Launch `Xlaunch`, open the WSL terminal (you can find it in your windows menù) and type the following command:</b>  
             ```bash
             ssh -X <username>@cecile.ovgu.de
             ```
