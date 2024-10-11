@@ -8,10 +8,10 @@ The job scheduler allows you to specify computational tasks, known as **jobs**, 
 
 ## How to think about jobs
 
-If you are using Cecile, you would most likely need to run multiple similar jobs at the same time, the key to achieve this goal is to code your analysis with the objective of making it parallelizable:
+If you are using Cecile, you most likely need to run multiple similar jobs at the same time, the key to achieve this goal is to code your analysis with the objective of making it parallelizable:
 
-- Create scripts that process only one dataset (it could be a subject) at a time. In this way one job is going to correspond to one task, for example the preprocessing of a single subject dataset.
-- Chunk your analysis in steps. In this way, especially if you are new to slurm, you have more control on your analysis, your outcomes and it reduces the duration of your jobs. This approach does not prevent you from running several steps at once, but if you do that, but if you do so you should be certain that each step is doing exactly what you want it to do.
+- Create scripts that process only one dataset (e.g. one participant) at a time. In this way one job is going to correspond to one task, for example the preprocessing of a single subject dataset.
+- Chunk your analysis in steps. In this way, especially if you are new to slurm, you have more control on your analysis, your outcomes and it reduces the duration of your jobs.
 
 ## How to run a job in Slurm
 
@@ -249,7 +249,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     Assume you want to run a specific analysis on 5 subjects in parallel and you want to use a script called `my_analysis.sh` that requires as unique parameter the subject ID. In order to set up a job array you can follow the next steps:
 
     - You need to provide to slurm the number of jobs by setting up `#SBATCH --array` as we have seen before. In this case our range is `0-4`, in total 5 jobs as the number of your subjects (remember that the shell interpreter counts starting from 0).
-    - Now you need to pass the subject ID parameter to the script. To do that, you can take advantage of the slurm variable `SLURM_ARRAY_TASK_ID` which keeps track of the jobs count. This means that for the first job of the array `SLURM_ARRAY_TASK_ID` will assume a value of 0 for the second job of 1 and so on until the last job, for which it will assume the value 4. `SLURM_ARRAY_TASK_ID` can be used as an index to extract the subject ID from the variable `subjects`. </b>  
+    - Now you need to pass the subject ID parameter to the script. To do that, you can take advantage of the slurm variable `SLURM_ARRAY_TASK_ID` which keeps track of the jobs count. This means that for the first job of the array `SLURM_ARRAY_TASK_ID` will assume a value of 0, for the second job it will assume the value of 1 and so on until the fifth job, for which it will assume the value 4. `SLURM_ARRAY_TASK_ID` can be used as an index to extract the subject ID from the variable `subjects`. </b>  
     - For the sake of practicality, we can assign `SLURM_ARRAY_TASK_ID` to the variable `idx`, which can be used to extract for each job the subject ID, `${subjects[idx]}`, and then it can be passed to the script `my_analysis.sh`. 
   
     In other words, for the first job `SLURM_ARRAY_TASK_ID` is going to be equal to 0 (because your array starts at 0) and so will be `idx`. Hence, the expression `${subjects[idx]}` will extract from the list `subjects` the first item, namely `01`, which is the ID of your first subject. For the second job, `SLURM_ARRAY_TASK_ID` will be equal to 1 and consequently `${subjects[idx]}` will be equal to `02` and so on until the last job.
@@ -373,6 +373,34 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
 
     In case you made your python code executable you can remove the line `module load python` and call the script as follows: `./python_script ${subjects[idx]}` without prepending `python -u`
 
+
+    #### Job array with more a complicated structure
+
+    A typical analysis might require to analyze different subjects with different sessions or different parameters. The following scripts exmplifies a similar case in which each subject needs to be run for three different sessions.
+
+    ```
+    #!/bin/bash
+
+    #SBATCH --job-name=multi_param
+    #SBATCH --output=logs/%x-%A-%a.out
+    #SBATCH --error=logs/%x-%A-%a.err
+    #SBATCH --array 0-11
+
+    SUBJECTS=(01 02 03 04)
+    SESSIONS=("ses-01", "ses-02", "ses-03")
+
+    SUBJECT_IDX=$((SLURM_ARRAY_TASK_ID % 4))
+    SESSION_IDX=$((SLURM_ARRAY_TASK_ID % 3))
+
+    ./my_analysis.sh --sub "sub-${SUBJECTS[SUBJECT_IDX]}" -ses "${SESSIONS[SESSION_IDX]}"
+    ```
+
+    In order to set up a similar script it is necessary to follow a few simple steps:
+
+    1. Set the array range according to the total number of jobs you need to run. In this example we have 4 subjects and 3 different sessions per subject, thus we can set the `--array` range as `0-11`, which amounts to 12 jobs.
+    2. Set up one array that defines the subject IDs `SUBJECTS` and another array that defines the session names `SESSIONS`.
+    3. To assign each session to each subject we can leverage on the modulus operator (take a look at [modular arythmetic](https://en.wikipedia.org/wiki/Modular_arithmetic)) to provide the correct index for all the combinations. For example, let's consider subject 4,  
+
 === "Interactive job"
 
     This approach allows you to work interactively inside a given node.</b>  
@@ -380,7 +408,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     **Use case:** It is ideal if you need to do some testing, or you just need to run some analyses interactively. Using an interactive job you avoid to work on the head node and take precious resources that are shared among all users.
 
     ```bash
-    srun --mem=1G --time=01:00:00 --pty bash -i
+    srun --mem=1G --time=01:00:00 --pty bash
     ```
     - `--mem`: memory requested (it can be specified in K|G)
     - `--time`: time requested for the interactive job
@@ -388,13 +416,19 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
 
     In case you do not specify time and memory requirements, by default the time will be **24 hours** and the **memory 4G**
 
+    If you need to use a software with a GUI in an interactive job you should use start the job using the following command:
+
+    ```bash
+    srun --pty --x11 bash
+    ```
+
     !!! Warning "Closing a session" 
         If you close your session on the cluster the interactive job will be ended as well
 
 
 ## How to define the amount of resources and time for your jobs
 
-The choice of resources for a job must be decided on a case by case basis, there is no precise rule for choosing them given that too many variables can influence the resources and time required. We will give you a few general principles which should work well anough in many instances. 
+The amount of resources necessary for a job must be decided on a case by case basis, there is no precise rule for choosing them given that too many variables can influence resources and time required. We will give you a few general principles which should work well anough in many instances. 
 
 Please do not underestimate this step, your choices influence your own jobs and other users.
 
@@ -412,7 +446,7 @@ seff <job-id>
 
 If you run `seff` when your job is still ongoing, it will give you an unreliable estimate. 
 
-- **Hunt for information:** In case you are using a standard tool (e.g. library, toolbox) you might find in the documentation some indications about minimal resource requirements, alternatively you could ask a more expert member of your group or other users (on Mattermost) who might have used a similar tool or pipeline. Both these approaches could be good starting estimates for your jobs. Online resources like [Neurostars](https://neurostars.org/) might be very helpful as well
+- **Hunt for information:** In case you are using a standard tool (e.g. library, toolbox) you might find some indications about minimal resource requirements in the documentation, alternatively you could ask a more expert member of your group or other users (on Mattermost) who might have used a similar tool or pipeline. Both these approaches could be good starting estimates for your jobs.
 
 - **Run your computation without slurm:** If possible, run your computation (e.g. analysis, simulation) on your local machine and check the resources usage. If you assume that your computation is not particularly heavy you could run it on your `home` on Cecile and check the resource requirements using `htop`. Keep in mind that this process, if computationally heavy, might create issues for other users.
 
@@ -420,10 +454,9 @@ If you run `seff` when your job is still ongoing, it will give you an unreliable
 
 As for data storage, also jobs need some restrictions in order to guarantee a fair usage for everybody.
 
-- **Time requested:** One job can have a **miximum duration of 24 hours**. This time duration could be extended by the clutser administrator upon reasonable request. Keep in mind that slurm will stop your job as soon as it exceeds the maximum time duration requested.
+- **Time requested:** One job can have a **maximum duration of 24 hours**. This time duration could be extended by the cluster administrator upon reasonable request. Keep in mind that slurm will stop your job as soon as it exceeds the maximum time duration requested.
   
 - **Maximum number of array jobs:** The maximum number of array jobs you can set are **10000**
-
 
 ## Slurm basic commands
 
