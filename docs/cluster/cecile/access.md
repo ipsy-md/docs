@@ -32,12 +32,13 @@
     If you want to use any software with a Graphical User Interface (GUI) in Cecile (e.g. Matlab), you need to use the so-called **X fowarding**. Keep in mind that this usage mode is very sensitive to latency, thus outside the OvGU network you will likely experience a poor performance in softwares with GUI. 
 
     !!! Warning "Issues with macOS"
-        X fowarding does not currently work natively on macOS, in order to be able to use it, you need to install [XQuartz](https://www.xquartz.org/)        
-
-
-    ```bash
-    ssh -X <username>@cecile.ovgu.de
-    ```
+        X fowarding does not currently work natively on macOS, in order to be able to use it follow the next steps:</b>  
+        1. Install [XQuartz](https://www.xquartz.org/)</b>  
+        2. By starting Xquartz a terminal should pop up, type the following command on the terminal:</b>  
+            ```bash
+            ssh -X <username>@cecile.ovgu.de
+            ```
+        3. To test whether the X-forwarding is properly working, type `xclock` and press enter, if everything is working a clock should appear. 
 
 === "Windows"
 
@@ -66,7 +67,7 @@
             ```bash
             ssh -X <username>@cecile.ovgu.de
             ```
-        4. To test whether the X-forwarding is properly working start type `xclock` and then enter, if everything is working this command should start a clock. 
+        4. To test whether the X-forwarding is properly working, type `xclock` and press enter, if everything is working a clock should appear. 
 
     **Windows Subsystem for Linux (WSL) option:**
 
