@@ -2,12 +2,12 @@
 
 A computational cluster is made up of multiple resources which can be exploited to run several tasks at the same time. In order to achieve this goal, you need to use a so called job scheduler, in our case is [Slurm](https://slurm.schedmd.com/quickstart.html), an open source cluster management and job scheduler system.
 
-The job scheduler allows you to specify computational tasks, known as **jobs**, that are going to be automatically distributed across the available and most suitable resources. A job can be any computational task as long as it respects specific [restrictions], for example it could be a specific section of your preprocessing analysis, or the whole analysis of a single subject.
+The job scheduler allows users to specify computational tasks, known as **jobs**, that are going to be automatically distributed across the available and most suitable resources (see image below). A job can be any computational task as long as it respects specific [restrictions], for example it could be a specific section of your preprocessing analysis, or the whole analysis of a single subject.
 
 [restrictions]: #job-restrictions-and-defaults
 
 <figure markdown="span">
-  ![Slurm](../images/slurm.png){ width="700" }
+  ![Slurm](../images/slurm.png){ width="600" }
   <figcaption></figcaption>
 </figure>
 
