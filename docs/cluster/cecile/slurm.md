@@ -6,6 +6,11 @@ The job scheduler allows you to specify computational tasks, known as **jobs**, 
 
 [restrictions]: #job-restrictions-and-defaults
 
+<figure markdown="span">
+  ![Slurm](images/slurm.png){ width="500" }
+  <figcaption></figcaption>
+</figure>
+
 ## How to think about jobs
 
 If you are using Cecile, you most likely need to run multiple similar jobs at the same time, the key to achieve this goal is to code your analysis with the objective of making it parallelizable:
