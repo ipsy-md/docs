@@ -406,7 +406,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
           <figcaption></figcaption>
         </figure>
 
-    4. Then extract subject IDs and sessions by using the related index.
+    4. Then extract subject IDs and sessions by using the related indeces.
 
 === "Interactive job"
 
