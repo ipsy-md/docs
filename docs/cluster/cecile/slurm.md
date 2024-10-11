@@ -374,7 +374,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     In case you made your python code executable you can remove the line `module load python` and call the script as follows: `./python_script ${subjects[idx]}` without prepending `python -u`
 
 
-    #### Job array with a more complicated structure
+    #### Job array with a nested parameters
 
     A typical analysis might require to analyze different subjects with different sessions or different parameters. The following scripts exmplifies a similar case in which each subject needs to be run for three different sessions.
 
