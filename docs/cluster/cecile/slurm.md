@@ -155,18 +155,19 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
             217379_5       all bad_job     user   IDLE    0:00      1 compute05
     ```
 
+    Let's understand the `squeue` output:
 
-    - `JOBID`: Indentification number of your job
-    - `PARTITION`: Name of partition your jobs are currently using 
+    - `JOBID`: Job indentification number
+    - `PARTITION`: Name of the partition your jobs are currently using 
     - `NAME`: Name you gave to your job
     - `USER`: Your username
-    - `ST`: Status of your job:
-    - `R`: running job
-    - `PD`: pending job, it is waiting for resources to be freed
-    - `IDLE`: idled job, there might be multiple reasons for an idled job, check the error logs and your slurm script.
+    - `ST`: Status of your job
+    - `R`: A running job
+    - `PD`: A pending job, it is waiting for resources to be freed
+    - `IDLE`: An idled job, something might be wrong with your scripts or your in the scirpt for submitting jobs check the error logs
     - `TIME`: Time since the job started running
     - `NODES`: Number of nodes
-    - `NODELIST` : Nodes name 
+    - `NODELIST` : Node name
 
 
     #### Single job with Matlab
