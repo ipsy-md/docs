@@ -280,7 +280,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
 
     ```
 
-    Now that your array job script is ready you can run your jobs using the `sbatch` command as follows:
+    Now that your array job script is ready you can run it by using the `sbatch` command as follows:
 
     ```bash
     sbatch my_array_job.slurm
