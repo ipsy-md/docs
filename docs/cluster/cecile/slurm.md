@@ -257,7 +257,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     - Now you need to pass the subject ID parameter to the script. To do that, you can take advantage of the slurm variable `SLURM_ARRAY_TASK_ID` which keeps track of the jobs count. This means that for the first job of the array `SLURM_ARRAY_TASK_ID` will take the value 0, for the second job it will tale the value 1 and so on until the fifth job, for which it will take the value 4. `SLURM_ARRAY_TASK_ID` can be used as an index to extract the subject ID from the variable `subjects`. </b>  
     - For the sake of practicality, we can assign `SLURM_ARRAY_TASK_ID` to the variable `idx`, which can be used to extract for each job the subject ID, `${subjects[idx]}`, and then it can be passed to the script `my_analysis.sh`. 
   
-    In other words, for the first job `SLURM_ARRAY_TASK_ID` is going to be equal to 0 (because your array starts at 0) and so will be `idx`. Hence, the expression `${subjects[idx]}` will extract from the list `subjects` the first item, namely `01`, which is the ID of your first subject. For the second job, `SLURM_ARRAY_TASK_ID` will be equal to 1 and consequently `${subjects[idx]}` will be equal to `02` and so on until the last job.
+    In other words, for the first job `SLURM_ARRAY_TASK_ID` is going to be equal to 0 (because your array starts at 0) and so will be `idx`. Hence, the expression `${subjects[idx]}` will extract from the `subjects` array the first item, namely `01`, which is the ID of your first subject. For the second job, `SLURM_ARRAY_TASK_ID` will be equal to 1 and consequently `${subjects[idx]}` will be equal to `02` and so on until the last job.
 
     ```bash title="Array job" 
     #!/bin/sh
