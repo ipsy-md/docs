@@ -338,8 +338,8 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --error=slurm_logs/error-%A-%a.err     # errors
     #SBATCH --array 0-4
 
-    ## you need to load matlab even if you have loaded already all the modules
-    ## from the software stack 
+    # load the stack and the module you need
+    . /software/current/env.sh
     module load matlab
 
     idx=$((SLURM_ARRAY_TASK_ID))
@@ -364,8 +364,8 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --error=slurm_logs/error-%A-%a.err     # errors
     #SBATCH --array 0-4
 
-    ## you need to load python even if you have loaded already all the modules
-    ## from the software stack 
+    # load the stack and the module you need
+    . /software/current/env.sh
     module load python3
 
     idx=$((SLURM_ARRAY_TASK_ID))
@@ -383,7 +383,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
 
     A typical analysis might require to analyze different subjects with different sessions or different parameters. The following scripts exmplifies a similar case in which each subject needs to be run for three different sessions.
 
-    ```
+    ```bash
     #!/bin/bash
 
     #SBATCH --job-name=multi_param
