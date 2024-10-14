@@ -269,8 +269,6 @@ Before you start converting your data we strongly recommend to go through the [B
         │   ├── fmap
         │   │   ├── sub-01_acq-grefieldmapping_magnitude1.json
         │   │   ├── sub-01_acq-grefieldmapping_magnitude1.nii.gz
-        │   │   ├── sub-01_acq-grefieldmapping_magnitude2.json
-        │   │   ├── sub-01_acq-grefieldmapping_magnitude2.nii.gz
         │   │   ├── sub-01_acq-grefieldmapping_phasediff.json
         │   │   ├── sub-01_acq-grefieldmapping_phasediff.nii.gz
         │   │   ├── sub-01_dir-AP_run-1_epi.json
