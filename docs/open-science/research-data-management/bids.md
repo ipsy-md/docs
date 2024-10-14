@@ -317,9 +317,9 @@ Before you start converting your data we strongly recommend to go through the [B
     - `sub` is the subject number as integer, `runs` is a vector containing the run numbers.
     - `cfg`: It is the general `struct` used by fieldtrip to provide the information to `data2bids` that is the actual fieldtrip converter.
     `cfg` offers the possibility to provide the information also for the metadata, please check the official documentation.
-    - `cfg.method`: This field defines the kind of action you want to take with the converter. In case your eeg data type is not recommedended by BIDS, meaning is neither the BrainVision nor the European format, it is set to `'convert'` and the data will be converted to the BrainVision format. Otherwise it is set to `'copy'` and the data will be onyl copied and restructured according to BIDS.
+    - `cfg.method`: This field defines the kind of action you want to take with the converter. In case your eeg data type is not recommedended by BIDS, meaning is neither the BrainVision nor the European format, it is set to `'convert'` and the data will be converted to the BrainVision format. Otherwise it is set to `'copy'` and the data will be only copied and restructured according to BIDS.
 
-    This function considers eeg data split into different runs, only to exemplify a specific case. Often raw data consist of one single recording per subject.
+    This function considers eeg data split into different runs. Often raw data consist of one single recording per subject.
     
     ```matlab title="Fieldtrip bids conversion"
     function cfg = eeg2bids(sub, runs, datadir, ext)
