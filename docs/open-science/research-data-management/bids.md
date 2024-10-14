@@ -336,7 +336,7 @@ Before you start converting your data we strongly recommend to go through the [B
         if strcmp(ext, '.vhdr') | strcmp(ext, '.edf')
             cfg.method = 'copy';
         else
-            cfg.method = 'convert'; % this method specify whether you want to convert data or copy and restructure them
+            cfg.method = 'convert'; % this method specifies whether you want to convert data or copy and restructure them
         end
         cfg.datatype  = 'eeg';
 
