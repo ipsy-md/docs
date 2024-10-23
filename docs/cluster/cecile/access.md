@@ -109,7 +109,6 @@ In a nutshell, a criptographic algorithm creates for you a pair of keys: a **pri
     ssh-copy-id <username>@cecile.ovgu.de
     ```
     - You can now simply type the following command to access the cluster. The first time you access the cluster, you will be asked to provide the passphrase one time only.
-
     ```bash
     ssh <username>@cecile.ovgu.de
     ```
