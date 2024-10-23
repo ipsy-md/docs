@@ -117,7 +117,7 @@ In a nutshell, a criptographic algorithm creates for you a pair of keys: a **pri
 === "Windows"
 
     !!! note "Access with WSL"
-        In case you use a WSL on your Windows system, you can directly refer to the Linux/Mac section
+        In case you use a WSL on your Windows system, you can directly refer to the Linux/Mac section to set up your SSH keys
 
 
     If you want to set up a public key authentication via a GUI, you can use [PUTTY](https://www.putty.org/), a straightforward explanation can be found in the [official microsoft page](https://learn.microsoft.com/en-us/viva/glint/setup/sftp-ssh-key-gen)
