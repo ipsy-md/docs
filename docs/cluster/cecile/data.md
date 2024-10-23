@@ -101,7 +101,7 @@ As mentioned in the research planning section, we adopt a specific project workf
 
 As a first step, you need to contact the cluster admin at cecile-admins-l@ovgu.de.
 
-As a second step, fill in a **questionnaire** about your project. The [questionnaire](../questionnaire/questionnaire.md){:download="questionnaire"} can be downloaded as a markdown file.</b>  
+As a second step, fill in a **questionnaire** about your project. The [questionnaire](../questionnaire/questionnaire.md){:download="questionnaire.md"} can be downloaded as a markdown file.</b>  
 Please try to answer all the questions, even if you do not know the exact answer to some questions, for example: `Indicate the size of your raw data`, you should provide a reasonable estimate and your answer can be updated later. In case you are not able to answer some questions by yourself, try asking your PI or more expert members of your group, alternatively contact us and we will try to help you.
 
 If your questionnaire has been properly completed your project will be created by the cluster admin.
