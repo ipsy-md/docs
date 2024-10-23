@@ -103,9 +103,11 @@ In a nutshell, a criptographic algorithm creates for you a pair of keys: a **pri
     -rw-r--r-- 1 user  101 Jun 12 17:14 id_ed25519.pub
     ```
 
-    - Now that you have the key pair, in case you do not have a password for the cluster you just need to provide the public key, `id_ed25519.pub` in this case, to your cluster administrator. If you have a password, you can simply access the folder `.ssh` on our local machine, type `ssh-copy-id <username>@cecile.ovgu.de`, provide the password and your public key will be transferred to the cluster.
-
-
+    - Now that you have the key pair, in case you do not have a password for the cluster you just need to provide the public key, `id_ed25519.pub` in this case, to your cluster administrator. 
+    - If you already have a password, you can simply access the folder `.ssh` on our local machine, type the following command, provide the password and your public key will be transferred to the cluster:
+    ```bash
+    ssh-copy-id <username>@cecile.ovgu.de
+    ```
     - You can now simply type the following command to access the cluster. The first time you access the cluster, you will be asked to provide the passphrase one time only.
 
     ```bash
