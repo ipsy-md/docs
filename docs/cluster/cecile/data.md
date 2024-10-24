@@ -357,9 +357,10 @@ As a byproduct, quotas help you to keep your project much more tidy and force yo
 |  Folder  |   Quota    |
 |----------|------------|
 | `home`   |  **1GB**   |
-| `group`  |  **?GB**   |
-| `scratch`|  **1TB**   | 
+| `group`  |  **10GB**  |
 | `project`|  **500GB** |
+| `scratch`|  **1TB**   | 
+
 
 
 
