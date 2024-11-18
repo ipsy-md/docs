@@ -2,19 +2,18 @@
 
 In Cecile softwares are provided systemwise through a so called **software stack**, a collection of softwares, which is generated using the [**Spack package manager**](https://spack.io/).
 
-A software stack contains a number of softwares necessary for your analysis and many more. If any software you might need is missing from the stack you need to contact `manuela.kuhn at ovgu.de`.
+A software stack contains a number of softwares necessary for your analysis and many more. If any software you might need is missing from the stack you need to contact `cecile-admins-l at ovgu.de`.
 
 
 ## Type of stacks
 
-Currently there are **two kinds of stacks** available: 
+Currently there are **two kinds of stacks** available:
 
 1. **Current stack:** A stack that is kept stable throughout one semester. Each semester a new stable stack is created from scratch, while the old `current stacks` are still in place and can be used by specifying the the date in the following way: `current_<date>`.
-2. **Experimental stack**: A flexible stack that is going to be frequently updated also upon user's request. 
+2. **Experimental stack**: A flexible stack that is going to be frequently updated also upon user's request.
 
 !!! Danger "Multiple software versions in Experimental stack"
-    Continuous updating in the `experimental stack` can lead to have multiple versions of the same software (e.g. `python ~gcc@11.0` vs `python ~gcc@11.1`) in the `experimental stack`, therefore be careful to load the correct version when using the experimental stack. Usually back compatibility between software versions is mantained, but sometimes this might not be the case and some feature might have been changed. 
-
+    Continuous updating in the `experimental stack` can lead to have multiple versions of the same software (e.g. `python ~gcc@11.0` vs `python ~gcc@11.1`) in the `experimental stack`, therefore be careful to load the correct version when using the experimental stack. Usually back compatibility between software versions is mantained, but sometimes this might not be the case and some feature might have been changed.
 
 
 !!! note "Why two different stacks"
@@ -29,7 +28,7 @@ There are multiple ways to access the stack depending on the control you want ov
 Instead of loading every package individually, you can activate an evironment containing only the newest version of each package.
 
 !!! Warning "Loading environments takes time"
-    Due to some changes in the package manager (Spack) currently loading an environment is a slow process that could take up to 5 minutes. 
+    Due to some changes in the package manager (Spack) currently loading an environment is a slow process that could take up to 5 minutes.
 
 === "Current stack"
 
@@ -54,7 +53,7 @@ Instead of loading every package individually, you can activate an evironment co
     ```bash
     . /software/experimental/ipsy-env/activate
     ```
-    
+
     Now that the stack has been loaded, you can start each single software.
 
     ```bash
@@ -73,12 +72,11 @@ For every installed package spack generates a module file in addition, this allo
 Unlike the environment method, this method is extremely fast and it allows you to specify the version of the software you prefere.
 
 !!! note "Software names in the stack"
-    Before loading a module it is advisable to check how the software you are interested in is named in the stack. 
+    Before loading a module it is advisable to check how the software you are interested in is named in the stack.
     For example all python software are preceded by `py-`, thus to load `pandas` you need to type: `module load py-pandas`.
-    This naming convention is limited to stack, in your code software must have their usual names.    
+    This naming convention is limited to stack, in your code software must have their usual names.
 
 === "Current stack"
-
 
     ```bash
     . /software/current/env.sh
