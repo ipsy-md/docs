@@ -108,3 +108,36 @@ Unlike the environment method, this method is extremely fast and it allows you t
     ```bash
     module load python
     ```
+
+## Matlab software stack
+
+The Matlab installation provided in the stack does include a variaty of toolboxes. In general we differentiate between toolboxes provided by MathWorks and third party toolboxes.
+
+MathWorks toolboxes are toolboxes from <https://www.mathworks.com/products.html> like e.g. `Image Processing Toolbox` or `Statistics and Machine Learning Toolbox` and are included automatically.
+
+Third party toolboxes like `SPM` or `FieldTrip` are also available in the central software stack but have to be loaded manually.
+
+=== "Current stack"
+
+    ```bash
+    /software/current/matlab_toolboxes/
+    ```
+
+    e.g load `SPM` individually
+    ```bash
+    addpath /software/current/matlab_toolboxes/spm12
+    ```
+
+=== "Experimental stack"
+
+    ```bash
+    /software/experimental/matlab_toolboxes/
+    ```
+
+    e.g load `SPM` individually
+    ```bash
+    addpath /software/experimental/matlab_toolboxes/spm12
+    ```
+
+!!! Warning "Don't use `genpath` to load all thirsparty toolboxes at once"
+    Although matlab provides the possibility to load all toolboxes within a path by using `genpath`, this is not recommended to do because some of the toolboxes don't work well together and might break. For example `spm` will not start anymore.
