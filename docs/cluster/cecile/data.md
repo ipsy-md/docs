@@ -145,9 +145,9 @@ For modalities, such as **eye-tracking**, for which there is not yet a consensus
     - `stimuli`: It includes a subfolder for the experimental code and the stimuli (e.g. images), if any.</b>  
 
     ```
-    /data/project_name/
+    /data/projects/
 
-    └── dataset-1/
+    └── dataset/
         ├── project-metadata.json
         ├── sourcedata
         ├── rawdata/
@@ -184,9 +184,9 @@ For modalities, such as **eye-tracking**, for which there is not yet a consensus
     - `stimuli`: It includes a subfolder for the experimental code and the stimuli (e.g. images), if any.</b>  
 
     ```
-    /data/project_name/
+    /data/projects/
 
-    └── dataset-1/
+    └── dataset/
         ├── project-metadata.json
         ├── sourcedata
         ├── rawdata/
@@ -222,9 +222,9 @@ For modalities, such as **eye-tracking**, for which there is not yet a consensus
     - `stimuli`: It includes a sub-folder for the experimental code and the stimuli (e.g. images), if any.</b>  
 
     ```
-    /data/project_name/
+    /data/projects/
 
-    └── dataset-1/
+    └── dataset/
         ├── project-metadata.json
         ├── sourcedata
         ├── rawdata/
