@@ -43,9 +43,9 @@ There are multiple platforms to make your data public, here just a few of the mo
  
 ## Pre-registration
 
-Pre-registration is a relatively recent approach to do research, it is based on the assumption that registering in advance, to a dedicated platform, a detailed plan of the experimental and analysis procedure one would follow, it would contribute to a more transparent and reproducible science.
+Pre-registration is a relatively recent approach of doing research, it is based on the assumption that registering in advance, to a dedicated platform, a detailed plan of your experimental and analysis procedures would contribute to a more transparent and reproducible research.
 
-One of the fundamental aspects of pre-registration is a clear distinction between **confirmatory-hypothesis** and **exploratory-hypothesis**, or in other words the distinction between the hypothesis put forward before data collection, the prediction,  and the exploratory post-hoc hypothesis, the postdiction. Pre-gistration does not favor one or the other hypothesis, as it should be, it considers both fundamental for the advancement of science, but it requires a net distinction when data and results are published.
+One of the fundamental aspects of pre-registration is a clear distinction between **confirmatory-hypothesis** and **exploratory-hypothesis**, or in other words the distinction between the hypothesis put forward before data collection (the prediction)  and the exploratory post-hoc hypothesis (the postdiction). Pre-gistration does not favor one or the other hypothesis, it considers both fundamental for the advancement of science, but it requires a net distinction when data and results are published.
 
 For a more comprehensive presentation of pre-registration refer to [Nosek et al, 2018](https://www.pnas.org/doi/10.1073/pnas.1708274114).
 
@@ -66,7 +66,7 @@ A registered report is an alternative publishing approach that consists of pre-r
 
 ## Preprints
 
-Preprints are papers that are made publicly available by the authors on dedicated platforms before being peer-reviewed and being published on a scientific journal.
+Preprints are scientific papers that authors make publicly available on dedicated platforms before being peer-reviewed and being published on a canonical scientific journal.
 
 ### Scope of preprints
 
