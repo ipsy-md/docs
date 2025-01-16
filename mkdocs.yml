@@ -44,7 +44,7 @@ nav:
   - Open Science:
     - Research Data Management:
       - Getting started: open-science/research-data-management/getting-started.md
-      - Plan you data management: open-science/research-data-management/planning.md
+      - Plan your data management: open-science/research-data-management/planning.md
       - BIDS: open-science/research-data-management/bids.md
       - Publish your data: open-science/research-data-management/publish.md
       - Archive your data: open-science/research-data-management/archive.md
