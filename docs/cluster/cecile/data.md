@@ -326,7 +326,7 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
     ```
 
     - In case you feel more comfortable with a GUI you may use the following SFTP clients:
-        [Winscp](https://winscp.net/eng/index.php) and [cyberduck](https://cyberduck.io/) are GUI based applications, please refer to their documentation for proper usage. 
+        [Winscp](https://winscp.net/eng/index.php) and [cyberduck](https://cyberduck.io/) are GUI based applications, please refer to their documentation for proper usage.
 
 
 ## How to retrieve lost data
