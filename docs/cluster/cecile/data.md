@@ -332,7 +332,7 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
 ## How to retrieve lost data
 
 !!! Warning "At the moment snapshots cannot be retrived by yourself"
-    Due to a filesystem issue, snapshots cannot be retrived by yourself, please, contact the admin at `cecile-admins-l at ovgu.de` in case you need to retrieve data.
+    Due to a filesystem issue, snapshots cannot be retrieved by yourself, please, contact the admin at `cecile-admins-l at ovgu.de` in case you have lost data.
 
 === "Data lost in the last 7 days"
 
