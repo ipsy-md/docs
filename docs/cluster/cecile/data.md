@@ -331,6 +331,9 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
 
 ## How to retrieve lost data
 
+!!! Warning "At the moment snapshots cannot be retrived by yourself"
+    Due to a filesystem issue, snapshots cannot be retrived by yourself, please, contact the admin at `cecile-admins-l at ovgu.de` in case you need to retrieve data.
+
 === "Data lost in the last 7 days"
 
     In case you have lost data within the last seven days, you can retrieve them by yourself. It is sufficient to go the following folder called `.zfs/snapshot` within the folder in which your data were previously hosted and transfer the data back to their previous location. Data transfer can be easily done using `rsync`.
