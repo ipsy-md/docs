@@ -443,7 +443,8 @@ TODO
 
 After you have accomplished the BIDS conversion, the last step is to validate your dataset. Keep in mind that this step is very important to ensure that your dataset actually complies with BIDS.
 
-The validation can be done on Cecile by using [`bids-validator`](https://github.com/bids-standard/bids-validator).
+The validation can be done on Cecile by using [`bids-validator`](https://github.com/bids-standard/bids-validator). The `bids-validatior` is installed on Cecile, you can use it as any other software, if you do not know how to use software on Cecile, please refer to the [software page].
+[software page]: ../../../cluster/cecile/software.md
 
 !!! Warning "Periodical validation checks"
     In order to keep the minimal standards on Cecile, there will be periodical BIDS validation on your dataset, in case a dataset is not valid you will receive an email asking to make your dataset BIDS compliant. 
