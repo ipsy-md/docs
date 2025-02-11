@@ -473,12 +473,12 @@ As a general rule, when your are setting up new slurm jobs, test that everything
     # job-id is the id of your job
     seff <job-id>
     ```
+    If you run `seff` when your job is still ongoing, it will give you an unreliable estimate. 
+
 
     ```bash
     sacct -j <job-id> --format=jobid,jobname,reqmem,maxrss,elapsed,timelimit,state
     ```
-
-If you run `seff` when your job is still ongoing, it will give you an unreliable estimate. 
 
 - **Hunt for information:** In case you are using a standard tool (e.g. library, toolbox) you might find some indications about minimal resource requirements in the documentation, alternatively you could ask a more expert member of your group or other users (on Mattermost) who might have used a similar tool or pipeline. Both these approaches could be good starting estimates for your jobs.
 
