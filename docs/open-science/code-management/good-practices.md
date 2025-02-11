@@ -71,7 +71,7 @@ As a starting point, you should make sure to gain a few principles of good codin
 
 - **Use helpful tools**: Use [linters](https://en.wikipedia.org/wiki/Lint_(software)) and other softwares that can help you identify issues in your code (e.g. formatters). 
     - **Matlab:** [codeIssues](https://www.mathworks.com/help/matlab/ref/codeissues.html)
-    - **Python:** [Pylint](https://pylint.readthedocs.io/en/latest/), [Flake8](https://flake8.pycqa.org/en/latest/) [Black](https://black.readthedocs.io/en/stable/)(not a linter, but a very useful formatter)
+    - **Python:** [Pylint](https://pylint.readthedocs.io/en/latest/), [Flake8](https://flake8.pycqa.org/en/latest/), [Black](https://black.readthedocs.io/en/stable/)(not a linter, but a very useful formatter)
     - **R:** [Lintr](https://lintr.r-lib.org/)
 
 - **Test your code:** Take the time to build tests for your code. Sistematically testing your code, although tedious and time consuming, might save your project from nasty mistakes:
