@@ -444,7 +444,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     - `--pty`: `bash -i` allows you use the terminal
 
     !!! Warning "Memory and time defaults"
-        In case you do not specify time and memory requirements, by default the maximum amount of time allowed will be **24 hours** and the and the maximum amount of **memory** will be **4G**. If your software requires more time and/or more memory you must specify it.
+        In case you do not specify time and memory requirements, by default the maximum amount of time allowed will be **24 hours** and the maximum amount of **memory** will be **4G**. If your software requires more time and/or more memory you must specify it.
 
     If you need to use a software with a GUI within an interactive session you should start the job using the following command:
 
