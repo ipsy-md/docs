@@ -438,12 +438,13 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     ```bash
     srun --mem=1G --time=01:00:00 --pty bash
     ```
-    
+
     - `--mem`: memory requested (it can be specified in K|G)
     - `--time`: time requested for the interactive job
     - `--pty`: `bash -i` allows you use the terminal
 
-    In case you do not specify time and memory requirements, by default the time will be **24 hours** and the **memory 4G**
+    !!! Warning "Memory and time defaults"
+        In case you do not specify time and memory requirements, by default the maximum amount of time allowed will be **24 hours** and the and the maximum amount of **memory** will be **4G**. If your software requires more time and/or more memory you must specify it.
 
     If you need to use a software with a GUI within an interactive session you should start the job using the following command:
 
