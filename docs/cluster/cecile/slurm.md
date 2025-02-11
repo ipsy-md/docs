@@ -467,12 +467,16 @@ As a general rule, when your are setting up new slurm jobs, test that everything
 
 **If you are clueless about your job resource requirements, you could adopt the following approaches:**
 
-- **Trial and error:** Set up one job using a very liberal estimate for the resources (e.g. `--mem-per-cpu`, `--time`). Once the job is over, you can use the following command to see the actual resources used and implement them in your future jobs:
+- **Trial and error:** Set up one job using a very liberal estimate for the resources (e.g. `--mem-per-cpu`, `--time`). Once the job is over, you can use one of the following two commands to see the actual resources used and implement them in your future jobs:
 
-```bash
-# job-id is the id of your job
-seff <job-id>
-```
+    ```bash
+    # job-id is the id of your job
+    seff <job-id>
+    ```
+
+    ```bash
+    sacct -j <job-id> --format=jobid,jobname,reqmem,maxrss,elapsed,timelimit,state
+    ```
 
 If you run `seff` when your job is still ongoing, it will give you an unreliable estimate. 
 
