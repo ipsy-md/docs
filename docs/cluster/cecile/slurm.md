@@ -438,6 +438,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     ```bash
     srun --mem=1G --time=01:00:00 --pty bash
     ```
+    
     - `--mem`: memory requested (it can be specified in K|G)
     - `--time`: time requested for the interactive job
     - `--pty`: `bash -i` allows you use the terminal
