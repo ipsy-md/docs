@@ -8,6 +8,7 @@ Build setup:
 python -m venv venv
 . ./venv/bin/activate
 pip install mkdocs
+pip install mkdocs-material
 ```
 
 Build page
