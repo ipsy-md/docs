@@ -482,7 +482,7 @@ As a general rule, when your are setting up new slurm jobs, test that everything
 
 - **Hunt for information:** In case you are using a standard tool (e.g. library, toolbox) you might find some indications about minimal resource requirements in the documentation, alternatively you could ask a more expert member of your group or other users (on Mattermost) who might have used a similar tool or pipeline. Both these approaches could be good starting estimates for your jobs.
 
-- **Run your computation without slurm:** If possible, run your computation (e.g. analysis, simulation) on your local machine and check the resources usage. If you assume that your computation is not particularly heavy you could run it on your `home` on Cecile and check the resource requirements using `htop`. Keep in mind that this process, if computationally heavy, might create issues for other users.
+- **Run your computation with an interactive job:** Set up an interactive job being rather liberal in your choice of resources. Run your computation (e.g. analysis, simulation) and check the resource requirements using the command `htop`. 
 
 ## Job restrictions and defaults
 
