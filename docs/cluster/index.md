@@ -21,7 +21,7 @@ A computational cluster is a collection of interconnected computers (see image b
 
 ## What do you need to do to use the cluster?
 
-- **An account:** You simply need an account, please contact manuela.kuhn at ovgu.de to obtain one.
+- **An account:** You simply need an account, please contact `cecile-admins-l` at `ovgu.de` to obtain one.
 
 - **Shell scripting:** If you prefer to work on the cluster via shell (the canonical way), but you have no experience with shell scripting, we recommend this straighforward [shell tutorial](https://swcarpentry.github.io/shell-novice/). You do not need to master it to use the cluster, but you can use the following list to start learning the basic concepts:
   
