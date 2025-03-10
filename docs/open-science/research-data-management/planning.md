@@ -22,7 +22,7 @@ There are many options to create a DMP, you could write your DMP by following te
 - [Data stewardship wizard](https://ds-wizard.org/)
 - [rdmo project](https://rdmo.aip.de/)
   
-## Why should I use a DMP?
+## Why should you use a DMP?
 
 As previously mentioned, a DMP is incresingly becoming mandatory to acquire fundings from German and European agencies, but besides this incentive it provides some other real advantages:
 
