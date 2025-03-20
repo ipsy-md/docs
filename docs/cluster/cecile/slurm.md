@@ -458,12 +458,12 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
 
 ## How to define the amount of resources and time for your jobs
 
-The amount of resources necessary for a job must be decided on a case by case basis, there is no precise rule for choosing them given that too many variables can influence resources and time required. We will give you a few general principles which should work well anough in many instances. 
+The amount of resources necessary for a job must be decided on a case by case basis, there is no precise rule for choosing them given that too many variables can influence resources and time required. We will give you a few general principles which should work well enough in many instances. 
 
 Please do not underestimate this step, your choices influence your own jobs and other users.
 
 **One job to rule them all:**
-As a general rule, when your are setting up new slurm jobs, test that everything works as intended using **only one job**. It is superfluous to say that this approach saves time for you and time and resources for other users, and importantly it reduces the amount of potential errors that might occur.
+As a general rule, when your are setting up new slurm jobs, test that everything works as intended by running **only one job**. It is superfluous to say that this approach saves time for you and time and resources for other users, and importantly it reduces the amount of potential errors.
 
 **If you are clueless about your job resource requirements, you could adopt the following approaches:**
 
