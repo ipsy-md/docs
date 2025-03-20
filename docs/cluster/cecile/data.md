@@ -291,42 +291,110 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
 
 === "macOS"
 
-    If you want to use a gui based application, you may use [cyberduck](https://cyberduck.io/), if you are comfortable with the terminal use `rsync`
+       - **Transferring files with the command line**
+    
+        **From your computer to Cecile:**
 
-    **From your computer to Cecile:**
+        ```bash
+        rsync -rltoDvh --progress </my_computer/some_data> <user@cecile.ovgu.de:~/target_directory/>
 
-    ```bash
-    rsync -rltoDvh --progress </my_computer/some_data> <user@cecile.ovgu.de:~/target_directory/>
+        ```
 
-    ```
+        **From Cecile to your computer:**
+        Also in this case the following command should be typed on your machine.
 
-    **From Cecile to your computer:**
-    Also in this case the following command should be typed on your machine.
+        ```bash
+        rsync -rltoDvh --progress <~/some_directory_on_cecile/some_data> <~/my_computer/>
+        ```
 
-    ```bash
-    rsync -rltoDvh --progress <~/some_directory_on_cecile/some_data> <~/my_computer/>
-    ```
+    - **Transferring files with a GUI**
+
+        In case you feel more comfortable with a GUI you may use the following SFTP clients:
+        [Filezilla](https://filezilla-project.org/), available for all OS, or [cyberduck](https://cyberduck.io/). Please refer to the respective documentation for the installation.
+
+        **How to use Filezilla**
+
+        - Install filezilla (please follow the instruction provided by the filezilla webpage)
+
+
+
+        - Let's open the `Site manager` and create a new instance for Cecile:
+
+            <figure markdown="span">
+                ![Slurm](../images/filezilla1.png){ width="1000" }
+                <figcaption></figcaption>
+            </figure>
+                
+        - Now set up the new instance by using the `site mangager`:
+
+            <figure markdown="span">
+                ![Slurm](../images/filezilla2.png){ width="900" }
+                <figcaption></figcaption>
+            </figure>
+
+        4. Once your are logged in the cluster, you can simply select your local directory and the destination directory and drag and drop the files you want to transfer.
+
+            <figure markdown="span">
+                ![Slurm](../images/filezilla3.png){ width="900" }
+                <figcaption></figcaption>
+            </figure>
+
+
 
 === "Windows"
 
-    - If you are using a [WSL](/cluster/cecile/accessing-cecile/#windows-subsystem-for-linux-wsl-option") on your Windows machine you can simply transfer data by using `rsync`:
+    - **Transferring files with the command line**
+
+        If you are using a [WSL](/cluster/cecile/accessing-cecile/#windows-subsystem-for-linux-wsl-option") on your Windows machine you can simply transfer data by using `rsync`:
     
-    **From your computer to Cecile:**
+        **From your computer to Cecile:**
 
-    ```bash
-    rsync -rltoDvh --progress </my_computer/some_data> <user@cecile.ovgu.de:~/target_directory/>
+        ```bash
+        rsync -rltoDvh --progress </my_computer/some_data> <user@cecile.ovgu.de:~/target_directory/>
 
-    ```
+        ```
 
-    **From Cecile to your computer:**
-    Also in this case the following command should be typed on your machine.
+        **From Cecile to your computer:**
+        Also in this case the following command should be typed on your machine.
 
-    ```bash
-    rsync -rltoDvh --progress <~/some_directory_on_cecile/some_data> <~/my_computer/>
-    ```
+        ```bash
+        rsync -rltoDvh --progress <~/some_directory_on_cecile/some_data> <~/my_computer/>
+        ```
 
-    - In case you feel more comfortable with a GUI you may use the following SFTP clients:
-        [Winscp](https://winscp.net/eng/index.php) and [cyberduck](https://cyberduck.io/) are GUI based applications, please refer to their documentation for proper usage.
+    - **Transferring files with a GUI**
+
+        In case you feel more comfortable with a GUI you may use the following SFTP clients:
+        [Filezilla](https://filezilla-project.org/), available for all OS, or [Winscp](https://winscp.net/eng/index.php) or [cyberduck](https://cyberduck.io/). Please refer to the respective documentation for the installation.
+
+
+        **How to use Filezilla**
+
+        - Install filezilla (please follow the instruction provided by the filezilla webpage)
+
+
+
+        - Let's open the `Site manager` and create a new instance for Cecile:
+
+            <figure markdown="span">
+                ![Slurm](../images/filezilla1.png){ width="1000" }
+                <figcaption></figcaption>
+            </figure>
+                
+        - Now set up the new instance by using the `site mangager`:
+
+            <figure markdown="span">
+                ![Slurm](../images/filezilla2.png){ width="900" }
+                <figcaption></figcaption>
+            </figure>
+
+        4. Once your are logged in the cluster, you can simply select your local directory and the destination directory and drag and drop the files you want to transfer.
+
+            <figure markdown="span">
+                ![Slurm](../images/filezilla3.png){ width="900" }
+                <figcaption></figcaption>
+            </figure>
+
+
 
 
 ## How to retrieve lost data
