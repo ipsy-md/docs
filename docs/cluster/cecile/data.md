@@ -325,7 +325,10 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
                 <figcaption></figcaption>
             </figure>
                 
-        - Now set up the new instance by using the `site mangager`:
+        - Now set up the new instance by using the `site manager`:
+
+            !!! Danger "Choose the SFTP-SSH protocol"
+                Choose the SFTP-SSH protocol, as in the image, this will ensure that the correct port is automatically chosen.
 
             <figure markdown="span">
                 ![Slurm](../images/filezilla2.png){ width="900" }
@@ -380,8 +383,11 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
                 <figcaption></figcaption>
             </figure>
                 
-        - Now set up the new instance by using the `site mangager`:
+        - Now set up the new instance by using the `site manager`:
 
+            !!! Danger "Choose the SFTP-SSH protocol"
+                Choose the SFTP-SSH protocol, as in the image, this will ensure that the correct port is automatically chosen.
+            
             <figure markdown="span">
                 ![Slurm](../images/filezilla2.png){ width="900" }
                 <figcaption></figcaption>
