@@ -275,19 +275,53 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
 === "Linux"
 
 
-    **From your computer to Cecile:**
+    - **Transferring files with the command line**
+    
+        **From your computer to Cecile:**
 
-    ```bash
-    rsync -rltoDvh --progress </my_computer/some_data> <user@cecile.ovgu.de:~/target_directory/>
+        ```bash
+        rsync -rltoDvh --progress </my_computer/some_data> <user@cecile.ovgu.de:~/target_directory/>
 
-    ```
+        ```
 
-    **From Cecile to your computer:**
-    Also in this case the following command should be typed on your machine.
+        **From Cecile to your computer:**
+        Also in this case the following command should be typed on your machine.
 
-    ```bash
-    rsync -rltoDvh --progress <~/some_directory_on_cecile/some_data> <~/my_computer/>
-    ```
+        ```bash
+        rsync -rltoDvh --progress <~/some_directory_on_cecile/some_data> <~/my_computer/>
+        ```
+
+    - **Transferring files with a GUI**
+
+        In case you feel more comfortable with a GUI you may use the [Filezilla](https://filezilla-project.org/) client, available for all OS. Please refer to the Filezilla documentation for the installation.
+
+        **How to use Filezilla**
+
+        - Install filezilla (please follow the instruction provided by the filezilla webpage)
+
+        - Let's open the `Site manager` and create a new instance for Cecile:
+
+            <figure markdown="span">
+                ![Slurm](../images/filezilla1.png){ width="1000" }
+                <figcaption></figcaption>
+            </figure>
+                
+        - Now set up the new instance by using the `site manager`:
+
+            !!! Danger "Choose the SFTP-SSH protocol"
+                Choose the SFTP-SSH protocol, as shown in the image, this will ensure that the correct port is automatically chosen.
+
+            <figure markdown="span">
+                ![Slurm](../images/filezilla2.png){ width="900" }
+                <figcaption></figcaption>
+            </figure>
+
+        4. Once your are logged in the cluster, you can simply select your local directory and the destination directory and drag and drop the files you want to transfer.
+
+            <figure markdown="span">
+                ![Slurm](../images/filezilla3.png){ width="900" }
+                <figcaption></figcaption>
+            </figure>
 
 === "macOS"
 
