@@ -458,19 +458,19 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
 
 Cecile is a shared resource, as such users are subjected to certain restrictions to guarantee a fair access to resources for everybody.
 
-**Data storage quotas set the maximum amount of storage space that can be utilized in a given folder (e.g. your home folder)**
+**Data storage quotas set the maximum amount of storage space that can be utilized in a given directory (e.g. your home directory)**
 
 Such restrictions are enforced to ensure that users adopt a reasoned and parsimonious choice when storing data, thus avoiding that unnecessary data pollute the cluster. 
-As a byproduct, quotas help you to keep your project much more tidy and force you to keep organized folders.
+As a byproduct, quotas help you to keep your project much more tidy and force you to keep organized your directories.
 
 
 
-|  Folder  |   Quota    |
-|----------|------------|
-| `home`   |  **1GB**   |
-| `group`  |  **10GB**  |
-| `project`|  **500GB** |
-| `scratch`|  **1TB**   | 
+|  Directories  |   Quota    |
+|---------------|------------|
+| `home`        |  **1GB**   |
+| `group`       |  **10GB**  |
+| `project`     |  **500GB** |
+| `scratch`     |  **1TB**   | 
 
 
 
