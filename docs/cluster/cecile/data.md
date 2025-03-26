@@ -465,12 +465,12 @@ As a byproduct, quotas help you to keep your project much more tidy and force yo
 
 
 
-|  Directories  |   Quota    |
-|---------------|------------|
-| `home`        |  **1GB**   |
-| `group`       |  **10GB**  |
-| `project`     |  **500GB** |
-| `scratch`     |  **1TB**   | 
+|  Directory  |   Quota     |
+|-------------|-------------|
+| `home`      |  **1 GB**   |
+| `group`     |  **10 GB**  |
+| `project`   |  **500 GB** |
+| `scratch`   |  **1 TB**   | 
 
 
 
