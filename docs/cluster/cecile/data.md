@@ -296,14 +296,14 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
 
         **How to filter out files or folders when transferring data:**
 
-            - Filter a folder out, for example, we exclude `.zfs` folder from the transfer:
-                ```bash
-                rsync -rltoDvh --exclude=".zfs" <user@cecile.ovgu.de:/data/project/project_name/> </my_computer/target_directory> 
-                ```
-            - Filter a file out:
-                ```bash
-                rsync -rltoDvh --exclude "<file_name>" <user@cecile.ovgu.de:/data/project/project_name/> </my_computer/target_directory> 
-                ```
+        - Filter a folder out, for example, we exclude `.zfs` folder from the transfer:
+            ```bash
+            rsync -rltoDvh --exclude=".zfs" <user@cecile.ovgu.de:/data/project/project_name/> </my_computer/target_directory> 
+            ```
+        - Filter a file out:
+            ```bash
+            rsync -rltoDvh --exclude "<file_name>" <user@cecile.ovgu.de:/data/project/project_name/> </my_computer/target_directory> 
+            ```
 
     - **Transferring files with a GUI**
 
