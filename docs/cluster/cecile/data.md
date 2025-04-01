@@ -294,7 +294,7 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
         rsync -rltoDvh --progress <~/some_directory_on_cecile/some_data> <~/my_computer/>
         ```
 
-        **How to filter out files or folders when transferring data:**
+        **How to exclude files or folders from a data transfer:**
 
         - Filter a folder out, for example, we exclude `.zfs` folder from the transfer:
             ```bash
@@ -355,7 +355,7 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
         rsync -rltoDvh --progress <~/some_directory_on_cecile/some_data> <~/my_computer/>
         ```
 
-        **How to filter out files or folders when transferring data:**
+        **How to exclude files or folders from a data transfer:**
 
         - Filter a folder out, for example, we exclude `.zfs` folder from the transfer:
             ```bash
@@ -423,7 +423,7 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
         rsync -rltoDvh --progress <~/some_directory_on_cecile/some_data> <~/my_computer/>
         ```
 
-        **How to filter out files or folders when transferring data:**
+        **How to exclude files or folders from a data transfer:**
 
         - Filter a folder out, for example, we exclude `.zfs` folder from the transfer:
             ```bash
