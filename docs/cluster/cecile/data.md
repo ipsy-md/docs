@@ -273,7 +273,7 @@ data/
 We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a powerful tool for data synchronization, it minimizes the data transfer by copying only data that have changed, meaning that if the files you want to transfer already exist in the new location, `rsync` will only copy files that have been modified or that are not present in the new location. In order to work, `rsync` must be installed in both machines, the source machine and the destination machine. Please refer to the `rsync -man` or `rsync --help` for further usage infomation.
 
 !!! Warning "Be aware of the `.zfs` folder when transferring data from a project"
-    As we will explain in the [backup section] every project contains a hidden folder called `.zfs` that stores temporary snapshots of your project to facilitate the recovery of lost data. Make sure to exclude the `.zfs` folder when transferring your data. In the following sections we will explain how to conveniently exclude any file or directory using either the command line or Filezilla.
+    As we explain in the [backup section] every project contains a hidden folder called `.zfs` that stores temporary snapshots of your project to facilitate the recovery of lost data. Make sure to exclude the `.zfs` folder when transferring your data. In the following sections we will explain how to conveniently exclude any file or directory using either the command line or Filezilla.
     [backup section]: #how-to-retrieve-lost-data
 
 === "Linux"
