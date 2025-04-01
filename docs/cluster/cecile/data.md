@@ -294,6 +294,17 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
         rsync -rltoDvh --progress <~/some_directory_on_cecile/some_data> <~/my_computer/>
         ```
 
+        **How to filter out files or folders when transferring data:**
+
+            - Filter a folder out, for example, we exclude `.zfs` folder from the transfer:
+                ```bash
+                rsync -rltoDvh --exclude=".zfs" <user@cecile.ovgu.de:/data/project/project_name/> </my_computer/target_directory> 
+                ```
+            - Filter a file out:
+                ```bash
+                rsync -rltoDvh --exclude "<file_name>" <user@cecile.ovgu.de:/data/project/project_name/> </my_computer/target_directory> 
+                ```
+
     - **Transferring files with a GUI**
 
         In case you feel more comfortable with a GUI you may use the [Filezilla](https://filezilla-project.org/) client, available for all OS. Please refer to the Filezilla documentation for the installation.
