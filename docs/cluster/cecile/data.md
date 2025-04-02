@@ -339,10 +339,10 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
 
         **How to exclude files or folder during data transfer:**
 
-            <figure markdown="span">
-                ![Slurm](../images/Filezilla_filter.png){ width="900" }
-                <figcaption></figcaption>
-            </figure>
+        <figure markdown="span">
+            ![Slurm](../images/Filezilla_filter.png){ width="900" }
+            <figcaption></figcaption>
+        </figure>
 
 === "macOS"
 
