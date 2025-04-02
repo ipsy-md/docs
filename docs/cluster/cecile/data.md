@@ -337,7 +337,7 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
                 <figcaption></figcaption>
             </figure>
 
-        **How to exclude files or folder during data transfer:**
+        **How to exclude files or folders during data transfer:**
 
         <figure markdown="span">
             ![Slurm](../images/Filezilla_filter.png){ width="900" }
@@ -401,14 +401,19 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
                 <figcaption></figcaption>
             </figure>
 
-        4. Once your are logged in the cluster, you can simply select your local directory and the destination directory and drag and drop the files you want to transfer.
+        - Once your are logged in the cluster, you can simply select your local directory and the destination directory and drag and drop the files you want to transfer.
 
             <figure markdown="span">
                 ![Slurm](../images/filezilla3.png){ width="900" }
                 <figcaption></figcaption>
             </figure>
 
+        **How to exclude files or folders during data transfer:**
 
+        <figure markdown="span">
+            ![Slurm](../images/Filezilla_filter.png){ width="900" }
+            <figcaption></figcaption>
+        </figure>
 
 === "Windows"
 
@@ -470,14 +475,19 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
                 <figcaption></figcaption>
             </figure>
 
-        4. Once your are logged in the cluster, you can simply select your local directory and the destination directory and drag and drop the files you want to transfer.
+        - Once your are logged in the cluster, you can simply select your local directory and the destination directory and drag and drop the files you want to transfer.
 
             <figure markdown="span">
                 ![Slurm](../images/filezilla3.png){ width="900" }
                 <figcaption></figcaption>
             </figure>
 
+        **How to exclude files or folders during data transfer:**
 
+        <figure markdown="span">
+            ![Slurm](../images/Filezilla_filter.png){ width="900" }
+            <figcaption></figcaption>
+        </figure>
 
 
 ## How to retrieve lost data
