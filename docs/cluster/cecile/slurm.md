@@ -261,7 +261,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     In other words, for the first job `SLURM_ARRAY_TASK_ID` is going to be equal to 0 (because your array starts at 0) and so will be `idx`. Hence, the expression `${subjects[idx]}` will extract from the `subjects` array the first item, namely `01`, which is the ID of your first subject. For the second job, `SLURM_ARRAY_TASK_ID` will be equal to 1 and consequently `${subjects[idx]}` will be equal to `02` and so on until the last job.
 
 
-    !!! warning "Not all shell start counting from 0"
+    !!! warning "Not all shells start counting from 0"
         In these section, we use `bash` as the reference shell for our examples because this is the default shell in Cecile. `bash` starts counting arrays from 0, but if you are using other shells like `zsh` they might start counting from 1. This means that if you use the `--array` parameter as an index, you must keep in mind where your specific shell interpreter starts counting from. If you use the default `bash` shell you can just use the examples as they are.
 
     ```bash title="Array job" 
