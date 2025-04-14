@@ -262,7 +262,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
 
 
     !!! warning "Not all shells start counting from 0"
-        In these section, we use `bash` as the reference shell for our examples because this is the default shell in Cecile. `bash` starts counting arrays from 0, but if you are using other shells like `zsh` they might start counting from 1. This means that if you use the `--array` parameter as an index, you must keep in mind where your specific shell interpreter starts counting from. If you use the default `bash` shell you can just use the examples as they are.
+        In this section, we use `bash` as the reference shell for our examples because this is the default shell in Cecile. `bash` starts counting arrays from 0, but if you are using other shells like `zsh` they might start counting from 1. This means that if you use the `--array` parameter as an index, you must keep in mind where your specific shell interpreter starts counting from. If you use the default `bash` shell you can just use the examples as they are.
 
     ```bash title="Array job" 
     #!/bin/sh
