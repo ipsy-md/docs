@@ -4,6 +4,7 @@ theme:
   name: material
   features:
     - navigation.tabs
+    - navigation.sections
     - content.tooltips
     - content.tabs.link
     - navigation.top
