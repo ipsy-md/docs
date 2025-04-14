@@ -235,7 +235,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
         - Define specific numbers: ```#SBATCH --array 1, 4, 6, 10```  (e.g. they might be specific subject IDs) for 4 total jobs.</b>  
         - Define a range with specific intervals: ```#SBATCH --array 1-20:2```</b>  
         - Define a range and specify the number of parallel jobs: ```#SBATCH -- array 1-400%100``` only 100 jobs are run simultaneously.</b>  
-
+ 
 
     ```bash linenums="1" hl_lines="10"
     #!/bin/sh
@@ -259,6 +259,10 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     - For the sake of practicality, we can assign `SLURM_ARRAY_TASK_ID` to the variable `idx`, which can be used to extract for each job the subject ID, `${subjects[idx]}`, and then it can be passed to the script `my_analysis.sh`. 
   
     In other words, for the first job `SLURM_ARRAY_TASK_ID` is going to be equal to 0 (because your array starts at 0) and so will be `idx`. Hence, the expression `${subjects[idx]}` will extract from the `subjects` array the first item, namely `01`, which is the ID of your first subject. For the second job, `SLURM_ARRAY_TASK_ID` will be equal to 1 and consequently `${subjects[idx]}` will be equal to `02` and so on until the last job.
+
+
+    !!! warning "Not all shell start counting from 0"
+        In these section, we use `bash` as the reference shell for our examples because this is the default shell in Cecile. `bash` starts counting arrays from 0, but if you are using other shells like `zsh` they might start counting from 1. This means that if you use the `--array` parameter as an index, you must keep in mind where your specific shell interpreter starts counting from. If you use the default `bash` shell you can just use the examples as they are.
 
     ```bash title="Array job" 
     #!/bin/sh
