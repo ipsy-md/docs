@@ -420,7 +420,7 @@ Before you start converting your data we strongly recommend to go through the [B
 
     ### Physiological data
 
-    We recommend to read the [dedicated page](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/physiological-and-other-continuous-recordings.html) in the BIDS website. 
+    We recommend to read the [dedicated page](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/physiological-recordings.html) in the BIDS website. 
 
     !!! note "Physio data general rules"
 
