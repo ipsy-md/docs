@@ -7,7 +7,7 @@ Cecile comprises a head node, a storage node and 7 compute nodes amounting to 35
 ### Head node
 
 - **CPU:** 1x AMD Epyc 7513, 32core
-- **RAM:** 512MB DDR4-3200 ECC REG (16x32 GB)
+- **RAM:** 512GB DDR4-3200 ECC REG (16x32 GB)
 - **SSD:** 
     - 1x960GB Samsung PM9A3, M.2, NVMe, 1 DWPD (Reading 5000MB/s, Writing 1400MB/s)
     - 1x3,84TB Micron 7300 PRO, M.2, NVMe, 1 DWPD
