@@ -52,4 +52,8 @@ Cecile comprises a head node, a storage node and 7 compute nodes amounting to 35
 
     - **CPU:** 4x8 core 2.6 GHz AMD Opteron 6282 SE
     - **RAM:** 384 GB RAM (48x 8GB DDR3 ECC)
-    - **Network:** ((4+4) x 1Gib/s, 2x 10Gib/s
+    - **Network:** (4+4) x 1Gib/s, 2x 10Gib/s
+
+### Backup
+
+Proxmox system, ~100TB of usable space, provided by the URZ.
