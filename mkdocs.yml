@@ -61,4 +61,5 @@ nav:
       - Data organization: cluster/cecile/data.md
       - Slurm: cluster/cecile/slurm.md
       - Software stack: cluster/cecile/software.md
+      - Hardware: cluster/cecile/hardware.md
     - Medusa: 'https://ipsy-md.github.io/medusa-docs/'
