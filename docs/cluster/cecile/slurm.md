@@ -48,7 +48,7 @@ There are different types of jobs in slurm (e.g. single jobs, interactive jobs e
         chmod +x <script.py>
         ```
 
-3. Create a folder called `slurm-logs` (or you can give it another meaningful name), in the same directory as the scripts are or in the `scratch` of your project. Slurm will use it to dump the logs reporting error files and printed outputs. 
+3. Create a folder called `logs` (or you can give it another meaningful name), in the same directory as the scripts are or in the `scratch` of your project. Slurm will use it to dump the logs reporting error files and printed outputs. 
 
 4. Activate the [software stack] environment or load the modules that you need for your code.  
    This needs to be done inside the script used to run your slurm jobs (see in the script examples).
@@ -77,8 +77,8 @@ Here it is how you turn the previous questions in parameters for slurm script.
 #SBATCH --nodes=1                             
 #SBATCH --mem-per-cpu=1g                     
 #SBATCH --time=01:00:00                       
-#SBATCH --output=slurm-logs/%x-%A-%a.out 
-#SBATCH --error=slurm-logs/%x-%A-%a.err  
+#SBATCH --output=logs/%x-%A-%a.out 
+#SBATCH --error=logs/%x-%A-%a.err  
 
 ```
 
@@ -92,8 +92,8 @@ Here it is how you turn the previous questions in parameters for slurm script.
 - `#SBATCH --nodes=1`: number of requested nodes, keep it to 1, it is fine for our type of analyses.
 - `#SBATCH --mem-per-cpu=1g`: amount of memory you request per cpu. 
 - `#SBATCH --time=01:00:00`: maximum duration you assign to a job (D-HH:MM:SS, for example `--time=00:01:00` is a one minute job).
-- `#SBATCH --output=slurm-logs/%x-%A-%a.out`: here you specify where job printed output should be saved, specifically in the folder `slurm-logs`. 
-- `#SBATCH --error=slurm-logs/%x-%A-%a.err`: here you specify where job related errors should be saved, again in the folder `slurm-logs`.
+- `#SBATCH --output=logs/%x-%A-%a.out`: here you specify where job printed output should be saved, specifically in the folder `slurm-logs`. 
+- `#SBATCH --error=logs/%x-%A-%a.err`: here you specify where job related errors should be saved, again in the folder `logs`.
 
 Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the amount of RAM you request in a node.
 
@@ -123,8 +123,8 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --nodes=1
     #SBATCH --mem-per-cpu=1g
     #SBATCH --time=01:00:00
-    #SBATCH --output=slurm-logs/%x-%A-%a.out
-    #SBATCH --error=slurm-logs/%x-%A-%a.err
+    #SBATCH --output=logs/%x-%A-%a.out
+    #SBATCH --error=logs/%x-%A-%a.err
 
     ./my_script.sh 
     ```
@@ -180,8 +180,8 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem-per-cpu=1G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
-    #SBATCH --output=slurm-logs/%x-%A-%a.out   # printed output
-    #SBATCH --error=slurm-logs/%x-%A-%a.err     # errors
+    #SBATCH --output=logs/%x-%A-%a.out   # printed output
+    #SBATCH --error=logs/%x-%A-%a.err     # errors
 
     ## load the software stack
     . /software/current/env.sh
@@ -206,8 +206,8 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem-per-cpu=1G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
-    #SBATCH --output=slurm-logs/%x-%A-%a.out   # printed output
-    #SBATCH --error=slurm-logs/%x-%A-%a.err     # errors
+    #SBATCH --output=logs/%x-%A-%a.out   # printed output
+    #SBATCH --error=logs/%x-%A-%a.err     # errors
 
     # load the stack and the module you need
     . /software/current/env.sh
@@ -245,8 +245,8 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --nodes=1
     #SBATCH --mem-per-cpu=1g
     #SBATCH --time=01:00:00
-    #SBATCH --output=slurm_logs/output-%A-%a.out
-    #SBATCH --error=slurm_logs/error-%A-%a.err
+    #SBATCH --output=logs/output-%A-%a.out
+    #SBATCH --error=logs/error-%A-%a.err
     #SBATCH --array 1-5
     ```
 
@@ -272,8 +272,8 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --nodes=1
     #SBATCH --mem-per-cpu=1g
     #SBATCH --time=01:00:00
-    #SBATCH --output=slurm_logs/output-%A-%a.out
-    #SBATCH --error=slurm_logs/error-%A-%a.err
+    #SBATCH --output=logs/output-%A-%a.out
+    #SBATCH --error=logs/error-%A-%a.err
     #SBATCH --array 0-4  ## 5 jobs
 
     idx=$((SLURM_ARRAY_TASK_ID))
@@ -339,8 +339,8 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem-per-cpu=1G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
-    #SBATCH --output=slurm_logs/output-%A-%a.out   # printed output
-    #SBATCH --error=slurm_logs/error-%A-%a.err     # errors
+    #SBATCH --output=logs/output-%A-%a.out   # printed output
+    #SBATCH --error=logs/error-%A-%a.err     # errors
     #SBATCH --array 0-4
 
     # load the stack and the module you need
@@ -365,8 +365,8 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem-per-cpu=1G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
-    #SBATCH --output=slurm_logs/output-%A-%a.out   # printed output
-    #SBATCH --error=slurm_logs/error-%A-%a.err     # errors
+    #SBATCH --output=logs/output-%A-%a.out   # printed output
+    #SBATCH --error=logs/error-%A-%a.err     # errors
     #SBATCH --array 0-4
 
     # load the stack and the module you need
