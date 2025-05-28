@@ -20,7 +20,7 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 
 - **I am unable to produce new files on my `home` or `groups` or `projects`**
 
-    In Cecile directories such as `home`, `groups` and `projects` have quotas, which means that there is a fix limit to the amount of data that can be added to those directories. Please,refer to the relevant [information](../cecile/data.md/#data-storage-quotas).
+    In Cecile directories such as `home`, `groups` and `projects` have quotas, which means that there is a fix limit to the amount of data that can be added to those directories. Please, refer to the relevant [information](../cecile/data.md/#data-storage-quotas).
 
 ## Slurm
 
@@ -36,7 +36,7 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 
 - **My job failed withe the following error: `error: Detected 1 oom-kill event(s) in StepId=217699.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory, handler.`.**
 
-    Your job might have failed because the memory you have requested for your job is not enough. You might want to investigate your failed job via `seff` or `sacct` to understand the actual amount of RAM that your job requires, and increase your RAM accordingly by changing the parameter `#SBATCH --mem-per-cpu`. Depending on your job, you might also need to change your CPU request. Please refer to the relevant [information](../cecile/slurm.md/#how-to-define-the-amount-of-resources-and-time-for-your-jobs)  
+    Your job might have failed because the memory you have requested for your job is not enough. You might want to investigate your failed job via `seff` or `sacct` to understand the actual amount of RAM that your job requires, and increase your RAM accordingly by changing the parameter `#SBATCH --mem-per-cpu` or `#SBATCH --mem`. Depending on your job, you might also need to change your CPU request. Please refer to the relevant [information](../cecile/slurm.md/#how-to-define-the-amount-of-resources-and-time-for-your-jobs)  
 
 - **My job failed with the following error: `line 13: ./my_script.py: Permission denied`.**
 
