@@ -8,6 +8,10 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 
     If you are outside the university network you can access Cecile only though [eduVPN](https://www.urz.ovgu.de/en/vpn-path-204,616.html).
 
+- **I mistyped my password a few times and I cannot login on Cecile any longer**
+
+    If you mistype your password 3 times in a row, you can retry to login after 10 minutes. 
+
 ## Data
 
 - **I would like to put my data on Cecile, what should I do?**
