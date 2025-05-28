@@ -1,12 +1,12 @@
 # Frequently Asked Questions
 
-If you have a very common problem it might be covered in this FAQS section, if you are unlucky and you cannot find any help on this page, please contact us at `cecile-admins-l at ovgu.de`.
+If you have a very common problem it might be covered in this FAQ section, if you are unlucky and you cannot find any help on this page, please contact us at `cecile-admins-l at ovgu.de`.
 
 ## Cecile access
 
 - **I can't access the cluster from outside the university.**
 
-    If you are outside the university network you can access Cecile only though edu-VPN, please, read the relevant [information](../cecile/access.md).
+    If you are outside the university network you can access Cecile only though [eduVPN](https://www.urz.ovgu.de/en/vpn-path-204,616.html).
 
 ## Data
 
