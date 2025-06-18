@@ -1,12 +1,12 @@
 # Questionnaire:
 
-- Write your project name. Format: non capitalized characters, no spaces, use underscores and/or hyphens instead
+- Write your project name. Format: The project name must contain a maximum of 25 characters (due to technical reasons). Characters must be only lowercase, no spaces, please use underscores and/or hyphens instead.
 
-- Write a short description of your project (like a short abstract, it must be informative for people who do not know your project).
+- Write a short description of your project (like a short abstract, it must be informative for people who do not know/remember your project).
 
 - Provide the name of the your project fundings and funding agency (e.g. dfg, erc, etc.).
 
-- Write the names of the researchers who have access to this project. Format: [Emanuele Porcu, Manuela Kuhn] 
+- Write the names of the researchers who are going to have access to this project on the cluster. Format: [Emanuele Porcu, Manuela Kuhn] 
 
 - Starting date of the project. Format: YYYY-MM-DD
 
