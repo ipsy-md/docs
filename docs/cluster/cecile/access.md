@@ -78,6 +78,47 @@
 
     Using a WSL provides multiple advantages: it allows you to use a Linux environment like Cecile, without giving up your Windows operating system. Interacting with Cecile via WSL facilitates many procedures, such as file transferring from and to Cecile. Files transferred via WSL will be directly available to your Windows system. Furthermore working with the command line will surely speed up all your processes, given that you will not need to go through additional tools to interact with Cecile.
 
+=== "Web Browser (Open On Demand)"
+
+    ## Accessing Cecile via web browser (Open On Demand)
+
+    !!! warning "Access restrictions"
+        In order to access Cecile via web browser, you must be connected either via ethernet cable into the OvGU network or you must to activate [eduVPN](https://www.urz.ovgu.de/en/vpn-path-204,616.html)
+
+    Cecile can be accessed via browser using a tool called [Open On Demand](https://openondemand.org/).
+
+    !!! note "Recommended browsers"
+        Open On Demand works regardless of your own the operating system. However, to experience the best performance, we recommend you to use Chrome, alternatively Firefox or Edge (Safari is known to have some issues).
+
+    To access Cecile via Open On Demand you simply need to type on your browser address bar `ood.cecile.ovgu.de` and press `enter`.
+
+    Once you provide your OvGU credentials you will be redirected to the Open On Demand main page.
+
+    <figure markdown="span">
+        ![OOD](../images/OOD_main_page.png){ width="900" }
+        <figcaption></figcaption>
+    </figure>
+
+    In the Open on Demand main page you are presented with different options to interact with the cluster, such as shell access, file access and interactive jobs.
+
+    The most direct way to interact with Cecile is to open a shell in your browser, as you see in the image below.
+
+    <figure markdown="span">
+        ![OOD](../images/OOD_terminal.png){ width="900" }
+        <figcaption></figcaption>
+    </figure>
+
+    By opening the shell in the browser you are redirected to your `home` on Cecile's head node. From now on, you can use Cecile as you would normally do it.
+
+    <figure markdown="span">
+        ![OOD](../images/OOD_browser_shell.png){ width="900" }
+        <figcaption></figcaption>
+    </figure>
+
+    !!! warning "Log out from Open on Demand"
+        Please, remember to log out from Open On Demand in case you do not need it any more.
+        You can log out by simply pressing the log out button. 
+
 ## Avoid passwords, use SSH keys
 
 
@@ -118,11 +159,6 @@ In a nutshell, a criptographic algorithm creates for you a pair of keys: a **pri
 
 
     If you want to set up a public key authentication via a GUI, you can use [PUTTY](https://www.putty.org/), a straightforward explanation can be found in the [official microsoft page](https://learn.microsoft.com/en-us/viva/glint/setup/sftp-ssh-key-gen)
-
-
-## Using a graphical interface
-
-Coming soon...
 
 ## Access from medical campus
 
