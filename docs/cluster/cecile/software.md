@@ -144,7 +144,7 @@ Third party toolboxes like `SPM` or `FieldTrip` are also available in the centra
 
 ### Matlab shortcuts fix
 
-Interacting with Matlab you might notice that shortcuts such as **Ctrl-C** or **Ctrl-V** do not work as expected, this behavior is due to a different editor keys-shortcuts binding, in the image below you can see that **Paste** is indeed bound to the **Ctrl-Y** shortcut.
+While interacting with Matlab, you might notice that shortcuts such as **Ctrl-C** or **Ctrl-V** do not work as expected, this behavior is due to a different editor keys-shortcuts binding, in the image below you can see that **Paste** is indeed bound to the **Ctrl-Y** shortcut.
 
 <figure markdown="span">
     ![matlab](../images/matlab_emacs_shortcuts.png){ width="250" }
