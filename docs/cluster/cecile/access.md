@@ -83,7 +83,7 @@
     ## Accessing Cecile via web browser (Open OnDemand)
 
     !!! warning "Access restrictions"
-        In order to access Cecile via web browser, you must be connected either via ethernet cable into the OvGU network or you must to activate [eduVPN](https://www.urz.ovgu.de/en/vpn-path-204,616.html)
+        In order to access Cecile via web browser, you must be connected either via ethernet cable into the OvGU network or you must activate [eduVPN](https://www.urz.ovgu.de/en/vpn-path-204,616.html)
 
     !!! tip "Recommended browsers"
         Open OnDemand works regardless of your the operating system. However, to experience the best performance, we recommend you to use Chrome, alternatively Firefox or Edge (Safari is known to have some issues).
