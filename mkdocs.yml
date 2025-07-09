@@ -4,7 +4,9 @@ theme:
   name: material
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
     - content.tooltips
     - content.tabs.link
     - navigation.top
@@ -16,6 +18,12 @@ plugins:
       listings_map:
             custom-id:
               toc: true
+  - search:
+      theme:
+        features:
+          - search.suggest
+          - search.highlight
+          - search.share
 
 markdown_extensions:
   - abbr
