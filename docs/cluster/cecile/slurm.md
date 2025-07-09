@@ -521,3 +521,76 @@ scancel -U <username> # all jobs belonging to that user will be cancelled
 ```bash
 scontrol show partition compute # allows you to see partitions present and limitations 
 ```
+
+## Interactive jobs with Open On Demand
+
+!!! warning "No batch jobs inside an interactive job"
+    Do not start slurm batch jobs (single or array jobs) from an interactive job session. This mis-use might create unwanted behaviors and terminate your jobs prematurely. In case you need to launch a batch job, open a new non interactive Open On Demand session and launch it from there.   
+
+To start an interactive job with Open On Demand you have to follow a few simple steps:
+
+- Press on **Interactive Apps** and then on **Cecile Desktop**
+
+    <figure markdown="span">
+        ![OOD](../images/OOD_interactive_apps.png){ width="900" }
+        <figcaption></figcaption>
+    </figure>
+
+- You will be redirected to the page below, which allows you to set up a slurm interactive job. 
+
+    As for any regular interactive job, you can request memory, number of cores and job duration according to your needs or use the default settings. Just remember that if your computations exceed the chosen parameters your job will be terminated by slurm. 
+
+    <figure markdown="span">
+        ![OOD](../images/OOD_interactive_job.png){ width="900" }
+        <figcaption></figcaption>
+    </figure>
+
+- By launching your interactive job, you will be redirected to the following window which contains a few information about your job, such as `Time Remaining`, `Host` node, number of `nodes`, `cores` and additional parameters to improve image rendering (Compression and Image Quality). 
+
+    <figure markdown="span">
+        ![OOD](../images/OOD_desktop_launch.png){ width="900" }
+        <figcaption></figcaption>
+    </figure>
+
+- By pressing on **Launch Cecile Desktop** you will be re-routed to the Cecile Desktop.
+
+    <figure markdown="span">
+        ![OOD](../images/OOD_cecile_desktop.png){ width="900" }
+        <figcaption></figcaption>
+    </figure>
+
+!!! note "Waiting for resources"
+    Note that sometimes depending on the available resources, you might need to wait until resources are freed before your interactive job can start.
+
+To get a summary of the active jobs press on **Jobs** and then **Active Jobs**
+
+<figure markdown="span">
+    ![OOD](../images/OOD_active_jobs.png){ width="900" }
+    <figcaption></figcaption>
+</figure>
+
+Once your interactive job has been terminated you have the chance to restore it by going to **My Interactive Sessions** and pressing on the recycle icon.
+
+<figure markdown="span">
+    ![OOD](../images/OOD_relaunch_session.png){ width="900" }
+    <figcaption></figcaption>
+</figure>
+
+## Batch jobs with Open On Demand
+
+!!! warning "This section is under development"
+    We will update this section soon. In the meantime you are free to test the Job Composer functionality.
+
+On Open On Demand you have also the option to create batch jobs using the **Job Composer**.
+
+<figure markdown="span">
+    ![OOD](../images/OOD_job_composer.png){ width="900" }
+    <figcaption></figcaption>
+</figure>
+
+You have the chance to create and launch jobs via the intuitive interface depicted below:
+
+<figure markdown="span">
+    ![OOD](../images/OOD_template_job.png){ width="900" }
+    <figcaption></figcaption>
+</figure>
