@@ -78,28 +78,28 @@
 
     Using a WSL provides multiple advantages: it allows you to use a Linux environment like Cecile, without giving up your Windows operating system. Interacting with Cecile via WSL facilitates many procedures, such as file transferring from and to Cecile. Files transferred via WSL will be directly available to your Windows system. Furthermore working with the command line will surely speed up all your processes, given that you will not need to go through additional tools to interact with Cecile.
 
-=== "Web Browser (Open On Demand)"
+=== "Web Browser (Open OnDemand)"
 
-    ## Accessing Cecile via web browser (Open On Demand)
+    ## Accessing Cecile via web browser (Open OnDemand)
 
     !!! warning "Access restrictions"
         In order to access Cecile via web browser, you must be connected either via ethernet cable into the OvGU network or you must to activate [eduVPN](https://www.urz.ovgu.de/en/vpn-path-204,616.html)
 
     !!! tip "Recommended browsers"
-        Open On Demand works regardless of your the operating system. However, to experience the best performance, we recommend you to use Chrome, alternatively Firefox or Edge (Safari is known to have some issues).
+        Open OnDemand works regardless of your the operating system. However, to experience the best performance, we recommend you to use Chrome, alternatively Firefox or Edge (Safari is known to have some issues).
 
-    Cecile can be accessed via web browser using a tool called [Open On Demand](https://openondemand.org/). You simply need to type `ood.cecile.ovgu.de` on your browser address bar and press `enter`, alternatively you can press the button below.
+    Cecile can be accessed via web browser using a tool called [Open OnDemand](https://openondemand.org/). You simply need to type `ood.cecile.ovgu.de` on your browser address bar and press `enter`, alternatively you can press the button below.
 
-    [Connect to Open On Demand](https://ood.cecile.ovgu.de){ .md-button .md-button--primary .fontawesome-solid-paper-plane: }
+    [Connect to Open OnDemand](https://ood.cecile.ovgu.de){ .md-button .md-button--primary .fontawesome-solid-paper-plane: }
 
-    Once you provide your OvGU credentials you will be redirected to the Open On Demand main page.
+    Once you provide your OvGU credentials you will be redirected to the Open OnDemand main page.
 
     <figure markdown="span">
         ![OOD](../images/OOD_main_page.png){ width="900" }
         <figcaption></figcaption>
     </figure>
 
-    In the Open on Demand main page you are presented with different options to interact with the cluster, such as shell access, file access and interactive jobs.
+    In the Open onDemand main page you are presented with different options to interact with the cluster, such as shell access, file access and interactive jobs.
 
     The most direct way to interact with Cecile is to open a shell in your browser, as you see in the image below.
 
@@ -115,8 +115,8 @@
         <figcaption></figcaption>
     </figure>
 
-    !!! warning "Log out from Open on Demand"
-        Please, remember to log out from Open On Demand in case you do not need it any more.
+    !!! warning "Log out from Open OnDemand"
+        Please, remember to log out from Open OnDemand in case you do not need it any more.
         You can log out by simply pressing the log out button. 
 
 ## Avoid passwords, use SSH keys
