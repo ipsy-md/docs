@@ -93,10 +93,10 @@ The following schema represents how data are structured on Cecile. Please take a
     ```
     I am a symlink
     ```
-### Accessing data on Open On Demand
+### Accessing data on Open OnDemand
 
-If you are using [Open On Demand] to interact with the cluster, you can access your data by pressing on **Files**
-[Open On Demand]: ../access/#accessing-cecile-via-web-browser-open-on-demand
+If you are using [Open OnDemand] to interact with the cluster, you can access your data by pressing on **Files**
+[Open OnDemand]: ../access/#accessing-cecile-via-web-browser-open-on-demand
 
 <figure markdown="span">
     ![OOD](../images/OOD_files.png){ width="900" }
@@ -504,7 +504,7 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
             <figcaption></figcaption>
         </figure>
 
-=== "Web Browser (Open On Demand)"
+=== "Web Browser (Open OnDemand)"
 
     Open On Demand gives you the option to upload and download data into and from Cecile, by simply using the **Upload** and **Download** buttons. However, you can only upload or download files with a **maximum size of 10G**.
     
@@ -516,7 +516,7 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
     </figure>
 
     !!! warning "Use `rsync` for large datasets"
-        Do not use Open On Demand to transfer big datasets, we recommend you to use `rsync` instead which guarantees data integrity using [checksum](https://en.wikipedia.org/wiki/Checksum) procedures.
+        Do not use Open OnDemand to transfer big datasets, we recommend you to use `rsync` instead which guarantees data integrity using [checksum](https://en.wikipedia.org/wiki/Checksum) procedures.
 
 
 ## How to retrieve lost data
