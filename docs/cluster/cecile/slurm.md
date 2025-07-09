@@ -522,7 +522,7 @@ scancel -U <username> # all jobs belonging to that user will be cancelled
 scontrol show partition compute # allows you to see partitions present and limitations 
 ```
 
-## Interactive jobs with Open On Demand
+## Interactive jobs with Open OnDemand
 
 !!! warning "No batch jobs inside an interactive job"
     Do not start slurm batch jobs (single or array jobs) from an interactive job session. This mis-use might create unwanted behaviors and terminate your jobs prematurely. In case you need to launch a batch job, open a new non interactive Open On Demand session and launch it from there.   
@@ -576,12 +576,12 @@ Once your interactive job has been terminated you have the chance to restore it 
     <figcaption></figcaption>
 </figure>
 
-## Batch jobs with Open On Demand
+## Batch jobs with Open OnDemand
 
 !!! warning "This section is under development"
     We will update this section soon. In the meantime you are free to test the Job Composer functionality.
 
-On Open On Demand you have also the option to create batch jobs using the **Job Composer**.
+On Open OnDemand you have also the option to create batch jobs using the **Job Composer**.
 
 <figure markdown="span">
     ![OOD](../images/OOD_job_composer.png){ width="900" }
