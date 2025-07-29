@@ -110,6 +110,15 @@ This functionality allows you to access and interact files contained your `group
     <figcaption></figcaption>
 </figure>
 
+
+!!! warning "OOD cannot list too many files"
+    If a directory contains too many files, Open OnDemand might not be able to list them, in that case the program would hang for a bit and return the following `Proxy Error`.
+    <figure markdown="span">
+        ![OOD](../images/OOD_proxy_error.png){ width="900" }
+        <figcaption></figcaption>
+    </figure>
+    This is a known bug that might be fixed in future Open OnDemand releases. We suggest you to use the shell to list your files when this issue emerges. 
+
 ## How to create a project on Cecile
 
 As mentioned in the research planning section, we adopt a specific project workflow, please follow carefully the next steps to create a project:
