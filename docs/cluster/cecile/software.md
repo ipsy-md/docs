@@ -76,7 +76,7 @@ Instead of loading every package individually, you can activate an evironment co
 === "Current stack"
 
     ```bash
-    . /software/current/ipsy-env_2025-03-28/activate
+    . /software/current/ipsy-env/activate
     ```
 
     Now that the stack has been loaded, you can start each single software.
