@@ -1,10 +1,10 @@
 # Getting started
 
-Science is an incremental process that builds on prior findings and technical advancements, as such it relies on the correcteness of previous and current results. To contribute responsably with our research, we need to guarantee replicable results and transparency regarding the processes that led to those results. This is not an easy task, it requires meticulous work, time and especially shared conventions for managing our data within a community.
+Science is an incremental process that builds on prior findings and technical advancements, as such it relies on the correcteness and replicability of previous and current results. To contribute responsably and effectively with our research, we need to ensure replicable results and transparency of the processes that led to those results. This is no easy task; it requires meticulous work, time, and, above all, shared conventions for managing our data within the scientific community. For this reason, efficient conventions and methods for managing research data have been established over the past decade.
 
 ## What is Research Data Management?
 
-Research Data Management (RDM) is the collection of processes (e.g. organization, documentation, publication and archiving) that researchers adopt to govern their data, before data collection, during data analysis and after data have been published.</b>  
+Research Data Management (RDM) is the collection of processes (e.g. organization, documentation, publication and archiving) that researchers adopt to govern their data, during data collection, data analysis and after data have been published.</b>  
 Although data differ significantly across disciplines, general principles for an open and transparent data management are shared among different fields and find their definition in the so called FAIR data principles.
 
 ## What are the FAIR principles?
