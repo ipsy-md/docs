@@ -160,16 +160,16 @@ Before you start converting your data we strongly recommend to go through the [B
             # other features (like data size) that 
             # can help select the correct files
 
-        if "t1_mpr" in s.protocol_name:
-            info[t1w].append(s.series_id)
-        elif 'fMRI_SMS2_2.2iso_66sl_TR2_run' in s.protocol_name and s.dim4 == 200:
-            info[task].append(s.series_id)
-        elif 'field_mapping' in s.protocol_name and s.dim3 == 132:
-            info[fmap_mag].append(s.series_id)
-        elif 'field_mapping' in s.protocol_name and s.dim3 == 66:
-            info[fmap_phasediff].append(s.series_id)
-        elif 'EPI' in s.protocol_name:
-            info[epi].append(s.series_id)
+            if "t1_mpr" in s.protocol_name:
+                info[t1w].append(s.series_id)
+            elif 'fMRI_SMS2_2.2iso_66sl_TR2_run' in s.protocol_name and s.dim4 == 200:
+                info[task].append(s.series_id)
+            elif 'field_mapping' in s.protocol_name and s.dim3 == 132:
+                info[fmap_mag].append(s.series_id)
+            elif 'field_mapping' in s.protocol_name and s.dim3 == 66:
+                info[fmap_phasediff].append(s.series_id)
+            elif 'EPI' in s.protocol_name:
+                info[epi].append(s.series_id)
 
             
         return info
