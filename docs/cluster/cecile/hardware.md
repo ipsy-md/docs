@@ -23,28 +23,28 @@ Cecile comprises a head node, a storage node and 7 compute nodes amounting to 35
 
 ### Compute nodes
 
-- **Nodes 1-3:**
-
-    - **CPU:** 4x12 core 2.5 GHz AMD Opteron 6180 SE
-    - **RAM:** 512GB RAM (32x8GB and 16x16GB DDR3 ECC)
-    - **Network:** 2x10Gib/s
-
-- **Nodes 4-5:**
+- **Nodes 1-2:**
 
     - **CPU:** 2x32 core AMD Epyc 7513
     - **RAM:** 512MB DDR4-3200 ECC REG (16x32GB)
     - **Network:** 2x10Gib/s
 
-- **Node 6:**
+- **Node 3:**
 
-    - **CPU:** 4x12 core 2.5 GHz AMD Opteron 6180 SE
-    - **RAM:** 384GB RAM (48x8GB DDR3 ECC)
+    - **CPU:** 2x10-core 2.3 GHz Intel Xeon E5-2650v3
+    - **RAM:** 96GB DDR3 RAM
     - **Network:** 2x10Gib/s
 
-- **Node 7:**
+- **Node 4:**
 
     - **CPU:** 4x8 core 2.6 GHz AMD Opteron 6282 SE
     - **RAM:** 384GB RAM (48x8GB DDR3 ECC)
+    - **Network:** 2x10Gib/s
+
+- **Node 5:**
+
+    - **CPU:** 4x4-core AMD Opteron 6320
+    - **RAM:** 512GB DDR3 RAM
     - **Network:** 2x10Gib/s
 
 ### Backup
