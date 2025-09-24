@@ -254,7 +254,7 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
 
     Assume you want to run a specific analysis on 5 subjects in parallel by using a script called `my_analysis.sh` that requires as a parameter the subject ID. In order to set up a job array you can follow the next steps:
 
-    - You need to provide to slurm the number of jobs by setting up `#SBATCH --array` as we have seen above. In this case our range is `0-4`, in total 5 jobs as the number of your subjects (remember that the shell interpreter counts starting from 0).
+    - You need to provide to slurm the number of jobs by setting up `#SBATCH --array` as we have seen above. In this case our range is `0-4`, in total 5 jobs as the number of your subjects (keep in mind that the bash interpreter, the default shell in Cecile, starts counting from 0).
     - Now you need to pass the subject ID parameter to the script. To do that, you can take advantage of the slurm variable `SLURM_ARRAY_TASK_ID` which keeps track of the jobs count. This means that for the first job of the array `SLURM_ARRAY_TASK_ID` will take the value 0, for the second job it will tale the value 1 and so on until the fifth job, for which it will take the value 4. `SLURM_ARRAY_TASK_ID` can be used as an index to extract the subject ID from the variable `subjects`. </b>  
     - For the sake of practicality, we can assign `SLURM_ARRAY_TASK_ID` to the variable `idx`, which can be used to extract for each job the subject ID, `${subjects[idx]}`, and then it can be passed to the script `my_analysis.sh`. 
   
