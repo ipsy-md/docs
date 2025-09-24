@@ -1,5 +1,5 @@
-# temp-ipsy
-Temporary ipsy-docs website
+# Ipsy docs
+Ipsy-docs website
 
 ## Build pages locally
 
