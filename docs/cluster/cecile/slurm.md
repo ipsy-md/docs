@@ -97,9 +97,9 @@ Here it is how you turn the previous questions in parameters for slurm script.
 
 Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount of RAM you request per CPU.
 
-!!! Warning "Be aware of memory and time"
-    - If your job exceeds the requested memory, your job will be aborted.
-    - If your job exceeds the requested time, your job will be aborted.
+!!! Warning "Be aware of insufficient memory and time allocation"
+    - If your job exceeds the requested memory, your job will be aborted and you will see the following error: `error: Detected 1 oom-kill event(s) in StepId=217699.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory, handler.` In this case you need to increase the memory allocated to your jobs by modifying the line: `#SBATCH --mem=`
+    - If your job exceeds the requested time, your job will be aborted and you will see the following error: `error: *** JOB 217698 ON compute01 CANCELLED AT 2024-09-26T23:22:59, DUE TO TIME LIMIT ***`. In this case you need to increase the duration of your jobs by modifying the line `#SBATCH --time=`.
 
 
 !!! note "Job ID"
