@@ -147,7 +147,7 @@ In `derivatives`, unlike `rawdata`, you have the freedom to create sub-folders f
     We **strongly recommend** to mirror the sub-folder names between `derivatives` and `code` to keep an intuitive relationship between code and data.
 
 !!! tip "Good naming practices"
-    As you know files and folders naming is an essential aspect of BIDS and the FAIR principles, we suggest you to look into this very helpful [page](https://book.the-turing-way.org/project-design/filenaming) to learn about good naming practices and machine readable names.  
+    As you know files and folders naming is an essential aspect of BIDS and the FAIR principles, we suggest you to look into this very helpful [page](https://book.the-turing-way.org/project-design/info-management/filenaming) to learn about good naming practices and machine readable names.  
 
 For modalities, such as **eye-tracking**, for which there is not yet a consensus for BIDS, we recommend to use the same structure as for the other modalities and to convert the data into BIDS format anyway. [Here](https://github.com/bids-standard/bids-specification/pull/1128) you can follow the discussion around BIDS for eye-tracking.
 
