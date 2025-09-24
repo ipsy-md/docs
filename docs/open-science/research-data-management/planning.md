@@ -1,13 +1,13 @@
 # Plan your data management
 
 Planning a research project can be at times overwhelming especially if it is our first time approaching such a task. 
-While designing a project we need to consider a number of technical aspects concerning the data we would like to produce, however we often underestimate **how to manage efficiently our data**. Thinking ahead about the best way to manage our data can save us plenty of time in the future and drastically reduce our mistakes.
+While designing a project we need to consider a number of aspects related to the data that we would like to produce and analyze, however we often underestimate **how to manage efficiently our data**. Thinking ahead about the best way to manage our data can save us plenty of time in the future and drastically reduce mistakes.
 
 A good starting point to think about data management is to create a **Data Management Plan.**
 
 ## What is a Data Management Plan (DMP)?
 
-A data management plan is a research document, tailored to your project, that, as the name suggests, helps you to organize your current and future data. It simply consists of a questionnaire that guides you through some of the aspects of the data life cycle.
+A data management plan is a research document, tailored to your own project, that, as the name suggests, helps you to organize your current and future data. It simply consists of a questionnaire that guides you through some of the aspects of the data life cycle.
 
 Despite its name, a DMP should be considered as a living document that you can update throughout your project. Keeping your DMP up to date allows you to record essential information relative to your data, such as sparse information and metadata that you might need in a later stage of the project (e.g. when writing a paper or a report for a funding agency). 
 
