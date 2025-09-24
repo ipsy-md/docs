@@ -75,7 +75,7 @@ Here it is how you turn the previous questions in parameters for slurm script.
 #SBATCH --mail-type=BEGIN,END,FAIL            
 #SBATCH --cpus-per-task=1                    
 #SBATCH --nodes=1                             
-#SBATCH --mem-per-cpu=1g                     
+#SBATCH --mem=4G                     
 #SBATCH --time=01:00:00                       
 #SBATCH --output=logs/%x-%A-%a.out 
 #SBATCH --error=logs/%x-%A-%a.err  
@@ -90,12 +90,12 @@ Here it is how you turn the previous questions in parameters for slurm script.
 - `#SBATCH --mail-type=BEGIN,END,FAIL`: get an email at the beginning of a job, end of a job and when a job fails, respectively.
 - `#SBATCH --cpus-per-task=1`: number of CPUs you request for a task
 - `#SBATCH --nodes=1`: number of requested nodes, keep it to 1, it is fine for our type of analyses.
-- `#SBATCH --mem-per-cpu=1g`: amount of memory you request per cpu. 
+- `#SBATCH --mem=4G`: amount of memory  you request. 
 - `#SBATCH --time=01:00:00`: maximum duration you assign to a job (D-HH:MM:SS, for example `--time=00:01:00` is a one minute job).
 - `#SBATCH --output=logs/%x-%A-%a.out`: here you specify where job printed output should be saved, specifically in the folder `slurm-logs`. 
 - `#SBATCH --error=logs/%x-%A-%a.err`: here you specify where job related errors should be saved, again in the folder `logs`.
 
-Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the amount of RAM you request in a node.
+Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount of RAM you request per CPU.
 
 !!! Warning "Be aware of memory and time"
     - If your job exceeds the requested memory, your job will be aborted.
@@ -121,7 +121,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --job-name=my_job
     #SBATCH --cpus-per-task=1
     #SBATCH --nodes=1
-    #SBATCH --mem-per-cpu=1g
+    #SBATCH --mem=4G
     #SBATCH --time=01:00:00
     #SBATCH --output=logs/%x-%A-%a.out
     #SBATCH --error=logs/%x-%A-%a.err
@@ -178,7 +178,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --nodes=1                # number of nodes
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
-    #SBATCH --mem-per-cpu=1G         # memory per cpu
+    #SBATCH --mem=4G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
     #SBATCH --output=logs/%x-%A-%a.out   # printed output
     #SBATCH --error=logs/%x-%A-%a.err     # errors
@@ -204,7 +204,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --nodes=1                # number of nodes
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
-    #SBATCH --mem-per-cpu=1G         # memory per cpu
+    #SBATCH --mem=4G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
     #SBATCH --output=logs/%x-%A-%a.out   # printed output
     #SBATCH --error=logs/%x-%A-%a.err     # errors
@@ -243,7 +243,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --job-name=my_job
     #SBATCH --cpus-per-task=1
     #SBATCH --nodes=1
-    #SBATCH --mem-per-cpu=1g
+    #SBATCH --mem=4G
     #SBATCH --time=01:00:00
     #SBATCH --output=logs/output-%A-%a.out
     #SBATCH --error=logs/error-%A-%a.err
@@ -270,7 +270,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --job-name=my_job
     #SBATCH --cpus-per-task=1
     #SBATCH --nodes=1
-    #SBATCH --mem-per-cpu=1g
+    #SBATCH --mem=4G
     #SBATCH --time=01:00:00
     #SBATCH --output=logs/output-%A-%a.out
     #SBATCH --error=logs/error-%A-%a.err
@@ -337,7 +337,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --nodes=1                # number of nodes
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
-    #SBATCH --mem-per-cpu=1G         # memory per cpu
+    #SBATCH --mem=4G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
     #SBATCH --output=logs/output-%A-%a.out   # printed output
     #SBATCH --error=logs/error-%A-%a.err     # errors
@@ -363,7 +363,7 @@ Instead of `--mem-per-cpu` you could also use `--mem`, the latter specifies the 
     #SBATCH --nodes=1                # number of nodes
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
-    #SBATCH --mem-per-cpu=1G         # memory per cpu
+    #SBATCH --mem=4G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
     #SBATCH --output=logs/output-%A-%a.out   # printed output
     #SBATCH --error=logs/error-%A-%a.err     # errors
@@ -471,7 +471,7 @@ As a general rule, when your are setting up new slurm jobs, test that everything
 
 **If you are clueless about your job resource requirements, you could adopt the following approaches:**
 
-- **Trial and error:** Set up one job using a very liberal estimate for the resources (e.g. `--mem-per-cpu`, `--time`). Once the job is over, you can use one of the following two commands to see the actual resources used and implement them in your future jobs:
+- **Trial and error:** Set up one job using a very liberal estimate for the resources (e.g. `--mem`, `--time`). Once the job is over, you can use one of the following two commands to see the actual resources used and implement them in your future jobs:
 
     ```bash
     # job-id is the id of your job
