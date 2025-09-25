@@ -308,6 +308,11 @@ Before you start converting your data we strongly recommend to go through the [B
 
     Other BIDS accepted formats, although not recommended by BIDS, are Biosemi: `.bdf` and EEGLAB: `.fdt`, `.set`.
 
+    ### EEG conversion with EEG-BIDS (EEGLAB plugin, Matlab based)
+
+    EEGLAB plugin EEG-BIDS is a very handy and extremely intuitive tool for converting eeg data into BIDS and working with bids datasets in EEGLAB. It is a GUI based tool which makes it simple to convert data, populate metadata files and validate the converted dataset.
+    [Here](https://eeglab.org/plugins/EEG-BIDS/) you can find the official tutorial.
+
     ### EEG conversion with Fieldtrip (Matlab based)
 
     The following code has been adapted from an example provided in the [fieldtrip page](https://www.fieldtriptoolbox.org/example/bids_eeg/), for further information read the official documentation.
@@ -391,7 +396,6 @@ Before you start converting your data we strongly recommend to go through the [B
         └── sub-20_scans.tsv
 
     ```
-
 
     ### EEG conversion with MNE (Python based)
 
