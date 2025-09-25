@@ -14,10 +14,13 @@ We recommend you to go through the [BIDS specification page](https://bids-specif
 ├── README
 └── sub-01
     ├── anat
-    │   ├── sub-01_T2starw.nii.gz
-    │   └── sub-01_T1W.nii.gz
+    │   ├── sub-01_T1w.nii.gz
+    │   ├── sub-01_T1w.json
+    │   ├── sub-01_T2w.nii.gz
+    │   └── sub-01_T2w.json
     ├── func
     │   ├── sub-01_task-mybrillianttask_bold.nii.gz
+    │   ├── sub-01_task-mybrillianttask_bold.json
     │   └── sub-01_task-mybrillianttask_events.tsv
     └── task-mybrillianttask_bold.json
 
