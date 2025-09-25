@@ -310,8 +310,8 @@ Before you start converting your data we strongly recommend to go through the [B
 
     ### EEG conversion with EEG-BIDS (EEGLAB plugin, Matlab based)
 
-    EEGLAB plugin EEG-BIDS is a very handy and extremely intuitive tool for converting eeg data into BIDS and working with bids datasets in EEGLAB. It is a GUI based tool which makes it simple to convert data, populate metadata files and validate the converted dataset.
-    [Here](https://eeglab.org/plugins/EEG-BIDS/) you can find the official tutorial.
+    [EEGLAB](https://sccn.ucsd.edu/eeglab/) plugin [EEG-BIDS](https://eeglab.org/plugins/EEG-BIDS/#eeg-bids-vs-other-bids-software) is a very handy and extremely intuitive tool for converting eeg data into BIDS and working with bids datasets in EEGLAB. It is a GUI based tool which makes it simple to convert data, populate metadata files and validate the converted dataset.
+    [Here](https://eeglab.org/plugins/EEG-BIDS/EEG%E2%80%90BIDS-docs.html) you can find the official documentation.
 
     ### EEG conversion with Fieldtrip (Matlab based)
 
