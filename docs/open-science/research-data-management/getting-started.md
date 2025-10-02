@@ -5,11 +5,11 @@ Science is an incremental process that builds on prior findings and technical ad
 ## What is Research Data Management?
 
 Research Data Management (RDM) is the collection of processes (e.g. organization, documentation, publication and archiving) that researchers adopt to govern their data, during data collection, data analysis and after data have been published.</b>  
-Although data differ significantly across disciplines, general principles for an open and transparent data management are shared among different fields and find their definition in the so called FAIR data principles.
+Although data differ significantly across disciplines, general principles for open and transparent data management are shared among different fields and find their definition in the so called FAIR data principles.
 
 ## What are the FAIR principles?
 
-In recent years, in order to provide a common ground for an open a transparent research, scientists from different fields have put forward general guidelines known as [**FAIR**](https://www.go-fair.org/fair-principles/) data principles.
+In recent years, in order to provide a common ground for open a transparent research, scientists from different fields have put forward general guidelines known as [**FAIR**](https://www.go-fair.org/fair-principles/) data principles.
 
 **FAIR** is an acronym that stands for: **F**indable, **A**ccessable, **I**nteroperable and **R**eusable
 
