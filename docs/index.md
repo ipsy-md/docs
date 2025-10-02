@@ -4,7 +4,7 @@
 
 Ipsy docs is a work in progress collection of resources, tutorials and guidelines to ease reproducible and open science at the Institute of Psychology at OvGU. 
 
-## Objectives of Ipsy Docs
+## Objectives of Ipsy docs
 
 <div class="grid cards" markdown>
 
