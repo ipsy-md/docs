@@ -61,7 +61,7 @@ Before you start converting your data we strongly recommend to go through the [B
     
     
     !!! note "Check your dicoms"
-        It is a good practice to extract your dicom files and check by yourself the file names to assess that they match with the names stored by heudiconv in the `dicominfo.tsv`.
+        It is a good practice to extract your dicom files and check that file names match with the names stored by heudiconv in the `dicominfo.tsv`.
 
 
     !!! Danger "Delete .heudiconv" 
@@ -451,7 +451,7 @@ Before you start converting your data we strongly recommend to go through the [B
 
 ## Populating metadata files
 
-TODO
+Coming soon ...
 
 ## Validate your BIDS dataset
 
