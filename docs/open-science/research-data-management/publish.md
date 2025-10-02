@@ -13,7 +13,7 @@ The following are the general questions that you should ask yourself when thinki
 - **How do I handle data with sensitive information?**
 - **Under which conditions can third-party data be re-used for my research?**
 
-Concerning the legal aspects about copyrights and personal data protection, you can refer directly to the official documents:
+Concerning the legal aspects of copyrights and personal data protection, you can refer directly to the official legal documents:
 
 Links to the official German documents.
 
@@ -34,18 +34,18 @@ There are multiple platforms to make your data public, here just a few of the mo
 - [Figshare](https://figshare.com/)
 - [Zenodo](https://zenodo.org/)
 - [RDC at ZPID](https://rdc-psychology.org/) (Intended only for psychogy/neuroscience data)
-- [OpenNeuro](https://openneuro.org/) (Intended only for neuroscientific data)
+- [OpenNeuro](https://openneuro.org/) (Intended only for psychogy/neuroscience data)
 
 !!! note "Sharing code for your publication"
-    If you expect and whish other people to have a more interactive and collaborative approach to the code of your paper,
-    consider to share it also on other platforms such as Github, Gitlab or Bitbucket. Refer to the section about [code sharing].
+    If you expect and whish other people to have a more interactive and collaborative approach your research,
+    consider to share your code on other platforms such as Github, Gitlab or Bitbucket. Refer to the section about [code sharing].
     [code sharing]: ../../code-management/sharing
  
 ## Pre-registration
 
-Pre-registration is a relatively recent approach of doing research, it is based on the assumption that registering in advance, to a dedicated platform, a detailed plan of your experimental and analysis procedures would contribute to a more transparent and reproducible research.
+Pre-registration is a relatively recent approach of doing research, it is based on the assumption that registering in advance, to a dedicated platform, a detailed plan of your experimental and analysis procedures contributes to a more transparent and reproducible research.
 
-One of the fundamental aspects of pre-registration is a clear distinction between **confirmatory-hypothesis** and **exploratory-hypothesis**, or in other words the distinction between the hypothesis put forward before data collection (the prediction)  and the exploratory post-hoc hypothesis (the postdiction). Pre-gistration does not favor one or the other hypothesis, it considers both fundamental for the advancement of science, but it requires a net distinction when data and results are published.
+One of the fundamental aspects of pre-registration is a clear distinction between **confirmatory-hypothesis** and **exploratory-hypothesis**, or in other words the distinction between the hypothesis put forward before data collection (the prediction)  and the exploratory post-hoc hypothesis (the postdiction). Pre-gistration does not favor one or the other hypothesis, it considers both fundamental for the advancement of science, but it requires reseachers to make a net distinction between the two hypotheses when data and results are published.
 
 For a more comprehensive presentation of pre-registration refer to [Nosek et al, 2018](https://www.pnas.org/doi/10.1073/pnas.1708274114).
 
@@ -53,7 +53,7 @@ You can pre-register your research in the [center for open science](https://www.
 
 ## Registered reports
 
-A registered report is an alternative publishing approach that consists of pre-registering and submitting to peer-review a protocol of a study you would like to conduct. This approach aims at enhancing results replicability by ensuring that rigorous methods are followed, that experiments do not suffer from low statistical power and by preventing results selection.
+A registered report is an alternative research approach that consists of pre-registering and submitting to peer-review a protocol of a study you would like to conduct. This approach aims at enhancing results replicability by ensuring that rigorous methods are followed, that experiments do not suffer from low statistical power and by preventing results selection.
 
 #### General procedure for registered reports
 
@@ -66,11 +66,11 @@ A registered report is an alternative publishing approach that consists of pre-r
 
 ## Preprints
 
-Preprints are scientific papers that authors make publicly available on dedicated platforms before being peer-reviewed and being published on a canonical scientific journal.
+Preprints are scientific papers that authors make publicly available on dedicated platforms before being peer-reviewed and being published canonical scientific journals.
 
 ### Scope of preprints
 
-Preprints facilitate, broaden and accelerate the dissemination of your research with no costs. A paper can be easily read by everyone, given that preprint platforms are freely accessable, it can be commented, shared and scrutinized by the scientific community and not necessarily by a close circle of researchers interested in your topic, but also by reserchers with different scientific interests and backgrounds. The obvious benefit for the community is the broader circulation of new findings and ideas, the open discussion and for the authors, the opportunity to discuss directly with the community and the chance to identify weak points or mistakes in their paper.
+Preprints facilitate, broaden and accelerate the dissemination of your research with no costs. A paper can be easily read by everyone, given that preprint platforms are freely accessible, it can be commented, shared and scrutinized by the whole scientific community and not necessarily by a close circle of researchers interested in your topic, but also by reserchers with different scientific interests and backgrounds. The obvious benefit for the community is the broader circulation of new findings and ideas, the open discussion and for the authors, the opportunity to discuss directly with the community and the chance to identify weak points or mistakes in their paper.
 
 ### What you need to know about preprints
 
@@ -83,7 +83,7 @@ Preprints facilitate, broaden and accelerate the dissemination of your research 
 ### Preprint repositories:
 
 - [PsyArxiv:](https://osf.io/preprints/psyarxiv) Dedicated to psychological research (hosted by OSF). 
-- [BioArxiv:](https://www.biorxiv.org/) Dedicated to biological research (numerous cogntive neuroscience preprints are published on BioArxiv)
-- [ArXiv:](https://arxiv.org/) Dedicated mainly to mathematics, physics, computer-science, but it can be used in case of methodological papers.
+- [BioArxiv:](https://www.biorxiv.org/) Dedicated to biological research (numerous cognitive neuroscience preprints are published on BioArxiv)
+- [ArXiv:](https://arxiv.org/) Dedicated mainly to mathematics, physics, computer-science, but it might be a good choice especially in case of methodological papers.
 - [f1000:](https://www.f1000.com/) Dedicated to life science research, it allows a public peer-review.
 - [Zenodo:](https://zenodo.org/) Dedicated to multiple disciplines.
