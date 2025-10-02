@@ -26,7 +26,7 @@ Links to the official English translation.
 - [Federal Data Protection Act](https://www.gesetze-im-internet.de/englisch_bdsg/)
 - [European data protection law](https://gdpr-info.eu/)
 
-A very effective tool to navigate through the legal questions is [iVA](https://www.berd-nfdi.de/legal-questions/) (interactive Virtual Assistant). iVA is developed by [BERD@NFDI](https://www.berd-nfdi.de/) a central resource for unstructured daata related to business, economics, and social sciences. 
+A very effective tool to navigate through the legal questions is [iVA](https://www.berd-nfdi.de/legal-questions/) (interactive Virtual Assistant). iVA is developed by [BERD@NFDI](https://www.berd-nfdi.de/) a central resource for unstructured data related to business, economics, and social sciences. 
 
 ## Where to share your data
 
