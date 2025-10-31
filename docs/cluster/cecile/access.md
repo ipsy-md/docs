@@ -172,7 +172,7 @@ The OVGU medical campus uses a separate VPN from the OVGU VPN. To be able to acc
 
 To obtain a guest account for Cecile it is necessary to obtain first a guest account at OvGU.
 
-- To do that the interested professor from Ipsy must request a guest account to the URZ by writing an email to `it-service` at `ovgu.de` with the following information about the guest researcher:
+- Guest accounts can be requested by OvGU professors belonging to Ipsy to the URZ by writing an email to `it-service` at `ovgu.de` with the following information about the guest researcher:
 
     - First name
     - Last name
@@ -180,4 +180,4 @@ To obtain a guest account for Cecile it is necessary to obtain first a guest acc
     - A private-mail address, in case the password has to be reset
     - Expiration date (Optional, max. 1 year)
 
-- Once the OvGU guest account has been obtained, the professor needs to communicate the username to the cecile admin by writing to `cecile-admins-l` at `ovgu.de`.
+- Once the OvGU guest account has been obtained, the professor needs to communicate the guest username to the cecile admin by email (to`cecile-admins-l` at `ovgu.de`). The cluster administrator will then set up a cecile account for the guest researcher.
