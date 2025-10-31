@@ -168,7 +168,7 @@ The OVGU medical campus uses a separate VPN from the OVGU VPN. To be able to acc
     The DNS name resolution for `cecile.ovgu.de` does not work from the medical campus. Workaround: use the IP address directly.
 
 
-### How to request an guest account to access Cecile
+## How to request an guest account
 
 To obtain a guest account for Cecile it is necessary to obtain first a guest account at OvGU.
 
