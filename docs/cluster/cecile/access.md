@@ -166,3 +166,18 @@ The OVGU medical campus uses a separate VPN from the OVGU VPN. To be able to acc
 
 !!! Warning Known Issues
     The DNS name resolution for `cecile.ovgu.de` does not work from the medical campus. Workaround: use the IP address directly.
+
+
+### How to request an guest account to access Cecile
+
+To obtain a guest account for Cecile it is necessary to obtain first a guest account at OvGU.
+
+- To do that the interested professor from Ipsy must request a guest account to the URZ by writing an email to `it-service` at `ovgu.de` with the following information about the guest researcher:
+
+    - First name
+    - Last name
+    - Date of birth
+    - A private-mail address, in case the password has to be reset
+    - Expiration date (Optional, max. 1 year)
+
+- Once the OvGU guest account has been obtained, the professor needs to communicate the username to the cecile admin by writing to `cecile-admins-l` at `ovgu.de`.
