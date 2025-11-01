@@ -36,6 +36,20 @@ A computational cluster is a collection of interconnected computers (see image b
 
 - **An editor:** Choose the editor you prefer among the available ones: [**Nano**](https://www.nano-editor.org/) (the most user friendly), [**Vim**](https://www.vim.org/), [**Emacs**](https://www.gnu.org/software/emacs/).
 
+## How to request a guest account
+
+To obtain a guest account for Cecile it is necessary to obtain first a guest account at OvGU.
+
+- Guest accounts can be requested by OvGU professors belonging to Ipsy to the URZ by writing an email to `it-service` at `ovgu.de` with the following information about the guest researcher:
+
+    - First name
+    - Last name
+    - Date of birth
+    - A private-mail address, in case the password has to be reset
+    - Expiration date (Optional, max. 1 year)
+
+- Once the OvGU guest account has been obtained, the professor needs to communicate the guest username to the cecile admin by email (to`cecile-admins-l` at `ovgu.de`). The cluster administrator will then set up a cecile account for the guest researcher.
+
 ## How to make a fair usage of the cluster
 
 !!! Warning "The cluster is a small community"
