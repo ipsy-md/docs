@@ -32,9 +32,9 @@
 
 - Methods used in the project (e.g: "behavioral", "eeg", "eye-tracking", "fmri/mri", "meg", "physiological", "questionnaires", "tms").
 
-- Provide the size of your source data (format: 2GB). With source data we mean data that did not undergo any pre-processing, for example DICOM size for MRI (not niftis), .bdf size or similar for EEG.
+- Provide the total size of your source data (format: 200GB). With source data we mean data that did not undergo any pre-processing, for example DICOM size for MRI (not niftis), .bdf size or similar for EEG.
 
-- Provide the size of the derivative data  (format: 10GB), as for the previous case if you do not know the exact size, provide a reasonable estimate, you could ask a more experienced person in your group who has a similar project.
+- Provide the total size of the derivative data  (format: 400GB), as for the previous case if you do not know the exact size, provide a reasonable estimate, you could ask a more experienced person in your group who has a similar project.
 
 - Please indicate the equipment used to collect your data (e.g. name and type of the MRI scan, if you do not know, you can either check in the website of the institute, or in the protocol that the technician might have provided you)
 
