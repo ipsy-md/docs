@@ -1,6 +1,6 @@
 # Software stack
 
-In Cecile softwares are provided systemwide through a so called **software stack**, a collection of softwares, which is generated using the [**Spack package manager**](https://spack.io/).
+In Cecile software are provided systemwide through a so called **software stack**, a collection of softwares, which is generated using the [**Spack package manager**](https://spack.io/).
 
 A software stack contains a number of softwares necessary for your analysis and many more. If any software you might need is missing from the stack you need to contact `cecile-admins-l at ovgu.de`.
 
@@ -33,7 +33,7 @@ Unlike the environment method, this method is extremely fast and it allows you t
     For example all python software are preceded by `py-`, thus to load `pandas` you need to type: `module load py-pandas`.
     This naming convention is limited to stack, in your code software must have their usual names.
 
-=== "Current stack"
+=== "Current stack:"
 
     ```bash
     . /software/current/env.sh
