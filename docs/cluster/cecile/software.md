@@ -1,6 +1,6 @@
 # Software stack
 
-In Cecile softwares are provided systemwise through a so called **software stack**, a collection of softwares, which is generated using the [**Spack package manager**](https://spack.io/).
+In Cecile softwares are provided systemwide through a so called **software stack**, a collection of softwares, which is generated using the [**Spack package manager**](https://spack.io/).
 
 A software stack contains a number of softwares necessary for your analysis and many more. If any software you might need is missing from the stack you need to contact `cecile-admins-l at ovgu.de`.
 
