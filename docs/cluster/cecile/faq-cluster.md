@@ -76,4 +76,4 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 
 - **I cannot start an Open OnDemand interactive session and I get the error: `Disk quota exceeded @ ...`**
 
-    You have just reached the storage quota available for your `home` directory; Just as you cannot write any new files to the `home` directory, neither can OOD. You should simply remove some files from your `home` directory and restart the session. For more information about quotas and this specific issue, please refer to relevant [paragraph](../cluster/cecile/data.md/#data-storage-quotas) and the specific warning box.
+    You have just reached the storage quota available for your `home` directory; just as you cannot write any new files to the `home` directory, neither can OOD. You should simply remove some files from your `home` directory and restart the session. For more information about quotas and this specific issue, please refer to relevant [paragraph](../cluster/cecile/data.md/#data-storage-quotas) and the specific warning box.
