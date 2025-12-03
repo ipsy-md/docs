@@ -25,7 +25,7 @@ Ipsy docs is a work in progress collection of resources, tutorials and guideline
 [Computational cluster]: cluster
 
 <div class="grid cards" markdown>
-    :material-frequently-asked-questions:  &nbsp; __[Frequently Asked Questions]__
+-   :material-frequently-asked-questions:  &nbsp; __[Frequently Asked Questions]__
 </div>
 [Frequently Asked Questions]: cluster/cecile/faq-cluster/
 
