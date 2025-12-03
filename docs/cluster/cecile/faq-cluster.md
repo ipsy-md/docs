@@ -71,3 +71,9 @@ If you have a very common problem it might be covered in this FAQ section, if yo
     1. After loading the software stack, you can use the command `module avail` to print the list of available software.
     2. Some software in the software stack have slightly different names, for example python packages are called `py-<package name>` (e.g. `py-pandas`) or R packages are all called `r-<library name>`.
     3. If you cannot still find the software among the available software that means that the software is not yet included in the software stack. Please contact cecile-admins-l at ovgu.de to request the software.
+
+## Open OnDemand
+
+- **I cannot start and Open OnDemand interactive session and I get the error: `Disk quota exceeded @ ...`**
+
+    You have just reached the storage quota available in your `home` directory; as you cannot write any new file in your `home` so cannot OOD. You should simply remove some files from your `home` directory and restart the session. For more information about quotas and this specific issue, please refer to relevant [paragraph](../cluster/cecile/data.md/#data-storage-quotas) and the specific warning box.
