@@ -24,6 +24,11 @@ Ipsy docs is a work in progress collection of resources, tutorials and guideline
 [Open science]: open-science/research-data-management/getting-started/
 [Computational cluster]: cluster
 
+<div class="grid cards" markdown>
+    :material-frequently-asked-questions:  &nbsp; __[Frequently Asked Questions]__
+</div>
+[Frequently Asked Questions]: cluster/cecile/faq-cluster/
+
 !!! note "Before starting"
     These pages require little prior knowledge, even if you are an experienced researcher, we recommend you to go through them and to read carefully the sections dedicated to the cluster usage, data and backups.
 
