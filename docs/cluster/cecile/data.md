@@ -561,6 +561,12 @@ As a byproduct, quotas help you to keep your project much more tidy and force yo
 | `scratch`   |  **1 TB**   | 
 
 
+!!! warning "Be aware of home quota and OOD"
+    If your `home` quota has been reached, you will be unable to write any new file in it, for the same reason, **Open OnDemand** will be unable to write any new log file in your `home` and will stop working. You will see an error like the one in the image below; do not panic, just delete some files from your home, and remember, your home is just an entry point, it is not a directory to store data.
+    <figure markdown="span">
+        ![QUOTA_ERROR](../images/OOD_quota_error.png){ width="900" }
+        <figcaption></figcaption>
+    </figure>    
 
 
 ## Scratch: What it is and how to use it
