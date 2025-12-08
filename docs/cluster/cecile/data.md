@@ -119,7 +119,7 @@ This functionality allows you to access and interact files contained your `group
     </figure>
     This is a known bug that might be fixed in future Open OnDemand releases. We suggest you to use the shell to list your files when this issue emerges. 
 
-## How to create a project on Cecile
+## How to request a project on Cecile
 
 As mentioned in the research planning section, we adopt a specific project workflow, please follow carefully the next steps to create a project:
 
