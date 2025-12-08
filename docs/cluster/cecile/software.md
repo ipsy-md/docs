@@ -1,8 +1,8 @@
 # Software stack
 
-In Cecile software are provided systemwide through a so called **software stack**, a collection of softwares, which is generated using the [**Spack package manager**](https://spack.io/).
+In Cecile software are provided systemwide through a so called **software stack**, a collection of software, which is generated using the [**Spack package manager**](https://spack.io/).
 
-A software stack contains a number of softwares necessary for your analysis and many more. If any software you might need is missing from the stack you need to contact `cecile-admins-l at ovgu.de`.
+A software stack contains a number of software necessary for your analysis and many more. If any software you need is missing from the stack you may contact `cecile-admins-l at ovgu.de` to request it.
 
 
 ## Type of stacks
@@ -21,7 +21,7 @@ Currently there are **two kinds of stacks** available:
 
 ## How to use the stacks
 
-There are multiple ways to access the stack depending on the control you want over the versions of softwares you would like to use:
+There are multiple ways to access the stack depending on the control you want over the versions of software you would like to use:
 
 ### Via modules
 
@@ -85,7 +85,7 @@ Instead of loading every package individually, you can activate an evironment co
     python
     ```
 
-    In order to see which softwares are available in the environment type the following command:
+    In order to see which software are available in the environment type the following command:
 
     ```bash
     module avail
@@ -103,7 +103,7 @@ Instead of loading every package individually, you can activate an evironment co
     python
     ```
 
-    In order to see which softwares are available in the environment type the following command:
+    In order to see which software are available in the environment type the following command:
 
     ```bash
     module avail
