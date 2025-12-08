@@ -16,7 +16,7 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 
 - **I would like to put my data on Cecile, what should I do?**
 
-    Data on Cecile are organized as `projects`. A project can be requested to the admin after filling in a questionnaire. Please, read the relevant [information](../cecile/data.md/#how-to-create-a-project-on-cecile).
+    Data on Cecile are organized as `projects`. A project can be requested to the admin after filling in a questionnaire. Please, read the relevant [information](../cecile/data.md/#how-to-request-a-project-on-cecile).
 
 - **I am trying to transfer data from Cecile to my local computer via `rsync`, but it fails with the following error: `rsync: mkdir "/home/my-local-computer/Documents" failed: No such file or directory (2) rsync error: error in file IO (code 11) at main.c(663) [Receiver=3.1.3]`.**
 
