@@ -143,7 +143,7 @@ In `derivatives`, unlike `rawdata`, you have the freedom to create sub-folders f
  
 
 !!! note "Mirroring derivatives and code structure"
-    We **strongly recommend** to mirror the sub-folder names between `derivatives` and `code` to keep an intuitive relationship between code and data.
+    We **strongly recommend** mirroring the sub-folder names between `derivatives` and `code` to keep an intuitive relationship between code and data.
 
 !!! tip "Good naming practices"
     As you know files and folders naming is an essential aspect of BIDS and the FAIR principles, we suggest you to look into this very helpful [page](https://book.the-turing-way.org/project-design/info-management/filenaming) to learn about good naming practices and machine readable names.  
