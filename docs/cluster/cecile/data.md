@@ -131,7 +131,7 @@ As mentioned in the research planning section, we adopt a specific project workf
 
 ### Project structure
 
-The project structure follows a specific BIDS structure (see examples in the tabs below). Such a structure will be generated upon project creation. According to BIDS, the structure we adopt requires only `rawdata` to be BIDS compliant, however we strongly recommend that also `derivatives` are BIDS compliant. 
+A project follows a specific BIDS structure (see examples in the tabs below). Such a structure will be generated upon project creation. Only `rawdata` must to be BIDS compliant, however we strongly recommend that also `derivatives` are BIDS compliant. 
 
 #### How to handle derivatives and code
 
