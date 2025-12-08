@@ -22,14 +22,17 @@ Documenting your code is not only advantageous for other potential users, but al
 
 - Provide explanations about inputs, outputs and types for functions and classes according to the language style.
 - Provide one or more toy examples that the user can easily run.
-- Provide explanations for lines of code that might have some criticalities, or some peculiarities that might be hard to figure out.
+- Provide ad hoc explanations for lines of code that might have some criticalities, or some peculiarities that might be hard to understand.
 
-**README file:** A README file (as Markdown) is one of the most common way to document code. It should include:
+**README file:** A README file is one of the most common way to document code. It should include:
 
 - A brief introduction explaining the scope of the code.
-- An installation procedure, the list of dependencies (libraries needed for the code to run) and requirements (e.g. specific version of a programming language and/or libraries).
-- A simple description of the code structure, especially if your code contains different interconnected parts.
-- A usage description and a working example.
+- An installation procedure, 
+- List of dependencies (libraries needed for the code to run) and requirements (e.g. specific version of a programming language and/or libraries).
+- Environment(s) where the code was tested/used (e.g. Ubuntu 24.04 lts).
+- A simple description of code structure, especially if your code contains different interconnected parts.
+- A clear usage description and a simple working example.
+- References: If your code is based on articles or specific methods, provide a reference to the methods.
 - Acknowledgements.
 
 ### Choose a code hosting platform 
@@ -37,8 +40,8 @@ Documenting your code is not only advantageous for other potential users, but al
 [Github](https://github.com/) and [Gitlab](https://gitlab.com/gitlab-org/gitlab) are just a few of the platforms that allow code sharing, such platforms, however, are not just public storages for code, but they are tools for collaborative projects. The advantage of using such platforms during your research are diverse:
 
 - They allow to share and document your code with your publication.
-- They rely on `git`, meaning that you can modify and keep track of your code locally through git and transfer (`push`) your changes to the version of your code hosted on Github or other platforms.
-- They allow to work easily on the same project with your collaborators.
+- They rely on `git`, meaning that you can modify and keep track of your code locally through git and transfer (`push`) your changes to Github or other platforms.
+- They allow easily collaborate at the same project.
 - They give you a free and safe backup for your code.
 - They allow other people to use your code, help you to find potential issues and improve your code.
 
