@@ -14,11 +14,11 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 
 ## Cecile accounts
 
-- **How can I get an account for Cecile?**
+- **How can I get an account for the Cecile cluster?**
 
-    If you are part of Ipsy, you just need to contact the claster admin at `cecile-admins-l at ovgu.de`. If you are not part of Ipsy, but you work at OvGU, a professor of Ipsy must request or sponsor your account.
+    If you are part of Ipsy, you just need to contact the cluster admin at `cecile-admins-l at ovgu.de`. If you are not part of Ipsy, but you work at OvGU, a professor of Ipsy must request or sponsor your account.
 
-- **How can I request a guest account for Cecile?**
+- **How can I request a guest account for the Cecile cluster?**
 
     In case you are a guest at OvGU and need an account on Cecile, or you need an account for a guest researcher, please read the information in this [paragraph](../../cluster/#how-to-request-a-guest-account) 
 
