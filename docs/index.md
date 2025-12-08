@@ -27,8 +27,6 @@ Ipsy docs is a work in progress collection of resources, tutorials and guideline
 <div class="grid cards" markdown>
 -   :material-frequently-asked-questions:  &nbsp; __[Frequently Asked Questions]__
 
-    ---
-
 -   :material-folder-account:  &nbsp; __[How to request a project]__
 </div>
 [Frequently Asked Questions]: cluster/cecile/faq-cluster/
