@@ -67,7 +67,7 @@ As a starting point, you should make sure to gain a few principles of good codin
 
 - **Make it readable:** Code can easily become convoluted and hard to read, try to make it readable by following style and guidelines of your language of choice and adopting the previous points of this list.
 
-- **Read other people code:** Reading other people code teaches you how more advance coders approach a problem and write their own code. At the same time you are also going to encounter a huge amount of bad code, this will help you understand what not to do (see also antipatterns in [python](https://docs.quantifiedcode.com/python-anti-patterns/) and [R](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf) to know what bad habits to avoid). 
+- **Read other people code:** Reading other people code teaches you how more advanced coders approach a problem and write their own code. At the same time you are also going to encounter a huge amount of bad code, this will help you understand what not to do (see also antipatterns in [python](https://docs.quantifiedcode.com/python-anti-patterns/) and [R](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf) to know what bad habits to avoid). 
 
 - **Use helpful tools**: Use [linters](https://en.wikipedia.org/wiki/Lint_(software)) and other softwares that can help you identify issues in your code (e.g. formatters). 
     - **Matlab:** [codeIssues](https://www.mathworks.com/help/matlab/ref/codeissues.html)
@@ -84,7 +84,7 @@ As a starting point, you should make sure to gain a few principles of good codin
 ## Language specific styles and principles:
 
 Although the previous principles apply to most of the programming languages you will encounter, each language follows its own peculiar conventions.
-Style conventions are not the result of a pure aestethic choice, but they aim at specific practical goals, such as increasing readibility and reducing the chance to produce bugs. 
+Style conventions are not the result of a pure aestethic choice, but they aim at specific practical goals, such as increasing readibility and reducing the chance of produging bugs. 
 
 **Styles and conventions of the major languages used in cognitive neuroscience:**
 As a rule of thumb, you do not need to memorize all the language conventions, but it would be a good starting point to read the main points and to start including them immediately in your code. With time you will be able to include more and more conventions into your code.
