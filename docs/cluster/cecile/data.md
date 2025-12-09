@@ -360,6 +360,13 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
                 <figcaption></figcaption>
             </figure>
 
+        !!! note "Preserving timestamps"
+            It is always a good idea to preserve the timestamps of files; Filezilla does not do it by defaults, to force timestamps preservation open `Transfer` on the menù and check `Preserve timestamps of transferred files`
+            <figure markdown="span">
+                ![Slurm](../images/Filezilla_timestamps.png){ width="1000" }
+                <figcaption></figcaption>
+            </figure>
+
         **How to exclude files or folders during data transfer:**
 
         <figure markdown="span">
