@@ -21,9 +21,9 @@ Each node offers a pool of resources such as CPUs, which in turn contain multipl
 
 ## What do you need to do to use the cluster?
 
-- **An account:** You simply need an account, please contact `cecile-admins-l` at `ovgu.de` to obtain one.
+- **Get an account:** In order to get an account, please contact `cecile-admins-l` at `ovgu.de` to obtain one.
 
-- **Shell scripting:** If you prefer to work on the cluster via shell (the canonical way), but you have no experience with shell scripting, we recommend this straighforward [shell tutorial](https://swcarpentry.github.io/shell-novice/). You do not need to master it to use the cluster, but you can use the following list to start learning the basic concepts:
+- **Learn a bit of shell scripting:** If you prefer to work on the cluster via shell (the canonical way), but you have no experience with shell scripting, we recommend this straighforward [shell tutorial](https://swcarpentry.github.io/shell-novice/). You do not need to master it to use the cluster, but you can use the following list to start learning the basic concepts:
   
     -  Where you are and how to navigate through the folders: `pwd`, `cd`
     -  How to list content (folders/files): `ls` 
@@ -34,7 +34,7 @@ Each node offers a pool of resources such as CPUs, which in turn contain multipl
     -  How to write a simple shell script and execute it</b>  
 
 
-- **An editor:** Choose the editor you prefer among the available ones: [**Nano**](https://www.nano-editor.org/) (the most user friendly), [**Vim**](https://www.vim.org/), [**Emacs**](https://www.gnu.org/software/emacs/).
+- **Choose an editor:** Choose the editor you prefer among the available ones: [**Nano**](https://www.nano-editor.org/) (the most user friendly), [**Vim**](https://www.vim.org/), [**Emacs**](https://www.gnu.org/software/emacs/).
 
 ## How to request a guest account
 
