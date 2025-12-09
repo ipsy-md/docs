@@ -2,7 +2,9 @@
 
 ## What is a computational cluster?
 
-A computational cluster is a collection of interconnected computers (see image below), called **compute nodes**, accessable and operable via a single computer called the **head node**. Each node offers a pool of resources such as CPUs, which in turn contain multiple cores, and volatile memory (RAM). The strength of a cluster comes from the collective interplay among resources which allows them to work as a unique entity able to perform computationally expensive parallel tasks (e.g. analyses, modelling etc.) otherwise difficult to achieve by a single computer. 
+A computational cluster is a collection of interconnected computers (see image below), called **compute nodes**, accessible and operable via a single computer called the **head node**. 
+
+Each node offers a pool of resources such as CPUs, which in turn contain multiple cores, and volatile memory (RAM). The strength of a cluster comes from the interplay among resources which allows them to work as a unique entity able to perform computationally expensive parallel tasks (e.g. analyses, modelling etc.) otherwise difficult to achieve by a single computer. 
 
 <figure markdown="span">
   ![Cluster](images/cluster.png){ width="500" }
@@ -11,13 +13,11 @@ A computational cluster is a collection of interconnected computers (see image b
 
 ## Why should I use a cluster instead of my own computer?
 
-- **Time**: A cluster allows you to perform computationally expensive tasks in a reduced amount of time with respect to your regular work computer.
-  
-- **Parallelization**: A typical cognitive neuroscience project requires the analysis of group of subjects, which can often take long time, by leveraging on the multiple resources, you can perform the analysis on multiple subjects virtually at the same time.
-   
-- **Security and backups**: A cluster ensures that your data are frequently backed up and protected, thus allowing also to store and analyze sensitive data (e.g. patient data).
-  
-- **Reproducible environment**: The software set-up guarantees a stable environment containing all the tools needed for your analyses that can be easily reproduced outside the cluster itself.
+- **Speed**: many more CPU cores, often with higher performance specifics than a typical laptop or desktop
+- **Volume**: main memory (RAM) and disk storage to handle very large amounts of data
+- **Parallelization**: instead of running one analysis one after another they can be run in parallel, because of the amount of resources available e.g. per subject
+- **Security and backups**: data duplication on hardware and frequent backups
+- **Reproducible environment**: software set-up guarantees a stable environment containing all the tools needed for the analyses in a reproducible way
 
 ## What do you need to do to use the cluster?
 
