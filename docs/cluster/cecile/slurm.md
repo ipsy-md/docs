@@ -220,6 +220,28 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
 
     In case you made your python script executable you can remove the line `module load python` and call the script as follows: `./python_script ${subject}` without prepending `python -u`
 
+    #### Single job with R
+
+    ```bash title="Single job R"
+    #!/bin/bash
+    #SBATCH --job-name=R_job         # job name, you give it a name you like
+    #SBATCH --nodes=1                # number of nodes
+    #SBATCH --ntasks=1               # number of tasks
+    #SBATCH --cpus-per-task=1        # cpu per task
+    #SBATCH --mem=4G                 # memory per cpu
+    #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
+    #SBATCH --output=logs/%x-%A-%a.out   # printed output
+    #SBATCH --error=logs/%x-%A-%a.err     # errors
+
+    # load the stack and the module you need
+    . /software/current/env.sh
+    module load r
+
+    subject=01
+
+    Rscript R_script.r ${subject}
+    ```
+
 === "Array job"
 
     An array job allows you to run multiple jobs in parallel.</b> 
