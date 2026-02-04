@@ -405,6 +405,31 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
 
     In case you made your python code executable you can remove the line `module load python` and call the script as follows: `./python_script ${subjects[idx]}` without prepending `python -u`
 
+    #### Job array with R
+
+    ```bash title="Array job R"
+    #!/bin/bash
+    #SBATCH --job-name=R_job         # job name, you give it a name you like
+    #SBATCH --nodes=1                # number of nodes
+    #SBATCH --ntasks=1               # number of tasks
+    #SBATCH --cpus-per-task=1        # cpu per task
+    #SBATCH --mem=4G         # memory per cpu
+    #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
+    #SBATCH --output=logs/output-%A-%a.out   # printed output
+    #SBATCH --error=logs/error-%A-%a.err     # errors
+    #SBATCH --array 0-4
+
+    # load the stack and the module you need
+    . /software/current/env.sh
+    module load python3
+
+    idx=$((SLURM_ARRAY_TASK_ID))
+
+    subjects=(01 02 03 04 05)
+
+    Rscript r_script.r ${subjects[idx]}
+
+    ```
 
     #### Job array with nested parameters
 
