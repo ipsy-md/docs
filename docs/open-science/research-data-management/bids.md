@@ -442,10 +442,9 @@ Before you start converting your data we strongly recommend to go through the [B
                     where `<matches>` can be `sub-012_task-mytaskname` and `_recoding-<label>` can be used to distinguish between two or more type of recordings e.g. `recording-breathing` and `recording-eyetracking`. In case you have multiple sessions and runs your file might be: `sub-012_ses-1_task-mytaskname_run-1-breathing_physio.tsv.gz` and the relative metadata `sub-012_ses-1_task-mytaskname_run-1-breathing_physio.json`.
 
 
-    Eye-tracking data roughly follows the principles of physiological data, but with some fundamental differences, we recommend to read the relavant section in the [official page](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/physiological-recordings.html#eye-tracking)
+    Eye-tracking data roughly follows the principles of physiological data, but with some fundamental differences, we recommend to carefully read the relevant section in the [official page](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/physiological-recordings.html#eye-tracking)
     
-    For eye-tracking data conversion, we suggest to use the `python` based library [`eye2bids`](https://github.com/bids-standard/eye2bids). It works quite well with data collected with all the major eye-trackers. The library is already available on Cecile.
-    Alternatively, you can use [Fieldtrip](https://www.fieldtriptoolbox.org/example/other/bids_eyetracker/), already available on cecile.
+    For eye-tracking data conversion, we suggest to use the `python` based library [`eye2bids`](https://github.com/bids-standard/eye2bids). It works quite well with data collected with all the major eye-trackers. Alternatively, you can use [Fieldtrip](https://www.fieldtriptoolbox.org/example/other/bids_eyetracker/); both software are already available in Cecile.
     
 
 ## Populating metadata files
