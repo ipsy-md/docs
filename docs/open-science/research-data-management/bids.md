@@ -422,8 +422,7 @@ Before you start converting your data we strongly recommend to go through the [B
     
     !!! note "Save your behavioral data already in BIDS" 
         It is convenient to save your raw behavioral files as BIDS compliant. 
-    
-    Given the large variety of structures and formats that researchers use for their behavioral experiments, we do not provide an example. 
+
     
 === "Physiological data/Eye-tracking"
     
