@@ -441,6 +441,7 @@ Before you start converting your data we strongly recommend to go through the [B
                         `<matches>[_recording-<label>]_physio.json`
                     where `<matches>` can be `sub-012_task-mytaskname` and `_recoding-<label>` can be used to distinguish between two or more type of recordings e.g. `recording-breathing` and `recording-eyetracking`. In case you have multiple sessions and runs your file might be: `sub-012_ses-1_task-mytaskname_run-1-breathing_physio.tsv.gz` and the relative metadata `sub-012_ses-1_task-mytaskname_run-1-breathing_physio.json`.
 
+    ### Eye-tracking data
 
     Eye-tracking data roughly follows the principles of physiological data, but with some fundamental differences, we recommend to carefully read the relevant section in the [official page](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/physiological-recordings.html#eye-tracking)
     
