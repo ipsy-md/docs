@@ -446,8 +446,8 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     SUBJECTS=(01 02 03 04)
     SESSIONS=("ses-01", "ses-02", "ses-03")
 
-    SUBJECT_IDX=$((SLURM_ARRAY_TASK_ID % 4))
-    SESSION_IDX=$((SLURM_ARRAY_TASK_ID % 3))
+    SUBJECT_IDX=$((SLURM_ARRAY_TASK_ID / ${#SESSIONS[@]}))
+    SESSION_IDX=$((SLURM_ARRAY_TASK_ID % ${#SESSIONS[@]}))
 
     ./my_analysis.sh --sub "sub-${SUBJECTS[SUBJECT_IDX]}" -ses "${SESSIONS[SESSION_IDX]}"
     ```
@@ -456,24 +456,23 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
 
     1. Set the array range according to the total number of jobs you need to run. In this example we have 4 subjects and 3 different sessions per subject, thus we can set the `--array` range as `0-11`, which amounts to 12 jobs.
     2. Set up one array that defines the subject IDs `SUBJECTS` and another array that defines the session names `SESSIONS`.
-    3. To assign each session to each subject we can leverage on the modulus operator (take a look at [modular arithmetic](https://en.wikipedia.org/wiki/Modular_arithmetic)) to provide the correct index for all the combinations. See in the example below how the modulus allows you to obtain all the index combinations.
+    3. To assign each session to each subject we can leverage on the modulus operator (take a look at [modular arithmetic](https://en.wikipedia.org/wiki/Modular_arithmetic)) and integer division to provide the correct index for all the combinations. See in the example below how the modulus allows you to obtain all the index combinations. **Note:** this line is just extracting the length of the sessions array `${#SESSIONS[@]}`.
 
         ```bash
-        Job index  Subject index   Session index      Subject ID      Session ID
-                   (job index % 4) (job index % 3)
-        0               0               0               sub-01          ses-01  
-        1               1               1               sub-02          ses-02
-        2               2               2               sub-03          ses-03
-        3               3               0               sub-04          ses-01
-        4               0               1               sub-01          ses-02
-        5               1               2               sub-02          ses-03 
-        6               2               0               sub-03          ses-01
-        7               3               1               sub-04          ses-01
-        8               0               2               sub-01          ses-02
-        9               1               0               sub-02          ses-01
-        10              2               1               sub-03          ses-02
-        11              3               2               sub-04          ses-03
-
+        Job index   Subject index   Session index       Subject ID      Session ID                   
+        
+        0           0               0                   sub-01          ses-01
+        1           0               1                   sub-01          ses-02
+        2           0               2                   sub-01          ses-03
+        3           1               0                   sub-02          ses-01
+        4           1               1                   sub-02          ses-02
+        5           1               2                   sub-02          ses-03
+        6           2               0                   sub-03          ses-01
+        7           2               1                   sub-03          ses-02
+        8           2               2                   sub-03          ses-03
+        9           3               0                   sub-04          ses-01
+        10          3               1                   sub-04          ses-02
+        11          3               2                   sub-04          ses-03
         ```
 
     4. Then extract subject IDs and sessions by using the related indices.
