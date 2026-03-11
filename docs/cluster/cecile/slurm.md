@@ -456,7 +456,7 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
 
     1. Set the array range according to the total number of jobs you need to run. In this example we have 4 subjects and 3 different sessions per subject, thus we can set the `--array` range as `0-11`, which amounts to 12 jobs.
     2. Set up one array that defines the subject IDs `SUBJECTS` and another array that defines the session names `SESSIONS`.
-    3. To assign each session to each subject we can leverage on the modulus operator (take a look at [modular arithmetic](https://en.wikipedia.org/wiki/Modular_arithmetic)) and integer division to provide the correct index for all the combinations. See in the example below how the modulus allows you to obtain all the index combinations. **Note:** this line is just extracting the length of the sessions array `${#SESSIONS[@]}`.
+    3. To assign each session to each subject we can leverage on the modulus operator (take a look at [modular arithmetic](https://en.wikipedia.org/wiki/Modular_arithmetic)) and integer division to provide the correct index for all the combinations. See in the example below how the modulus allows you to obtain all the index combinations. **Note:** this line `${#SESSIONS[@]}` is just extracting the length of the sessions array.
 
         ```bash
         Job index   Subject index   Session index       Subject ID      Session ID                   
