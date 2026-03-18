@@ -63,7 +63,7 @@ In order to specify a job in Slurm, you need to make a few decisions and provide
     3. How much memory does your job need?</b>  
     4. Does your job require any special hardware feature?
 
-The following parameters are not all mandatory, but we **strongly recommend** to define all of them. If you do not define them properly your job might not run as expected, might stop or even fail and you might involuntarily take resources away from other users.
+The following parameters are not mandatory, but we **recommend** to get familiar with them if you need to customize your job. In case you do not specify the following parameters, Slurm will use the default ones.
 
 Here it is how you turn the previous questions in parameters for slurm script.
 
