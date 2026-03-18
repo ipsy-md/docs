@@ -58,7 +58,7 @@ In order to specify a job in Slurm, you need to make a few decisions and provide
 
 !!! note "Ask yourself the following questions before setting up your job"
 
-    1. How long does your job need to run?</b>  
+    1. How long will your job run approximately?</b>  
     2. How many CPUs does your job need?</b>  
     3. How much memory does your job need?</b>  
     4. Does your job require any special hardware feature?
