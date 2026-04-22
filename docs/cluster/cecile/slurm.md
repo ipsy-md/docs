@@ -30,7 +30,7 @@ There are different types of jobs in slurm (e.g. single jobs, interactive jobs e
         Add the so called **shebang** on top of your bash script, it will tell the system to use the bash interpreter to run the code:
         
         ```bash
-        #!/bin/bash
+        #!/usr/bin/env bash
         ```
         Once you have done that, run the following command to make your script exacutable:
         
@@ -68,13 +68,13 @@ The following parameters are not mandatory, but we **recommend** to get familiar
 Here it is how you turn the previous questions in parameters for slurm script.
 
 ```bash title="Setting Slurm parameters" linenums="1"
-#!/bin/sh 
+#!/usr/bin/env bash 
 
 #SBATCH --job-name=my_job
 #SBATCH --mail-user=<name.lastname>@ovgu.de  
-#SBATCH --mail-type=BEGIN,END,FAIL            
-#SBATCH --cpus-per-task=1                    
-#SBATCH --nodes=1                             
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --ntasks=1          
+#SBATCH --cpus-per-task=1                                              
 #SBATCH --mem=4G                     
 #SBATCH --time=01:00:00                       
 #SBATCH --output=logs/%x-%A-%a.out 
@@ -89,7 +89,6 @@ Here it is how you turn the previous questions in parameters for slurm script.
 - `#SBATCH --mail-user=<name.lastname>@ovgu.de`: your email address, in case you want to receive a job feedback by email.
 - `#SBATCH --mail-type=BEGIN,END,FAIL`: get an email at the beginning of a job, end of a job and when a job fails, respectively.
 - `#SBATCH --cpus-per-task=1`: number of CPUs you request for a task
-- `#SBATCH --nodes=1`: number of requested nodes, keep it to 1, it is fine for our type of analyses.
 - `#SBATCH --mem=4G`: amount of memory  you request. 
 - `#SBATCH --time=01:00:00`: maximum duration you assign to a job (D-HH:MM:SS, for example `--time=00:01:00` is a one minute job).
 - `#SBATCH --output=logs/%x-%A-%a.out`: here you specify where job printed output should be saved, specifically in the folder `slurm-logs`. 
@@ -116,11 +115,11 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     The following is a prototypical slurm script. You can use the name and the extension you prefer, we recommend to use `<filename>.slurm`
 
     ```bash title="Slurm single job"
-    #!/bin/sh
+    #!/usr/bin/env bash
  
     #SBATCH --job-name=my_job
+    #SBATCH --ntasks=1 
     #SBATCH --cpus-per-task=1
-    #SBATCH --nodes=1
     #SBATCH --mem=4G
     #SBATCH --time=01:00:00
     #SBATCH --output=logs/%x-%A-%a.out
@@ -173,9 +172,9 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #### Single job with Matlab
 
     ```bash title="Single job Matlab"
-    #!/bin/bash
+    #!/usr/bin/env bash
+
     #SBATCH --job-name=matlab        # job name, you give it a name you like
-    #SBATCH --nodes=1                # number of nodes
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
@@ -199,9 +198,9 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #### Single job with python
 
     ```bash title="Single job Python"
-    #!/bin/bash
+    #!/usr/bin/env bash
+
     #SBATCH --job-name=python        # job name, you give it a name you like
-    #SBATCH --nodes=1                # number of nodes
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
@@ -223,9 +222,9 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #### Single job with R
 
     ```bash title="Single job R"
-    #!/bin/bash
+    #!/usr/bin/env bash
+
     #SBATCH --job-name=R_job         # job name, you give it a name you like
-    #SBATCH --nodes=1                # number of nodes
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G                 # memory per cpu
@@ -260,11 +259,10 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
  
 
     ```bash linenums="1" hl_lines="10"
-    #!/bin/sh
+    #!/usr/bin/env bash
 
     #SBATCH --job-name=my_job
     #SBATCH --cpus-per-task=1
-    #SBATCH --nodes=1
     #SBATCH --mem=4G
     #SBATCH --time=01:00:00
     #SBATCH --output=logs/output-%A-%a.out
@@ -287,11 +285,11 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
         In this section, we use `bash` as the reference shell for our examples because this is the default shell in Cecile. `bash` starts counting arrays from 0, but if you are using other shells like `zsh` they might start counting from 1. This means that if you use the `--array` parameter as an index, you must keep in mind where your specific shell interpreter starts counting from. If you use the default `bash` shell you can just use the examples as they are.
 
     ```bash title="Array job" 
-    #!/bin/sh
+    #!/usr/bin/env bash
 
     #SBATCH --job-name=my_job
+    #SBATCH --ntasks=1 
     #SBATCH --cpus-per-task=1
-    #SBATCH --nodes=1
     #SBATCH --mem=4G
     #SBATCH --time=01:00:00
     #SBATCH --output=logs/output-%A-%a.out
@@ -353,10 +351,9 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #### Job array with Matlab
 
     ```bash title="Array job Matlab"
-    #!/bin/bash
+    #!/usr/bin/env bash
 
     #SBATCH --job-name=matlab        # job name, you give it a name you like
-    #SBATCH --nodes=1                # number of nodes
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
@@ -380,9 +377,9 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #### Job array with python
 
     ```bash title="Array job Python"
-    #!/bin/bash
+    #!/usr/bin/env bash
+
     #SBATCH --job-name=python        # job name, you give it a name you like
-    #SBATCH --nodes=1                # number of nodes
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
@@ -408,9 +405,9 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #### Job array with R
 
     ```bash title="Array job R"
-    #!/bin/bash
+    #!/usr/bin/env bash
+
     #SBATCH --job-name=R_job         # job name, you give it a name you like
-    #SBATCH --nodes=1                # number of nodes
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
@@ -436,9 +433,13 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     A typical analysis might require to analyze different subjects with different sessions or different parameters. The following scripts exmplifies a similar case in which each subject needs to be run for three different sessions.
 
     ```bash
-    #!/bin/bash
+    #!/usr/bin/env bash
 
     #SBATCH --job-name=multi_param
+    #SBATCH --ntasks=1 
+    #SBATCH --cpus-per-task=1 
+    #SBATCH --mem=4G         
+    #SBATCH --time=00:01:00    
     #SBATCH --output=logs/%x-%A-%a.out
     #SBATCH --error=logs/%x-%A-%a.err
     #SBATCH --array 0-11
