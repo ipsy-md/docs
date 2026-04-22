@@ -4,6 +4,9 @@ In Cecile software are provided systemwide through a so called **software stack*
 
 A software stack contains a number of software necessary for your analysis and many more. If any software you need is missing from the stack you may contact `cecile-admins-l at ovgu.de` to request it.
 
+!!! note "Medusa software stack"
+    In case you need to use the old software stack used within the Medusa cluster, please contact the admin at `cecile-admins-l at ovgu.de`
+
 
 ## Type of stacks
 
@@ -164,3 +167,4 @@ To verify that the process was successful, do a right click with your mouse and 
     ![matlab](../images/matlab_regular_shortcuts.png){ width="250" }
     <figcaption></figcaption>
 </figure>
+
