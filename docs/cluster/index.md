@@ -61,6 +61,15 @@ To obtain a guest account for Cecile it is necessary to obtain first a guest acc
 - If you need to run computationally heavy tests/analyses in an interactive fashion, use **interactive jobs** in the scheduler. By doing so you will be assigned a specific resource and you will not interfere with any other users. 
 - Always think before polluting a shared space like the `group` folder with your data or other unecessary files. Do not store data or analyses in `groups/<group_name>/`, `project` is the right place to store them.
 
+## What to do when you are leaving IPSY
+
+If you have an account on Cecile and you are leaving IPSY, you are kindly required to do the following:
+
+- **Communicate** that you are about to leave IPSY to the cluster administrator at least **2 months before the contract expires**.
+- Empty your `home` in the cluster.
+- Remove all files present in your `/home/scratch` and in your projects `scratch/`.
+- Make sure that your data are clearly documented. If your `BIDS` dataset in `rawdata` is lacking some information (e.g. `.json` sidecars are not properly filled in), please make sure to add the missing information.
+
 ## Clusters at Ipsy:
 
 At ipsy we currently have two clusters: the new one, [Cecile], named after the **French neurologist Cécile Vogt**, and the old one, [Medusa], named after the **Greek mythological figure**.
