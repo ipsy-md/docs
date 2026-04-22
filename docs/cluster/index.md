@@ -67,8 +67,8 @@ If you have an account on Cecile and you are leaving IPSY, you are kindly requir
 
 - **Communicate** that you are about to leave IPSY to the cluster administrator at least **2 months before the contract expires**.
 - Empty your `home` in the cluster.
-- Remove all files present in your `/home/scratch` and in your projects `scratch/`.
-- Make sure that your data are clearly documented. If your `BIDS` dataset in `rawdata` is lacking some information (e.g. `.json` sidecars are not properly filled in), please make sure to add the missing information.
+- Remove all files present in your `/home/scratch/` and in your projects `scratch/`.
+- Make sure that your data are clearly documented. If your `BIDS` dataset in `rawdata/` is lacking some information (e.g. `.json` sidecars are not properly filled in), please make sure to add the missing information.
 
 ## Clusters at Ipsy:
 
