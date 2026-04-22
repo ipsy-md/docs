@@ -25,7 +25,7 @@ Ipsy docs is a work in progress collection of resources, tutorials and guideline
 [Computational cluster]: cluster
 
 <div class="grid cards" markdown>
-- <div align="center" markdown>:material-folder-account: &nbsp; __[How to request a project]__</div>
+-   :material-folder-account:  &nbsp; __[How to request a project]__
 </div>
 [How to request a project]: cluster/cecile/data/#how-to-request-a-project-on-cecile
 
