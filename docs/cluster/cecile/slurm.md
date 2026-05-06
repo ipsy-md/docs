@@ -430,7 +430,7 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
 
     #### Job array with nested parameters
 
-    A typical analysis might require to analyze different subjects with different sessions or different parameters. The following scripts exmplifies a similar case in which each subject needs to be run for three different sessions.
+    A typical analysis might require to run different subjects with different sessions or parameters. The following scripts exemplifies the case in which each subject needs to be run for three different sessions.
 
     ```bash
     #!/usr/bin/env bash
