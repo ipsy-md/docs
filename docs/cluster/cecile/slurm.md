@@ -180,7 +180,7 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --mem=4G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
     #SBATCH --output=logs/%x-%A-%a.out   # printed output
-    #SBATCH --error=logs/%x-%A-%a.err     # errors
+    #SBATCH --error=logs/%x-%A-%a.err    # errors
 
     ## load the software stack
     . /software/current/env.sh
@@ -206,7 +206,7 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --mem=4G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
     #SBATCH --output=logs/%x-%A-%a.out   # printed output
-    #SBATCH --error=logs/%x-%A-%a.err     # errors
+    #SBATCH --error=logs/%x-%A-%a.err    # errors
 
     # load the stack and the module you need
     . /software/current/env.sh
@@ -229,8 +229,8 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G                 # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
-    #SBATCH --output=logs/%x-%A-%a.out   # printed output
-    #SBATCH --error=logs/%x-%A-%a.err     # errors
+    #SBATCH --output=logs/%x-%A-%a.out  # printed output
+    #SBATCH --error=logs/%x-%A-%a.err   # errors
 
     # load the stack and the module you need
     . /software/current/env.sh
@@ -265,8 +265,8 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --cpus-per-task=1
     #SBATCH --mem=4G
     #SBATCH --time=01:00:00
-    #SBATCH --output=logs/output-%A-%a.out
-    #SBATCH --error=logs/error-%A-%a.err
+    #SBATCH --output=logs/%x-%A-%a.out 
+    #SBATCH --error=logs/%x-%A-%a.err 
     #SBATCH --array 1-5
     ```
 
@@ -292,8 +292,8 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --cpus-per-task=1
     #SBATCH --mem=4G
     #SBATCH --time=01:00:00
-    #SBATCH --output=logs/output-%A-%a.out
-    #SBATCH --error=logs/error-%A-%a.err
+    #SBATCH --output=logs/%x-%A-%a.out 
+    #SBATCH --error=logs/%x-%A-%a.err 
     #SBATCH --array 0-4  ## 5 jobs
 
     idx=$((SLURM_ARRAY_TASK_ID))
@@ -358,8 +358,8 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
-    #SBATCH --output=logs/output-%A-%a.out   # printed output
-    #SBATCH --error=logs/error-%A-%a.err     # errors
+    #SBATCH --output=logs/%x-%A-%a.out # printed output
+    #SBATCH --error=logs/%x-%A-%a.err  # errors
     #SBATCH --array 0-4
 
     # load the stack and the module you need
@@ -384,8 +384,8 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
-    #SBATCH --output=logs/output-%A-%a.out   # printed output
-    #SBATCH --error=logs/error-%A-%a.err     # errors
+    #SBATCH --output=logs/%x-%A-%a.out # printed output
+    #SBATCH --error=logs/%x-%A-%a.err  # errors
     #SBATCH --array 0-4
 
     # load the stack and the module you need
@@ -412,8 +412,8 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
     #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
-    #SBATCH --output=logs/output-%A-%a.out   # printed output
-    #SBATCH --error=logs/error-%A-%a.err     # errors
+    #SBATCH --output=logs/%x-%A-%a.out # printed output
+    #SBATCH --error=logs/%x-%A-%a.err  # errors
     #SBATCH --array 0-4
 
     # load the stack and the module you need
