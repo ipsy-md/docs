@@ -68,11 +68,11 @@ A registered report is an alternative research approach that consists of pre-reg
 
 ## Preprints
 
-Preprints are scientific papers that authors make publicly available on dedicated platforms before being peer-reviewed and being published canonical scientific journals.
+Preprints are scientific manuscripts that authors make publicly available on dedicated platforms before being peer-reviewed and being published by canonical scientific journals.
 
 ### Scope of preprints
 
-Preprints facilitate, broaden and accelerate the dissemination of your research with no costs. A paper can be easily read by everyone, given that preprint platforms are freely accessible, it can be commented, shared and scrutinized by the whole scientific community and not necessarily by a close circle of researchers interested in your topic, but also by reserchers with different scientific interests and backgrounds. The obvious benefit for the community is the broader circulation of new findings and ideas, the open discussion and for the authors, the opportunity to discuss directly with the community and the chance to identify weak points or mistakes in their paper.
+Preprints facilitate, broaden and accelerate the dissemination of your research with no costs. A manuscript can be easily read by everyone, given that preprint platforms are freely accessible, it can be commented, shared and scrutinized by the whole scientific community and not necessarily by a close circle of researchers interested in your topic, but also by reserchers with different scientific interests and backgrounds. The obvious benefit for the community is the broader circulation of new findings and ideas, the open discussion and for the authors, the opportunity to discuss directly with the community and the chance to identify weak points or mistakes in their work.
 
 ### What you need to know about preprints
 
