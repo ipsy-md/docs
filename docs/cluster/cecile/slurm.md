@@ -390,7 +390,7 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
 
     # load the stack and the module you need
     . /software/current/env.sh
-    module load python3
+    module load python
 
     idx=$((SLURM_ARRAY_TASK_ID))
 
