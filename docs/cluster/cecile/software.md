@@ -61,7 +61,7 @@ There are **two kinds of stacks** available:
     `R` software is preceded by `r-`.
     This naming convention needs to be used when loading the software, in your code software must have their usual names.
 
-## New `current` stack, old `current` stacks and how to use them
+## New and old versions of `current` stacks and how to use them
 
 As pointed out, the `current` stack is updated and rebuilt periodically; this procedure ensures that the cluster always includes up-to-date versions of all software. However, the older versions of `current` stacks are still available on the cluster. To distinguish them from the up-to-date `current` stack, the older versions of `current` stacks get a suffix indicating the creation date, `current_<yyyy-mm-dd>`.
 
