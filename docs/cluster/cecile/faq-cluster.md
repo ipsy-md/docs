@@ -84,7 +84,7 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 
 - **How can I use and old version of a `current` stack?**
 
-    You can use an old stack sourcing it in the following way: `. /software/current_<yyyy-mm-dd>/env.sh`. Make sure to substitute the actual date of the stack you need use. For more information about old stacks, please, refer to the relevant [information](../cluster/cecile/software/#new-and-old-versions-of-current-stacks-and-how-to-use-them)
+    You can use an old stack sourcing it in the following way: `. /software/current_<yyyy-mm-dd>/env.sh`. Make sure to substitute the actual date of the stack you need use. For more information about old stacks, please, refer to the relevant [information](../cecile/software/#new-and-old-versions-of-current-stacks-and-how-to-use-them)
 
 ## Open OnDemand
 
