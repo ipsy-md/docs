@@ -8,7 +8,7 @@ A software stack contains a number of software necessary for your analysis and m
 
 There are **two kinds of stacks** available:
 
-1. **Current stack:** A stack that is kept stable throughout one semester. Each semester a new stable stack is created from scratch, which means that the new `current` stack will include only new updated versions of software; however the old `current` stacks are still available.
+1. **Current stack:** A stack that is kept stable throughout one semester. Each semester a new stable stack is created from scratch, which means that the new `current` stack will include only new up-to-date software versions; however the old versions of `current` stacks are still available on the cluster.
 2. **Experimental stack**: A flexible stack that is going to be frequently updated also upon user's request. A software requested by a user will be added to the `experimental` stack; as soon as a new `current` stack is created the new software will also added to `current`.
 
 !!! Danger "Multiple software versions in `experimental` stack"
@@ -59,16 +59,22 @@ There are **two kinds of stacks** available:
     Before loading a module it is advisable to check how the software you are interested in is called in the stack.
     For example all python software is preceded by `py-`, thus to load `pandas` you need to type: `module load py-pandas` and
     `R` software is preceded by `r-`.
-    This naming convention is limited to stack, in your code software must have their usual names.
+    This naming convention needs to be used when loading the software, in your code software must have their usual names.
 
 ## New `current` stack, old `current` stacks and how to use them
 
-As pointed out, the `current` stack gets to be updated and rebuild every semester; this procedure ensures that the cluster always includes up to date versions of all software. However, the older `current` stacks are still available and usable. In order to distinguish them from the up-to-date `current` stack, the older `current` stacks get a suffix indicating the creation date, `current_<YYYY-MM-DD>`.
+As pointed out, the `current` stack is updated and rebuilt every semester; this procedure ensures that the cluster always includes up-to-date versions of all software. However, the older versions of `current` stacks are still available on the cluster. To distinguish them from the up-to-date `current` stack, the older versions of `current` stacks get a suffix indicating the creation date, `current_<yyyy-mm-dd>`.
 
 To use an older `current` stack you only need to source the correct stack:
 
 ```bash
-. /software/current_YYYY-MM-DD/env.sh
+. /software/current_<yyyy-mm-dd>/env.sh
+```
+
+For example:
+
+```bash
+. /software/current_2024-07-28/env.sh
 ```
 
 !!! note "Medusa software stack"
