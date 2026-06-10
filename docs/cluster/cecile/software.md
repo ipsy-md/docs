@@ -8,7 +8,7 @@ A software stack contains a number of software necessary for your analysis and m
 
 There are **two kinds of stacks** available:
 
-1. **Current stack:** A stack that is kept stable throughout one semester. Each semester a new stable stack is created from scratch, which means that the new `current` stack will include only new up-to-date software versions; however the old versions of `current` stacks are still available on the cluster.
+1. **Current stack:** A stack that is kept stable for a long period of time. A new stable stack is created periodically from scratch, which means that the new `current` stack will include only new up-to-date software versions; however the old versions of `current` stacks are still available on the cluster.
 2. **Experimental stack**: A flexible stack that is going to be frequently updated also upon user's request. A software requested by a user will be added to the `experimental` stack; as soon as a new `current` stack is created the new software will also added to `current`.
 
 !!! Danger "Multiple software versions in `experimental` stack"
@@ -63,7 +63,7 @@ There are **two kinds of stacks** available:
 
 ## New `current` stack, old `current` stacks and how to use them
 
-As pointed out, the `current` stack is updated and rebuilt every semester; this procedure ensures that the cluster always includes up-to-date versions of all software. However, the older versions of `current` stacks are still available on the cluster. To distinguish them from the up-to-date `current` stack, the older versions of `current` stacks get a suffix indicating the creation date, `current_<yyyy-mm-dd>`.
+As pointed out, the `current` stack is updated and rebuilt periodically; this procedure ensures that the cluster always includes up-to-date versions of all software. However, the older versions of `current` stacks are still available on the cluster. To distinguish them from the up-to-date `current` stack, the older versions of `current` stacks get a suffix indicating the creation date, `current_<yyyy-mm-dd>`.
 
 To use an older `current` stack you only need to source the correct stack:
 
@@ -82,7 +82,75 @@ For example:
 
 ### Available `current` stacks and included software
 
-The following tables represent all the `current` stacks (up-to-date and older) currently available on the cluster and software included in each of them. 
+The following tables represent all the `current` stacks (up-to-date and older) currently available on the cluster and software included in each of them.
+
+=== "`current`"
+    | Software | Version |
+    | --- | -- |
+    | bids-validator | 2.4.1
+    | bidsonym | 0.0.6_2025-10-24
+    | connectome-workbench | 2.1.0
+    | eyelink | 2.1.1197.0_v26.04
+    | fmriprep | 25.2.5
+    | freesurfer | 8.2.0-1
+    | fsl | 6.0.7.22
+    | gdb | 17.1
+    | git-annex | 10.20230408
+    | git | 2.53.0
+    | gnuplot | 6.0.0
+    | hdf5 | 1.14.6 |
+    | headcase-pipeline | 1.0.0_2024-05-16_cca8bf2 |
+    | heudiconv | 1.4.0 |
+    | laynii | 2.10.0 |
+    | matlab | r2025b |
+    | mricron | 1.2.20211006 |
+    | mriqc | 24.0.2 |
+    | plantus | 0.1.1 |
+    | py-bidscoin | 4.6.2 |
+    | py-bidskit | 2025.11.7 |
+    | py-datalad | 1.4.0 |
+    | py-dcm2bids | 3.2.0 |
+    | py-eye2bids | 0.1.2026-03.16 |
+    | py-flake8 | 7.3.0 |
+    | py-glmsingle | main |
+    | py-jupyterlab | 4.5.8 |
+    | py-matplotlib | 3.10.9 |
+    | py-memory-profiler | 0.61.0 |
+    | py-mne-bids | 0.18.0 |
+    | py-mne | 1.11.0 |
+    | py-mypy | 2.1.0 |
+    | py-neurokit2 | 0.2.13 |
+    | py-neurora | 1.1.6.12 |
+    | py-nibabel | 5.4.2 |
+    | py-nilearn | 0.13.1 |
+    | py-nipype | 1.11.0 |
+    | py-numba | 0.65.1 |
+    | py-numpy | 2.3.5 |
+    | py-palettable | 3.3.3 |
+    | py-pandas | 2.3.3 |
+    | py-pip | 26.1 |
+    | py-pybv | 0.7.6 |
+    | py-rsatoolbox | 0.2.0 |
+    | py-scikit-learn | 1.8.0 |
+    | py-scipy | 1.17.1 |
+    | py-seaborn | 0.13.2 |
+    | py-sphinx | 9.1.0 |
+    | py-statsmodels | 0.14.6 |
+    | py-virtualenv | 21.4.1 |
+    | py-wesanderson | 0.0.4 |
+    | python | 3.14.5 |
+    | r-afex | 1.5-1 |
+    | r-bayesfactor | 0.9.12-4.8 |
+    | r-brms | 2.23.0 |
+    | r-dplyr | 1.2.0 |
+    | r-emmeans | 2.0.2 |
+    | r-ggplot2 | 4.0.3 |
+    | r-irkernel | 1.3.2 |
+    | r-rstan | 2.32.7 |
+    | r-tidyverse | 2.0.0 |
+    | r | 4.5.3 |
+    | simnibs | 4.6.0 |
+
 
 === "`current_2024-07-28`"
 
@@ -152,72 +220,6 @@ The following tables represent all the `current` stacks (up-to-date and older) c
     | simnibs | 4.5.0 |
     | texlive | 20220321 |
 
-=== "`current`"
-    | Software | Version |
-    | --- | -- |
-    | bids-validator | 2.4.1
-    | bidsonym | 0.0.6_2025-10-24
-    | connectome-workbench | 2.1.0
-    | eyelink | 2.1.1197.0_v26.04
-    | fmriprep | 25.2.5
-    | freesurfer | 8.2.0-1
-    | fsl | 6.0.7.22
-    | gdb | 17.1
-    | git-annex | 10.20230408
-    | git | 2.53.0
-    | gnuplot | 6.0.0
-    | hdf5 | 1.14.6 |
-    | headcase-pipeline | 1.0.0_2024-05-16_cca8bf2 |
-    | heudiconv | 1.4.0 |
-    | laynii | 2.10.0 |
-    | matlab | r2025b |
-    | mricron | 1.2.20211006 |
-    | mriqc | 24.0.2 |
-    | plantus | 0.1.1 |
-    | py-bidscoin | 4.6.2 |
-    | py-bidskit | 2025.11.7 |
-    | py-datalad | 1.4.0 |
-    | py-dcm2bids | 3.2.0 |
-    | py-eye2bids | 0.1.2026-03.16 |
-    | py-flake8 | 7.3.0 |
-    | py-glmsingle | main |
-    | py-jupyterlab | 4.5.8 |
-    | py-matplotlib | 3.10.9 |
-    | py-memory-profiler | 0.61.0 |
-    | py-mne-bids | 0.18.0 |
-    | py-mne | 1.11.0 |
-    | py-mypy | 2.1.0 |
-    | py-neurokit2 | 0.2.13 |
-    | py-neurora | 1.1.6.12 |
-    | py-nibabel | 5.4.2 |
-    | py-nilearn | 0.13.1 |
-    | py-nipype | 1.11.0 |
-    | py-numba | 0.65.1 |
-    | py-numpy | 2.3.5 |
-    | py-palettable | 3.3.3 |
-    | py-pandas | 2.3.3 |
-    | py-pip | 26.1 |
-    | py-pybv | 0.7.6 |
-    | py-rsatoolbox | 0.2.0 |
-    | py-scikit-learn | 1.8.0 |
-    | py-scipy | 1.17.1 |
-    | py-seaborn | 0.13.2 |
-    | py-sphinx | 9.1.0 |
-    | py-statsmodels | 0.14.6 |
-    | py-virtualenv | 21.4.1 |
-    | py-wesanderson | 0.0.4 |
-    | python | 3.14.5 |
-    | r-afex | 1.5-1 |
-    | r-bayesfactor | 0.9.12-4.8 |
-    | r-brms | 2.23.0 |
-    | r-dplyr | 1.2.0 |
-    | r-emmeans | 2.0.2 |
-    | r-ggplot2 | 4.0.3 |
-    | r-irkernel | 1.3.2 |
-    | r-rstan | 2.32.7 |
-    | r-tidyverse | 2.0.0 |
-    | r | 4.5.3 |
-    | simnibs | 4.6.0 |
 
 ## Matlab software stack
 
