@@ -4,10 +4,6 @@ In Cecile software is provided systemwide through a so called **software stack**
 
 A software stack contains a number of software necessary for your analysis and much more. If any software you need is missing from the stack you may contact `cecile-admins-l at ovgu.de` to request it.
 
-!!! note "Medusa software stack"
-    In case you need to use the old software stack used within the Medusa cluster, please contact the admin at `cecile-admins-l at ovgu.de`
-
-
 ## Type of stacks
 
 There are **two kinds of stacks** available:
@@ -15,12 +11,8 @@ There are **two kinds of stacks** available:
 1. **Current stack:** A stack that is kept stable throughout one semester. Each semester a new stable stack is created from scratch, which means that the new `current` stack will include only new updated versions of software; however the old `current` stacks are still available.
 2. **Experimental stack**: A flexible stack that is going to be frequently updated also upon user's request. A software requested by a user will be added to the `experimental` stack; as soon as a new `current` stack is created the new software will also added to `current`.
 
-!!! Danger "Multiple software versions in Experimental stack"
+!!! Danger "Multiple software versions in `experimental` stack"
     Continuous updating in the `experimental stack` can lead to have multiple versions of the same software (e.g. `python ~gcc@11.0` vs `python ~gcc@11.1`) in the `experimental stack`, therefore be careful to load the correct version when using the experimental stack. Usually back compatibility between software versions is mantained, but sometimes this might not be the case and some feature might have been changed.
-
-
-!!! note "Why two different stacks"
-    If you need to use a software that is not yet available in the `current stack`, after your request, the missing software will be installed in the `experimental stack`
 
 ## How to use the stacks
 
@@ -69,6 +61,157 @@ There are **two kinds of stacks** available:
     `R` software is preceded by `r-`.
     This naming convention is limited to stack, in your code software must have their usual names.
 
+## New `current` stack, old `current` stacks and how to use them
+
+As pointed out, the `current` stack gets to be updated and rebuild every semester; this procedure ensures that the cluster always includes up to date versions of all software. However, the older `current` stacks are still available and usable. In order to distinguish them from the up-to-date `current` stack, the older `current` stacks get a suffix indicating the creation date, `current_<YYYY-MM-DD>`.
+
+To use an older `current` stack you only need to source the correct stack:
+
+```bash
+. /software/current_YYYY-MM-DD/env.sh
+```
+
+!!! note "Medusa software stack"
+    In case you need to use the old software stack used within the Medusa cluster, please contact the admin at `cecile-admins-l at ovgu.de`
+
+### Available `current` stacks and included software
+
+The following tables represent all the `current` stacks (up-to-date and older) currently available on the cluster and software included in each of them. 
+
+=== "`current_2024-07-28`"
+
+    | Software | Version |
+    | --- | -- |
+    | bids-validator | 1.14.6 |
+    | bidsonym | 0.0.6 |
+    | deepprep | 25.1.0 |
+    | environment-modules | 5.4.0 |
+    | eyelink | 2.1.1197.0 |
+    | fmriprep | 21.0.2 |
+    | fmriprep | 23.0.2 |
+    | fmriprep | 24.0.0 |
+    | freesurfer | 7.4.1 |
+    | fsl | 6.0.7.4 |
+    | gdb | 14.2 |
+    | git-annex | 10.20230408 |
+    | git | 2.45.2 |
+    | gnuplot | 6.0.0 |
+    | hdf5 | 1.14.3 |
+    | headcase-pipeline | 1.0.0_2024-05-16_cca8bf2 |
+    | heudiconv | 1.1.6 |
+    | laynii | 2.7.0 |
+    | matlab | r2023b |
+    | mricron | 1.2.20211006 |
+    | mriqc | 23.1.0 |
+    | py-bidscoin | 4.1.1 |
+    | py-bidskit | 2023.9.7 |
+    | py-datalad-hirni | 0.0.8 |
+    | py-datalad | 0.18.4 |
+    | py-dcm2bids | 3.1.0 |
+    | py-eye2bids | 0.1.dev1 |
+    | py-flake8 | 6.1.0 |
+    | py-glmsingle | main |
+    | py-jupyterlab | 4.0.1 |
+    | py-matplotlib | 3.9.0 |
+    | py-memory-profiler | 0.61.0 |
+    | py-mne-bids | 0.15.0 |
+    | py-mne | 1.7.1 |
+    | py-mypy | 1.8.0 |
+    | py-neurokit2 | 0.2.4 |
+    | py-neurora | 1.1.6.10 |
+    | py-nilearn | 0.10.3 |
+    | py-nipype | 1.8.6 |
+    | py-numba | 0.58.1 |
+    | py-numpy | 1.26.4 |
+    | py-palettable | 3.3.3 |
+    | py-pandas | 2.1.4 |
+    | py-pip | 23.1.2 |
+    | py-pybv | 0.7.5 |
+    | py-rsatoolbox | 0.2.0 |
+    | py-scikit-learn | 1.5.1 |
+    | py-scipy | 1.14.0 |
+    | py-seaborn | 0.13.2 |
+    | py-sphinx | 7.4.5 |
+    | py-statsmodels | 0.14.0 |
+    | py-virtualenv | 20.24.5 |
+    | py-wesanderson | 0.0.3 |
+    | python | 3.11.9 |
+    | r-afex | 1.3-0 |
+    | r-brms | 2.19.0 |
+    | r-emmeans | 1.8.5 |
+    | r-rstan | 2.21.8 |
+    | r-tidyverse | 2.0.0 |
+    | r | 4.4.0 |
+    | rabies | 0.5.0 |
+    | simnibs | 4.5.0 |
+    | texlive | 20220321 |
+
+=== "`current`"
+    | Software | Version |
+    | --- | -- |
+    | bids-validator | 2.4.1
+    | bidsonym | 0.0.6_2025-10-24
+    | connectome-workbench | 2.1.0
+    | eyelink | 2.1.1197.0_v26.04
+    | fmriprep | 25.2.5
+    | freesurfer | 8.2.0-1
+    | fsl | 6.0.7.22
+    | gdb | 17.1
+    | git-annex | 10.20230408
+    | git | 2.53.0
+    | gnuplot | 6.0.0
+    | hdf5 | 1.14.6 |
+    | headcase-pipeline | 1.0.0_2024-05-16_cca8bf2 |
+    | heudiconv | 1.4.0 |
+    | laynii | 2.10.0 |
+    | matlab | r2025b |
+    | mricron | 1.2.20211006 |
+    | mriqc | 24.0.2 |
+    | plantus | 0.1.1 |
+    | py-bidscoin | 4.6.2 |
+    | py-bidskit | 2025.11.7 |
+    | py-datalad | 1.4.0 |
+    | py-dcm2bids | 3.2.0 |
+    | py-eye2bids | 0.1.2026-03.16 |
+    | py-flake8 | 7.3.0 |
+    | py-glmsingle | main |
+    | py-jupyterlab | 4.5.8 |
+    | py-matplotlib | 3.10.9 |
+    | py-memory-profiler | 0.61.0 |
+    | py-mne-bids | 0.18.0 |
+    | py-mne | 1.11.0 |
+    | py-mypy | 2.1.0 |
+    | py-neurokit2 | 0.2.13 |
+    | py-neurora | 1.1.6.12 |
+    | py-nibabel | 5.4.2 |
+    | py-nilearn | 0.13.1 |
+    | py-nipype | 1.11.0 |
+    | py-numba | 0.65.1 |
+    | py-numpy | 2.3.5 |
+    | py-palettable | 3.3.3 |
+    | py-pandas | 2.3.3 |
+    | py-pip | 26.1 |
+    | py-pybv | 0.7.6 |
+    | py-rsatoolbox | 0.2.0 |
+    | py-scikit-learn | 1.8.0 |
+    | py-scipy | 1.17.1 |
+    | py-seaborn | 0.13.2 |
+    | py-sphinx | 9.1.0 |
+    | py-statsmodels | 0.14.6 |
+    | py-virtualenv | 21.4.1 |
+    | py-wesanderson | 0.0.4 |
+    | python | 3.14.5 |
+    | r-afex | 1.5-1 |
+    | r-bayesfactor | 0.9.12-4.8 |
+    | r-brms | 2.23.0 |
+    | r-dplyr | 1.2.0 |
+    | r-emmeans | 2.0.2 |
+    | r-ggplot2 | 4.0.3 |
+    | r-irkernel | 1.3.2 |
+    | r-rstan | 2.32.7 |
+    | r-tidyverse | 2.0.0 |
+    | r | 4.5.3 |
+    | simnibs | 4.6.0 |
 
 ## Matlab software stack
 
