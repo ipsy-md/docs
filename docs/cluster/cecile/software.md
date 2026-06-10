@@ -12,7 +12,7 @@ A software stack contains a number of software necessary for your analysis and m
 
 There are **two kinds of stacks** available:
 
-1. **Current stack:** A stack that is kept stable throughout one semester. Each semester a new stable stack is created from scratch, while the old `current stacks` are still available and can be used by specifying the date in the following way: `current_<date>`.
+1. **Current stack:** A stack that is kept stable throughout one semester. Each semester a new stable stack is created from scratch, however the old `current stacks` are still available.
 2. **Experimental stack**: A flexible stack that is going to be frequently updated also upon user's request.
 
 !!! Danger "Multiple software versions in Experimental stack"
@@ -20,7 +20,7 @@ There are **two kinds of stacks** available:
 
 
 !!! note "Why two different stacks"
-    If you need to use a software that is not yet available on Cecile (in the `current stack`), after your request, the missing software is going to be installed in the `experimental stack`
+    If you need to use a software that is not yet available in the `current stack`, after your request, the missing software will be installed in the `experimental stack`
 
 ## How to use the stacks
 
