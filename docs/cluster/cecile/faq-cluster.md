@@ -82,6 +82,10 @@ If you have a very common problem it might be covered in this FAQ section, if yo
     2. Some software in the software stack have slightly different names, for example python packages are called `py-<package name>` (e.g. `py-pandas`) or R packages are all called `r-<library name>`.
     3. If you cannot still find the software among the available software that means that the software is not yet included in the software stack. Please contact cecile-admins-l at ovgu.de to request the software.
 
+- **How can I use and old version of a `current` stack?**
+
+    You can use an old stack sourcing it in the following way: `. /software/current_<yyyy-mm-dd>/env.sh`. Make sure to substitute the actual date of the stack you need use. For more information about old stacks, please, refer to the relevant [information](../cluster/cecile/software/#new-current-stack-old-current-stacks-and-how-to-use-them)
+
 ## Open OnDemand
 
 - **I cannot start an Open OnDemand interactive session and I get the error: `Disk quota exceeded @ ...`**
