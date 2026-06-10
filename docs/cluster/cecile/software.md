@@ -12,8 +12,8 @@ A software stack contains a number of software necessary for your analysis and m
 
 There are **two kinds of stacks** available:
 
-1. **Current stack:** A stack that is kept stable throughout one semester. Each semester a new stable stack is created from scratch, however the old `current stacks` are still available.
-2. **Experimental stack**: A flexible stack that is going to be frequently updated also upon user's request.
+1. **Current stack:** A stack that is kept stable throughout one semester. Each semester a new stable stack is created from scratch, which means that the new `current` stack will include only new updated versions of software; however the old `current` stacks are still available.
+2. **Experimental stack**: A flexible stack that is going to be frequently updated also upon user's request. A software requested by a user will be added to the `experimental` stack; as soon as a new `current` stack is created the new software will also added to `current`.
 
 !!! Danger "Multiple software versions in Experimental stack"
     Continuous updating in the `experimental stack` can lead to have multiple versions of the same software (e.g. `python ~gcc@11.0` vs `python ~gcc@11.1`) in the `experimental stack`, therefore be careful to load the correct version when using the experimental stack. Usually back compatibility between software versions is mantained, but sometimes this might not be the case and some feature might have been changed.
@@ -24,93 +24,51 @@ There are **two kinds of stacks** available:
 
 ## How to use the stacks
 
-There are multiple ways to access the stack depending on the control you want over the versions of software you would like to use:
-
-### Via modules
-
-For every installed package spack generates a module file in addition, this allows you to use the `module` command to load specific software.
-Unlike the environment method, this method is extremely fast and it allows you to specify the version of the software you prefere.
-
-!!! note "Software names in the stack"
-    Before loading a module it is advisable to check how the software you are interested in is named in the stack.
-    For example all python software are preceded by `py-`, thus to load `pandas` you need to type: `module load py-pandas`.
-    This naming convention is limited to stack, in your code software must have their usual names.
-
 === "Current stack:"
 
-    ```bash
-    . /software/current/env.sh
-    ```
+    - Source the `current` stack, by running the following command (please, be aware of the space between the dot and the path)
 
-    To see what packages are installed run
-    ```bash
-    module avail
-    ```
+        ```bash
+        . /software/current/env.sh
+        ```
 
-    To load a package (in case a specific version is needed, load the version of the software shown by `module avail`)
-    ```bash
-    module load python
-    ```
-
-
-=== "Experimental stack"
-
-    ```bash
-    . /software/experimental/env.sh
-    ```
-
-    To see what packages are installed run
-    ```bash
-    module avail
-    ```
-
-    To load a package (in case a specific version is needed, load the version of the software shown by `module avail`)
-    ```bash
-    module load python
-    ```
-
-### Load the Ipsy environment
-
-Instead of loading every package individually, you can activate an evironment containing only the newest version of each package.
-
-!!! Warning "Loading environments takes time"
-    Due to some changes in the package manager (Spack) currently loading an environment is a slow process that could take up to 5 minutes.
-
-=== "Current stack"
-
-    ```bash
-    . /software/current/ipsy-env/activate
-    ```
-
-    Now that the stack has been loaded, you can start each single software.
-
-    ```bash
-    python
-    ```
-
-    In order to see which software are available in the environment type the following command:
-
-    ```bash
-    module avail
-    ```
+    - Now load a software using `module load <software name>` 
+        
+        ```bash
+        module load py-pandas
+        ```
+    - To see what software is available run the following command
+        
+        ```bash
+        module avail
+        ```
 
 === "Experimental stack"
 
-    ```bash
-    . /software/experimental/ipsy-env/activate
-    ```
+    - Source the `experimental` stack, by running the following command (please, be aware of the space between the dot and the path)
 
-    Now that the stack has been loaded, you can start each single software.
+        ```bash
+        . /software/experimental/env.sh
+        ```
 
-    ```bash
-    python
-    ```
+    - Now load a software using `module load <software name>` (in case a specific version is needed, check the software version with `module avail`)
+        ```bash
+        module load py-pandas
+        ```
 
-    In order to see which software are available in the environment type the following command:
+    - To see what software is available run the following command
 
-    ```bash
-    module avail
-    ```
+        ```bash
+        module avail
+        ```
+
+
+!!! note "Software names in the stack"
+    Before loading a module it is advisable to check how the software you are interested in is called in the stack.
+    For example all python software is preceded by `py-`, thus to load `pandas` you need to type: `module load py-pandas` and
+    `R` software is preceded by `r-`.
+    This naming convention is limited to stack, in your code software must have their usual names.
+
 
 ## Matlab software stack
 
