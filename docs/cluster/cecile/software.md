@@ -9,7 +9,7 @@ A software stack contains a number of software necessary for your analysis and m
 There are **two kinds of stacks** available:
 
 1. **Current stack:** A stack that is kept stable for a long period of time. A new stable stack is created periodically from scratch, which means that the new `current` stack will include only new up-to-date software versions; however the old versions of `current` stacks are still available on the cluster.
-2. **Experimental stack**: A flexible stack that is going to be frequently updated also upon user's request. A software requested by a user will be added to the `experimental` stack; as soon as a new `current` stack is created the new software will also added to `current`.
+2. **Experimental stack**: A flexible stack that is going to be frequently updated also upon user's request. A software requested by a user will be added to the `experimental` stack; as soon as a new `current` stack is created the new software will be also added to `current`.
 
 !!! Danger "Multiple software versions in `experimental` stack"
     Continuous updating in the `experimental stack` can lead to have multiple versions of the same software (e.g. `python ~gcc@11.0` vs `python ~gcc@11.1`) in the `experimental stack`, therefore be careful to load the correct version when using the experimental stack. Usually back compatibility between software versions is mantained, but sometimes this might not be the case and some feature might have been changed.
