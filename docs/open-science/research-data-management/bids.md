@@ -50,7 +50,7 @@ Before you start converting your data, we strongly recommend to go through the [
 
 === "EEG/MEG"
 
-    ### EEG BIDS recommended formats
+    **EEG BIDS recommended formats**
 
     Given the variety of EEG data formats, BIDS recommends two main formats (we also strongly suggest to use these two formats):
 
@@ -59,7 +59,7 @@ Before you start converting your data, we strongly recommend to go through the [
 
     Other BIDS accepted formats, although not recommended by BIDS, are Biosemi: `.bdf` and EEGLAB: `.fdt`, `.set`.
 
-    ### Relevant converters
+    **Relevant converters**
 
     - [mne-bids](https://mne.tools/mne-bids/stable/index.html): A python based converter related to the [`mne`](https://mne.tools/stable/index.html) analysis library. It requires python coding. [mne-bids tutorial](https://mne.tools/mne-bids/stable/use.html)
     - [fieldtrip](https://www.fieldtriptoolbox.org/getting_started/othersoftware/bids/): Matlab based converter, it requires matlab coding. It can convert non-recommended data formats to BrainVision or European formats [fieldtrip bids tutorial](https://www.fieldtriptoolbox.org/example/other/bids_eeg/)
@@ -67,7 +67,7 @@ Before you start converting your data, we strongly recommend to go through the [
     
 === "Physiological data/Eye-tracking"
     
-    ### Physiological data
+    **Physiological data**
 
     We recommend to read the [dedicated page](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/physiological-recordings.html) in the BIDS website. 
 
@@ -81,7 +81,7 @@ Before you start converting your data, we strongly recommend to go through the [
                         `<matches>[_recording-<label>]_physio.json`
                     where `<matches>` can be `sub-012_task-mytaskname` and `_recoding-<label>` can be used to distinguish between two or more type of recordings e.g. `recording-breathing` and `recording-eyetracking`. In case you have multiple sessions and runs your file might be: `sub-012_ses-1_task-mytaskname_run-1-breathing_physio.tsv.gz` and the relative metadata `sub-012_ses-1_task-mytaskname_run-1-breathing_physio.json`.
 
-    ### Eye-tracking data
+    **Eye-tracking data**
 
     Eye-tracking data roughly follows the principles of physiological data, but with some fundamental differences, we recommend to carefully read the relevant section in the [official page](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/physiological-recordings.html#eye-tracking)
     
