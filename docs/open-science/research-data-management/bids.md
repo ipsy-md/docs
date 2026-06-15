@@ -42,7 +42,7 @@ Before you start converting your data, we strongly recommend to go through the [
 
 === "fMRI"
 
-    There several very efficient tools for (f)MRI bids conversion, mainly python based:
+    There are several very efficient tools for (f)MRI bids conversion, mainly python based:
 
     - [**bidscoin**](https://bidscoin.readthedocs.io/en/stable/): It is a GUI based and user friendly converter; it allows users to easily map dicom files with the appropriate bids file names and structure. Once one partipant dataset has been converted, assuming equal settings for all participants, the conversion can be run for all participants at once without the need to specify a participant-specific conversion. It can also be used via command line. [Bidscoin tutorial](https://bidscoin.readthedocs.io/en/stable/tutorial.html)
     - [**dcm2bids**](https://unfmontreal.github.io/Dcm2Bids/3.2.0/): A very powerful command line based converter. Users need to specify a configuration file (.json file) that describes the content of the dataset and allows the tool to map each image to the appropriate bids file. It also provides a helper function that guesses the nature of the images and helps users to fill in the configuration file. [dcm2bids tutorial](https://unfmontreal.github.io/Dcm2Bids/3.2.0/tutorial/)
@@ -87,7 +87,7 @@ Before you start converting your data, we strongly recommend to go through the [
     
     For eye-tracking data conversion, we suggest to use the `python` based library [`eye2bids`](https://github.com/bids-standard/eye2bids). It works quite well with data collected with all the major eye-trackers. Alternatively, you can use [Fieldtrip](https://www.fieldtriptoolbox.org/example/other/bids_eyetracker/); both software are already available in Cecile.
    
-=== Non-invasive Brain Stimulation
+=== "Non-invasive Brain Stimulation"
 
     The BIDS proposal for non-invasive brain stimulation is currently in an advanced development stage, but still work in progress; please refer to the [bep037](https://bids.neuroimaging.io/extensions/beps/bep_037.html) page or the [github page](https://github.com/nigelrogasch/nibs-bids/tree/master)
 
