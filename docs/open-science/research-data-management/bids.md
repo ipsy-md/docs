@@ -90,10 +90,7 @@ Before you start converting your data, we strongly recommend to go through the [
 === "Non-invasive Brain Stimulation"
 
     The BIDS proposal for non-invasive brain stimulation is currently in an advanced development stage, but still work in progress; please refer to the [bep037](https://bids.neuroimaging.io/extensions/beps/bep_037.html) page or the [github page](https://github.com/nigelrogasch/nibs-bids/tree/master)
-
-## Populating metadata files
-
-Coming soon ...
+  
 
 ## Validate your BIDS dataset
 
