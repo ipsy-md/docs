@@ -287,7 +287,7 @@ JupyterLab is a web-based interactive environment for notebooks and code. For in
 
 JupyterLab works only via Open OnDemand
 
-1. Once you are on Open OnDemand, go to `Interactive Apps` and select **JupyterLab**
+1. Once you are on Open OnDemand, go to `Interactive Apps` and select **JupyterLab** (image below) and a configuration window will be shown.
 
     <figure markdown="span">
         ![jupyterlab](../images/jupyterlab_widget.png){ width="250" }
