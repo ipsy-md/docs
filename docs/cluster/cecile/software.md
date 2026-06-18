@@ -294,7 +294,7 @@ JupyterLab works only via Open OnDemand
         <figcaption></figcaption>
     </figure>
 
-2. Configure your JupyterLab session:
+2. Configure your JupyterLab session (see image below):
 
     - **Kernel:** It allows to choose the language you want to use inside JupyterLab. The available kernels are `python` and `R`, by selecting either one of these kernels you are able to use only the selected language within JupyterLab. By selecting `all` you have both `python` and `R` kernels and all the relative libraries available.
 
