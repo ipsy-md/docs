@@ -298,27 +298,27 @@ JupyterLab works only via Open OnDemand
 
     - **Kernel:** Right now you can select between `Python` or `R` kernels. By selecting either `Python` or `R`, once JupyterLab is started, you can only use the selected language and you won't have the chance to start a notebook with the other language. To have booth languages available, you must select `all`. This will load both kernels and the all relative libraries.
 
-     !!! Warning "Loading all libraries takes time"
+    !!! Warning "Loading all libraries takes time"
         By selecting `all` in kernels, you have more flexibility inside JupyterLab, but it requires about 1 minute to load all the libraries. Please be patient.
 
     - The rest of the configuration is the same as any other interactive session.
 
     <figure markdown="span">
-        ![jupyterlab](../images/jupyterlab_session_configuration.png){ width="250" }
+        ![jupyterlab](../images/jupyterlab_session_configuration.png){ width="500" }
         <figcaption></figcaption>
     </figure>
 
 - Launch JupyterLab
 
     <figure markdown="span">
-        ![jupyterlab](../images/jupyterlab_launching_button.png){ width="250" }
+        ![jupyterlab](../images/jupyterlab_launching_button.png){ width="500" }
         <figcaption></figcaption>
     </figure>
 
 - Now you are on JupyterLab and you can work on notebooks or code.
 
     <figure markdown="span">
-        ![jupyterlab](../images/jupyterlab_main.png){ width="250" }
+        ![jupyterlab](../images/jupyterlab_main.png){ width="500" }
         <figcaption></figcaption>
     </figure>
 
