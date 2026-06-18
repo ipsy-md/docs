@@ -298,7 +298,9 @@ JupyterLab works only via Open OnDemand
 
     - **Kernel:** It allows to choose the language you want to use inside JupyterLab. The available kernels are `python` and `R`, by selecting either one of these kernels you are able to use only the selected language within JupyterLab. By selecting `all` you have both `python` and `R` kernels and all the relative libraries available.
 
-    - The rest of the configuration is the same as any other interactive session.
+    - **Jupyterlab start directory** There are two starting directorie options: `user home`, which allows you to use Jupyterlab in your `home` and `/data/projects/` which allows you to navigate to your project inside JupyterLab GUI. Keep in mind that if you select `user home` as starting directory, you cannot navigate to `/data/projects/` and vice versa.
+
+    - The remaining specfications of the configuration are the same as any other interactive session.
 
     !!! Warning "Loading all libraries takes time"
         By selecting `all` in kernels, you have more flexibility inside JupyterLab, but it requires about 1 minute to load all the libraries. Please be patient.
