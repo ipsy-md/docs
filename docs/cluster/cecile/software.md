@@ -287,42 +287,42 @@ JupyterLab is a web-based interactive environment for notebooks and code. For in
 
 JupyterLab works only via Open OnDemand
 
-- Once you are on Open OnDemand, go to `Interactive Apps` and select **JupyterLab**
+1. Once you are on Open OnDemand, go to `Interactive Apps` and select **JupyterLab**
 
     <figure markdown="span">
         ![jupyterlab](../images/jupyterlab_widget.png){ width="250" }
         <figcaption></figcaption>
     </figure>
 
-- Configure your JupyterLab session:
+2. Configure your JupyterLab session:
 
-    - **Kernel:** Right now you can select between `Python` or `R` kernels. By selecting either `Python` or `R`, once JupyterLab is started, you can only use the selected language and you won't have the chance to start a notebook with the other language. To have booth languages available, you must select `all`. This will load both kernels and the all relative libraries.
+    - **Kernel:** It allows to choose the language you want to use inside JupyterLab. The available kernels are `python` and `R`, by selecting either one of these kernels you are able to use only the selected language within JupyterLab. By selecting `all` you have both `python` and `R` kernels and all the relative libraries available.
+
+    - The rest of the configuration is the same as any other interactive session.
 
     !!! Warning "Loading all libraries takes time"
         By selecting `all` in kernels, you have more flexibility inside JupyterLab, but it requires about 1 minute to load all the libraries. Please be patient.
-
-    - The rest of the configuration is the same as any other interactive session.
 
     <figure markdown="span">
         ![jupyterlab](../images/jupyterlab_session_configuration.png){ width="500" }
         <figcaption></figcaption>
     </figure>
 
-- Launch JupyterLab
+3. Launch JupyterLab
 
     <figure markdown="span">
         ![jupyterlab](../images/jupyterlab_launching_button.png){ width="500" }
         <figcaption></figcaption>
     </figure>
 
-- Now you are on JupyterLab and you can work on notebooks or code.
+4. Now you are on JupyterLab and you can work on notebooks or code.
 
     <figure markdown="span">
-        ![jupyterlab](../images/jupyterlab_main.png){ width="500" }
+        ![jupyterlab](../images/jupyterlab_main.png){ width="800" }
         <figcaption></figcaption>
     </figure>
 
-- Once you are done working with JupyterLab, please shut down the interactive session: `File` --> `Shut Down`
+5. Once you are done working with JupyterLab, please shut down the interactive session: `File` --> `Shut Down`
 
     <figure markdown="span">
         ![jupyterlab](../images/jupyterlab_shutdown.png){ width="250" }
