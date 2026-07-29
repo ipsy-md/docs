@@ -11,7 +11,7 @@ Each node offers a pool of resources such as CPUs, which in turn contain multipl
   <figcaption></figcaption>
 </figure>
 
-## Cluster at Ipsy:
+## Cluster at Ipsy
 
 At ipsy we currently have one cluster, [Cecile], named after the **French neurologist Cécile Vogt**.
 [Cecile]: cecile/access
