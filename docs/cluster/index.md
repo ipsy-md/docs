@@ -11,6 +11,11 @@ Each node offers a pool of resources such as CPUs, which in turn contain multipl
   <figcaption></figcaption>
 </figure>
 
+## Cluster at Ipsy:
+
+At ipsy we currently have one cluster, [Cecile], named after the **French neurologist Cécile Vogt**.
+[Cecile]: cecile/access
+
 ## Why should I use a cluster instead of my own computer?
 
 - **Speed**: many more CPU cores, often with higher performance specifics than a typical laptop or desktop
@@ -70,9 +75,3 @@ If you have an account on Cecile and you are leaving IPSY, you are kindly requir
 - Remove all files present in your `/home/scratch/` and in your projects `scratch/`.
 - Make sure that your data are clearly documented. If your `BIDS` dataset in `rawdata/` is lacking some information (e.g. `.json` sidecars are not properly filled in), please make sure to add the missing information.
 
-## Clusters at Ipsy:
-
-At ipsy we currently have two clusters: the new one, [Cecile], named after the **French neurologist Cécile Vogt**, and the old one, [Medusa], named after the **Greek mythological figure**.
-
-[Cecile]: cecile/access
-[Medusa]: medusa/access
