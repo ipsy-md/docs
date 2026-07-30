@@ -20,7 +20,7 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 
 - **How can I request a guest account for the Cecile cluster?**
 
-    In case you are a guest at OvGU and need an account on Cecile, or you need an account for a guest researcher, please read the information in this [paragraph](../../cluster/#how-to-request-a-guest-account) 
+    In case you are a guest at OvGU and need an account on Cecile, or you need an account for a guest researcher, please read the information in this [paragraph](../index.md/#how-to-request-a-guest-account) 
 
 ## Data
 
