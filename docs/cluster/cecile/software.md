@@ -251,7 +251,7 @@ Third party toolboxes like `SPM` or `FieldTrip` are also available in the centra
     addpath /software/experimental/matlab_toolboxes/spm12
     ```
 
-!!! Warning "Don't use `genpath` to load all thirsparty toolboxes at once"
+!!! Warning "Don't use `genpath` to load all third-party toolboxes at once"
     Although matlab provides the possibility to load all toolboxes within a path by using `genpath`, this is not recommended to do because some of the toolboxes don't work well together and might break. For example `spm` will not start anymore.
 
 ### Matlab shortcuts fix
