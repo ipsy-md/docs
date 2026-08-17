@@ -17,18 +17,20 @@ The ***Deutsche Gesellshaft für Psychologie*** has published some [guidelines f
 
 [Psycharchives](https://www.psycharchives.org/) provides a good [overview of possible data licenses](https://www.psycharchives.org/en/about#rights) and the possibility to use a [standardized license for scientific purposes](https://www.psycharchives.org/en/about#sharing_levels)
 
-Concerning the legal aspects of copyrights and personal data protection, you can refer directly to the official legal documents:
 
-Links to the official German documents.
+!!! note "References to the official documents about data protection"
+    Concerning the legal aspects of copyrights and personal data protection, you can refer directly to the official legal documents:
 
-- [Bundesdatenschutzgesetz](https://www.gesetze-im-internet.de/bdsg_2018/BJNR209710017.html)
-- [Gesetz über Urheberrecht und verwandte Schutzrechte](https://www.gesetze-im-internet.de/urhg/)
+    Links to the official German documents.
 
-Links to the official English translation.
+    - [Bundesdatenschutzgesetz](https://www.gesetze-im-internet.de/bdsg_2018/BJNR209710017.html)
+    - [Gesetz über Urheberrecht und verwandte Schutzrechte](https://www.gesetze-im-internet.de/urhg/)
 
-- [Act on Copyright and Related Rights](https://www.gesetze-im-internet.de/englisch_urhg/englisch_urhg.html)
-- [Federal Data Protection Act](https://www.gesetze-im-internet.de/englisch_bdsg/)
-- [European data protection law](https://gdpr-info.eu/)
+    Links to the official English translation.
+
+    - [Act on Copyright and Related Rights](https://www.gesetze-im-internet.de/englisch_urhg/englisch_urhg.html)
+    - [Federal Data Protection Act](https://www.gesetze-im-internet.de/englisch_bdsg/)
+    - [European data protection law](https://gdpr-info.eu/)
 
 
 A tool to navigate through the legal questions is [iVA](https://www.berd-nfdi.de/legal-questions/) (interactive Virtual Assistant). iVA is developed by [BERD@NFDI](https://www.berd-nfdi.de/) a central resource for unstructured data related to business, economics, and social sciences. 
