@@ -6,7 +6,7 @@ Sharing your code is essential for making your research open and reproducible, i
 
 ### If you can, use open source tools
 
-There are several reasons why people choose to use a secific software or a programming language: simplicity, familiarity with the tool, lab standards and many others. These are all valid reasons for choosing a tool, but if you want to make sure that your research is open and transparent, you should also consider **open source** tools.
+There are several reasons why researchers choose to use a specific software or programming languages: simplicity, familiarity with the tool, lab standards and many others. These are all valid reasons for choosing a tool, but if you want to make sure that your research is open and transparent, you should also consider **open source** tools.
 
 Open source software grants you access to the source code and freedom to use it, modify it and distribute it according to its license.
 
