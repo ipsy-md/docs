@@ -90,7 +90,11 @@ Before you start converting your data, we strongly recommend to go through the [
 === "Non-invasive Brain Stimulation"
 
     The BIDS proposal for non-invasive brain stimulation is currently in an advanced development stage, but still work in progress; please refer to the [bep037](https://bids.neuroimaging.io/extensions/beps/bep_037.html) page or the [github page](https://github.com/nigelrogasch/nibs-bids/tree/master)
-  
+
+
+!!! Warning "Anonimize your data"
+    Although BIDS helps to pseudo-anonymize your data, data like MRI anatomical data require further steps to reduce the possibility to link a dataset to a specific person. 
+    The common approach is to use algorithms for the de-identification of neuroimaging data like defacing. Here it is a [list of anonymization tools](https://open-brain-consent.readthedocs.io/en/stable/anon_tools.html)
 
 ## Validate your BIDS dataset
 
