@@ -30,10 +30,9 @@ Documenting your code is not only advantageous for other potential users, but al
 - A clear installation procedure.
 - A list of dependencies and requirements: programming language(s), libraries or other code and files needed to make you code work. It is not enough to state the name of a library, or a programming language, but it is essential to provide also their version (e.g. matplotlib >= 3.8.0).
 - Environment(s) where the code was tested/used (e.g. Ubuntu 26.04 lts).
-- A simple description of code structure, especially if your code contains different interconnected parts.
-- A clear usage description and a simple working example.
+- A clear description of the code structure and use, with a working example or more toy examples, in case you are sharing a library with different functionalities.
 - References: If your code is based on articles or specific methods, provide a reference to the methods.
-- Acknowledgements.
+- Acknowledgements, list of everybody that have contributed to the project.
 
 !!! note "Share your code according to your language standards"
     Each programming language uses specific tools and processes to ease and standardize code sharing, we recommend to follow language specific approaches to facilitate the sharing process and to allow other users to use your code.
@@ -44,15 +43,11 @@ Documenting your code is not only advantageous for other potential users, but al
 
 - They allow to share and document your code with your publication.
 - They rely on `git`, meaning that you can modify and keep track of your code locally through git and transfer (`push`) your changes to Github or other platforms.
-- They allow easily collaborate at the same project.
+- They allow to easily collaborate at the same project.
 - They give you a free and safe backup for your code.
-- They allow other people to use your code, help you to find potential issues and improve your code.
+- They allow other people to use your code, help you to find issues and improve your code.
 
 ### Provide a license
-
-Coming soon...
-
-### Share your environment
 
 Coming soon...
 
