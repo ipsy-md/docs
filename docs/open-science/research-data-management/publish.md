@@ -13,6 +13,8 @@ The following are the general questions that you should ask yourself when thinki
 - **How do I handle data with sensitive information?**
 - **Under which conditions can third-party data be re-used for my research?**
 
+These are very critical and hard questions that must be carefully answered on a case by case basis.
+
 [Psycharchives](https://www.psycharchives.org/) provides a good [overview of possible data licenses](https://www.psycharchives.org/en/about#rights)
 
 Concerning the legal aspects of copyrights and personal data protection, you can refer directly to the official legal documents:
@@ -28,7 +30,8 @@ Links to the official English translation.
 - [Federal Data Protection Act](https://www.gesetze-im-internet.de/englisch_bdsg/)
 - [European data protection law](https://gdpr-info.eu/)
 
-A very effective tool to navigate through the legal questions is [iVA](https://www.berd-nfdi.de/legal-questions/) (interactive Virtual Assistant). iVA is developed by [BERD@NFDI](https://www.berd-nfdi.de/) a central resource for unstructured data related to business, economics, and social sciences. 
+
+A tool to navigate through the legal questions is [iVA](https://www.berd-nfdi.de/legal-questions/) (interactive Virtual Assistant). iVA is developed by [BERD@NFDI](https://www.berd-nfdi.de/) a central resource for unstructured data related to business, economics, and social sciences. 
 
 ## Where to share your data
 
