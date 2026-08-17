@@ -32,7 +32,7 @@ Documenting your code is not only advantageous for other potential users, but al
 - Environment(s) where the code was tested/used (e.g. Ubuntu 26.04 lts).
 - A clear description of the code structure and use, with a working example or more toy examples, in case you are sharing a library with different functionalities.
 - References: If your code is based on articles or specific methods, provide a reference to the methods.
-- Acknowledgements, list of everybody that have contributed to the project.
+- Acknowledgements, list of everybody who has contributed to the project.
 
 !!! note "Share your code according to your language standards"
     Each programming language uses specific tools and processes to ease and standardize code sharing, we recommend to follow language specific approaches to facilitate the sharing process and to allow other users to use your code.
