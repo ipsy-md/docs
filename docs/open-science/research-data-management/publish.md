@@ -14,10 +14,6 @@ The following are the general questions that you should ask yourself when thinki
 These are very critical and hard questions that must be carefully answered on a case by case basis.
 The ***Deutsche Gesellshaft für Psychologie*** has published some [guidelines for data-management and data sharing](https://econtent.hogrefe.com/doi/10.1026/0033-3042/a000514)
 
-
-[Psycharchives](https://www.psycharchives.org/) provides a good [overview of possible data licenses](https://www.psycharchives.org/en/about#rights) and the possibility to use a [standardized license for scientific purposes](https://www.psycharchives.org/en/about#sharing_levels)
-
-
 !!! note "References to the official documents about data protection"
     Concerning the legal aspects of copyrights and personal data protection, you can refer directly to the official legal documents:
 
@@ -35,11 +31,21 @@ The ***Deutsche Gesellshaft für Psychologie*** has published some [guidelines f
 
 A tool to navigate through the legal questions is [iVA](https://www.berd-nfdi.de/legal-questions/) (interactive Virtual Assistant). iVA is developed by [BERD@NFDI](https://www.berd-nfdi.de/) a central resource for unstructured data related to business, economics, and social sciences. 
 
+## Licenses
+
+The choice of a license is not simple matter and is conditional to different critical apects of your data.
+
+[Psycharchives](https://www.psycharchives.org/) provides a good [overview of possible data licenses](https://www.psycharchives.org/en/about#rights) and the possibility to choose a [standardized license for scientific purposes](https://www.psycharchives.org/en/about#sharing_levels), however the choice of the license is ultimately yours.
+
+
 ## Where to share your data
 
-There are multiple platforms to make your data public, here just a few of the most popular ones:
+There are multiple platforms to make your data public, please refer to points listed the paragraph [*4. Anforderungen an ein geeignetes Repositorium*](https://econtent.hogrefe.com/doi/10.1026/0033-3042/a000514#_i12) by the DGP to deside whether a repository is suitable for your data:
 
-- [Psycharchives](https://www.psycharchives.org/) (**Suggested by the *Deutsche Gesellschaft für Psychologie***)
+[Psycharchives](https://www.psycharchives.org/) (**Strongly recommended by the *Deutsche Gesellschaft für Psychologie***)
+
+Other repositories potential repositories:
+
 - [Figshare](https://figshare.com/)
 - [Zenodo](https://zenodo.org/)
 - [OpenNeuro](https://openneuro.org/)
