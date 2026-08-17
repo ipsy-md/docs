@@ -32,11 +32,12 @@ A very effective tool to navigate through the legal questions is [iVA](https://w
 
 There are multiple platforms to make your data public, here just a few of the most popular ones:
 
-- [Open Science Framework](https://osf.io/)
+
 - [Figshare](https://figshare.com/)
 - [Zenodo](https://zenodo.org/)
 - [RDC at ZPID](https://rdc-psychology.org/) (Intended only for psychogy/neuroscience data)
 - [OpenNeuro](https://openneuro.org/) (Intended only for psychogy/neuroscience data)
+- [Open Science Framework](https://osf.io/) Warning! It is no longer possible to create new projects or mantain private projects on OSF. For detailed information, please read [here](https://www.cos.io/osf-changes)
 
 !!! note "Sharing code for your publication"
     If you expect and whish other people to have a more interactive and collaborative approach your research,
