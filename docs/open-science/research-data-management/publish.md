@@ -13,6 +13,8 @@ The following are the general questions that you should ask yourself when thinki
 - **How do I handle data with sensitive information?**
 - **Under which conditions can third-party data be re-used for my research?**
 
+[Psycharchives](https://www.psycharchives.org/) provides a good [overview of possible data licenses](https://www.psycharchives.org/en/about#rights)
+
 Concerning the legal aspects of copyrights and personal data protection, you can refer directly to the official legal documents:
 
 Links to the official German documents.
@@ -32,12 +34,11 @@ A very effective tool to navigate through the legal questions is [iVA](https://w
 
 There are multiple platforms to make your data public, here just a few of the most popular ones:
 
-
+- [Psycharchives](https://www.psycharchives.org/) (**Suggested by the *Deutsche Gesellschaft für Psychologie***)
 - [Figshare](https://figshare.com/)
 - [Zenodo](https://zenodo.org/)
-- [RDC at ZPID](https://rdc-psychology.org/) (Intended only for psychogy/neuroscience data)
-- [OpenNeuro](https://openneuro.org/) (Intended only for psychogy/neuroscience data)
-- [Open Science Framework](https://osf.io/) Warning! It is no longer possible to create new projects or mantain private projects on OSF. For detailed information, please read [here](https://www.cos.io/osf-changes)
+- [OpenNeuro](https://openneuro.org/)
+- [Open Science Framework](https://osf.io/) **Warning!** It is no longer possible to create new projects or mantain private projects on OSF. For detailed information, please read [here](https://www.cos.io/osf-changes)
 
 !!! note "Sharing code for your publication"
     If you expect and whish other people to have a more interactive and collaborative approach your research,
