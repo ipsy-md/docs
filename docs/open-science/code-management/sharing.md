@@ -2,7 +2,7 @@
 
 Sharing your code is essential for making your research open and reproducible, it allows other researchers to build on your work, to understand it and to verify your findings.
 
-## What to do to share your code
+## How to share your code
 
 ### If you can, use open source tools
 
