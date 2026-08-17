@@ -49,7 +49,7 @@ Other repositories potential repositories:
 - [Figshare](https://figshare.com/)
 - [Zenodo](https://zenodo.org/)
 
-[Open Science Framework](https://osf.io/) cannot longer host new projects or mantain previously private projects. For detailed information, please read [here](https://www.cos.io/osf-changes)
+[Open Science Framework](https://osf.io/) cannot longer host new projects or mantain private projects. For detailed information, please read [here](https://www.cos.io/osf-changes)
 
 !!! note "Sharing code for your publication"
     If you expect and whish other people to have a more interactive and collaborative approach your research,
