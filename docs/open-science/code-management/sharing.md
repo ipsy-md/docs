@@ -6,9 +6,9 @@ Sharing your code is essential for making your research open and reproducible, i
 
 ### If you can, use open source tools
 
-There are several reasons why people choose a programming language or a software: simplicity, familiarity with the tool, lab standard and many others. These are all valid reasons for choosing a tool, but if you want to ensure that your research is open and transparent, you should also consider whether a tool is **open source**.
+There are several reasons why people choose to use a secific software or a programming language: simplicity, familiarity with the tool, lab standards and many others. These are all valid reasons for choosing a tool, but if you want to make sure that your research is open and transparent, you should also consider **open source** tools.
 
-Open source software grants you access to the source code and freedom to use it, modify it and distribute it according to the used license.
+Open source software grants you access to the source code and freedom to use it, modify it and distribute it according to its license.
 
 As a consequence of using open source tools, your analysis code and experiment code if publicly available can be re-used and tested by other researchers. On the contrary, proprietary programming languages and software require the user to buy a license, or to use a license from their institution, thus contravening to the fundamental openess principle of science.
 
@@ -16,7 +16,7 @@ As a consequence of using open source tools, your analysis code and experiment c
 
 Code documentation is an essential prerequisite to make your research transparent and replicable. Without a decent documentation other researchers might be unable to use your code.
 
-Documenting your code is not only advantageous for other potential users, but also for you. It often happens to forget how a piece of code works, by providing good documentation you will save time and effort to you and other users. 
+Documenting your code is not only advantageous for other potential users, but also for you. It is very common not to remember why you made a specific decision in you code or how some piace of code works; by providing good documentation you will save time and effort to the future you and other users. 
 
 **Comment your code:** The best way to start documenting your code is to comment each essential piece of it while your are still programming:
 
@@ -27,13 +27,16 @@ Documenting your code is not only advantageous for other potential users, but al
 **README file:** A README file is one of the most common way to document code. It should include:
 
 - A brief introduction explaining the scope of the code.
-- An installation procedure, 
-- List of dependencies (libraries needed for the code to run) and requirements (e.g. specific version of a programming language and/or libraries).
-- Environment(s) where the code was tested/used (e.g. Ubuntu 24.04 lts).
+- A clear installation procedure.
+- A list of dependencies and requirements: programming language(s), libraries or other code and files needed to make you code work. It is not enough to state the name of a library, or a programming language, but it is essential to provide also their version (e.g. matplotlib >= 3.8.0).
+- Environment(s) where the code was tested/used (e.g. Ubuntu 26.04 lts).
 - A simple description of code structure, especially if your code contains different interconnected parts.
 - A clear usage description and a simple working example.
 - References: If your code is based on articles or specific methods, provide a reference to the methods.
 - Acknowledgements.
+
+!!! note "Share your code according to your language standards"
+    Each programming language uses specific tools and processes to ease and standardize code sharing, we recommend to follow language specific approaches to facilitate the sharing process and to allow other users to use your code.
 
 ### Choose a code hosting platform 
 
