@@ -28,7 +28,7 @@ Documenting your code is not only advantageous for other potential users, but al
 
 - A brief introduction explaining the scope of the code.
 - A clear installation procedure.
-- A list of dependencies and requirements: programming language(s), libraries or other code and files needed to make you code work. It is not enough to state the name of a library, or a programming language, but it is essential to provide also their version (e.g. matplotlib >= 3.8.0).
+- A list of dependencies and requirements: programming language(s), libraries or other code and files needed to make your code work. It is not enough to state the name of a library, or a programming language, but it is essential to provide also their version (e.g. matplotlib >= 3.8.0).
 - Environment(s) where the code was tested/used (e.g. Ubuntu 26.04 lts).
 - A clear description of the code structure and use, with a working example or more toy examples, in case you are sharing a library with different functionalities.
 - References: If your code is based on articles or specific methods, provide a reference to the methods.
