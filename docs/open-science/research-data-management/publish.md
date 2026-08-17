@@ -2,8 +2,6 @@
 
 Sharing your data with the scientific community is a milestone for your research, for this reason the best way to share your data and your findings with others is to make them open, transparent and especially interoperable.
 
-If you have followed the previous recommendations up to now, your data should be almost ready to be shared.
-
 ## Restrictions, sensitive data and legal aspects
 
 The following are the general questions that you should ask yourself when thinking of the legal aspects of sharing your research.
@@ -14,8 +12,10 @@ The following are the general questions that you should ask yourself when thinki
 - **Under which conditions can third-party data be re-used for my research?**
 
 These are very critical and hard questions that must be carefully answered on a case by case basis.
+The ***Deutsche Gesellshaft für Psychologie*** has published some [guidelines for data-management and data sharing](https://econtent.hogrefe.com/doi/10.1026/0033-3042/a000514)
 
-[Psycharchives](https://www.psycharchives.org/) provides a good [overview of possible data licenses](https://www.psycharchives.org/en/about#rights)
+
+[Psycharchives](https://www.psycharchives.org/) provides a good [overview of possible data licenses](https://www.psycharchives.org/en/about#rights) and the possibility to use a [standardized license for scientific purposes](https://www.psycharchives.org/en/about#sharing_levels)
 
 Concerning the legal aspects of copyrights and personal data protection, you can refer directly to the official legal documents:
 
