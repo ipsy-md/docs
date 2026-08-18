@@ -93,7 +93,7 @@ Before you start converting your data, we strongly recommend to go through the [
 
 
 !!! Warning "Anonimize your data"
-    Although BIDS helps to pseudo-anonymize your data, data like MRI anatomical data require further steps to reduce the possibility to link a dataset to a specific person. 
+    Although BIDS helps to pseudo-anonymize your dataset, data such as MRI anatomical images require further steps to reduce the possibility to link a dataset to a specific person. 
     The common approach is to use algorithms for the de-identification of neuroimaging data like defacing. Here it is a [list of anonymization tools](https://open-brain-consent.readthedocs.io/en/stable/anon_tools.html)
 
 ## Validate your BIDS dataset
