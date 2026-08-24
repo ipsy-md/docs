@@ -9,7 +9,7 @@ Although data differ significantly across disciplines, general principles for op
 
 ## What are the FAIR principles?
 
-In recent years, in order to provide a common ground for open a transparent research, scientists from different fields have put forward general guidelines known as [**FAIR**](https://www.go-fair.org/fair-principles/) data principles.
+In recent years, in order to provide a common ground for open and transparent research, scientists from different fields have put forward general guidelines known as [**FAIR**](https://www.go-fair.org/fair-principles/) data principles.
 
 **FAIR** is an acronym that stands for: **F**indable, **A**ccessable, **I**nteroperable and **R**eusable
 
