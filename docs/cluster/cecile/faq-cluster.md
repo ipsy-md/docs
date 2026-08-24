@@ -92,20 +92,26 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 
     You have just reached the storage quota available for your `home` directory; just as you cannot write any new files to the `home` directory, neither can OOD. You should simply remove some files from your `home` directory and restart the session. For more information about quotas and this specific issue, please refer to relevant [paragraph](../cecile/data.md/#data-storage-quotas) and the specific warning box.
 
-### How do I access Matlab, FSL, fsleyes or any other GUI based tools on Open OnDemand?
+### How do I access Matlab, fsl, fsleyes or any other GUI based tools on Open OnDemand?
 
 1. Start an [Open OnDemand session](../cecile/access.md/#accessing-cecile-via-web-browser-open-ondemand)
 2. Start an [interactive cecile session](../cecile/slurm/#interactive-jobs-with-open-ondemand)
 3. Once you are within an interactive session:
     - Open a terminal
     - [Initialize your software stack of choice](../cecile/software/#how-to-use-the-stacks)
-        ```. /software/current/env.sh```
+        ```bash
+        . /software/current/env.sh
+        ```
     - Load the module (the software) that you need 
-        ```module load fsl```
+        ```bash
+        module load fsl
+        ```
     - Start the software. 
-        ```fsl```
+        ```bash
+        fsl
+        ```
     
-    **The following snippet starts Matlab from the `current` software stack:**
+    **The following snippet starts `matlab` from the `current` software stack:**
 
     ```bash
     . /software/current/env.sh
@@ -113,7 +119,7 @@ If you have a very common problem it might be covered in this FAQ section, if yo
     matlab
     ```
 
-    **The following snippet starts fsleyes (which is contained in FSL) from the `experimental` software stack:**
+    **The following snippet starts `fsleyes` (which is included in `fsl`) from the `experimental` software stack:**
 
     ```bash
     . /software/experimental/env.sh
