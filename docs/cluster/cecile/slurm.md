@@ -592,6 +592,9 @@ To start an interactive job with Open On Demand you have to follow a few simple 
         <figcaption></figcaption>
     </figure>
 
+    !!! Warning "Matlab usually requires more resources"
+        When using matlab (especially in GUI mode) keep in mind that requires more resources and if the resources requested are not enough matlab will crash with no clear error/feedback. To circumvent this potential issue add some extra resources, and later when you acquire more information about the actual resources you can adjust your requests.
+
 - By launching your interactive job, you will be redirected to the following window which contains a few information about your job, such as `Time Remaining`, `Host` node, number of `nodes`, `cores` and additional parameters to improve image rendering (Compression and Image Quality). 
 
     <figure markdown="span">
