@@ -86,7 +86,7 @@ The following tables represent all the `current` stacks (up-to-date and older) c
 
 === "`current`"
 
-    ??? note "List of software and version of `current` stack"
+    ??? note "Table of `current` stack"
 
         | Software | Version |
         | --- | -- |
@@ -157,7 +157,7 @@ The following tables represent all the `current` stacks (up-to-date and older) c
 
 === "`current_2024-07-28`"
 
-    ??? note "List of software and version of `current_2024-07-28` stack"
+    ??? note "Table for `current_2024-07-28` stack"
 
         | Software | Version |
         | --- | -- |
