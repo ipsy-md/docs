@@ -94,29 +94,29 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 
 ### How do I access Matlab, FSL, fsleyes or any other GUI based tools on Open OnDemand?
 
-    1. Start an [Open OnDemand session](../cecile/access.md/#accessing-cecile-via-web-browser-open-ondemand)
-    2. Start an [interactive cecile session](../cecile/slurm/#interactive-jobs-with-open-ondemand)
-    3. Once you are within an interactive session:
-        - Open a terminal
-        - [Initialize your software stack of choice](../cecile/software/#how-to-use-the-stacks)
-            ```. /software/current/env.sh```
-        - Load the module (the software) that you need 
-            ```module load fsl```
-        - Start the software. 
-            ```fsl```
-        
-        **The following snippet starts Matlab from the `current` software stack:**
+1. Start an [Open OnDemand session](../cecile/access.md/#accessing-cecile-via-web-browser-open-ondemand)
+2. Start an [interactive cecile session](../cecile/slurm/#interactive-jobs-with-open-ondemand)
+3. Once you are within an interactive session:
+    - Open a terminal
+    - [Initialize your software stack of choice](../cecile/software/#how-to-use-the-stacks)
+        ```. /software/current/env.sh```
+    - Load the module (the software) that you need 
+        ```module load fsl```
+    - Start the software. 
+        ```fsl```
+    
+    **The following snippet starts Matlab from the `current` software stack:**
 
-        ```bash
-        . /software/current/env.sh
-        module load matlab
-        matlab
-        ```
+    ```bash
+    . /software/current/env.sh
+    module load matlab
+    matlab
+    ```
 
-        **The following snippet starts fsleyes (which is contained in FSL) from the `experimental` software stack:**
+    **The following snippet starts fsleyes (which is contained in FSL) from the `experimental` software stack:**
 
-        ```bash
-        . /software/experimental/env.sh
-        module load fsl
-        fsleyes
-        ```
+    ```bash
+    . /software/experimental/env.sh
+    module load fsl
+    fsleyes
+    ```
