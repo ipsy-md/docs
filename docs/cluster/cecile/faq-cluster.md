@@ -95,10 +95,10 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 ### How do I access Matlab, fsl, fsleyes or any other GUI based tools on Open OnDemand?
 
 1. Start an [Open OnDemand session](../cecile/access.md/#accessing-cecile-via-web-browser-open-ondemand)
-2. Start an [interactive cecile session](../cecile/slurm/#interactive-jobs-with-open-ondemand)
+2. Start an [interactive cecile session](../cecile/slurm.md/#interactive-jobs-with-open-ondemand)
 3. Once you are within an interactive session:
     - Open a terminal
-    - [Initialize your software stack of choice](../cecile/software/#how-to-use-the-stacks)
+    - [Initialize your software stack of choice](../cecile/software.md/#how-to-use-the-stacks)
         ```bash
         . /software/current/env.sh
         ```
