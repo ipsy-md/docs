@@ -99,14 +99,17 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 3. Once you are within an interactive session:
     - Open a terminal
     - [Initialize your software stack of choice](../cecile/software.md/#how-to-use-the-stacks)
+        
         ```bash
         . /software/current/env.sh
         ```
-    - Load the module (the software) that you need 
+    - Load the module that you need (for example `fsl`) 
+        
         ```bash
         module load fsl
         ```
     - Start the software. 
+        
         ```bash
         fsl
         ```
