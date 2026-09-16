@@ -20,12 +20,14 @@ Ipsy docs is a work in progress collection of resources, tutorials and guideline
 -   :material-folder-account:  &nbsp; __[How to request a project]__
 -   __[BIDS]__
 -   :material-key: __[How to access the cluster]__
--   :material-table-large: __[Data organization]__
+-   :material-file-tree: __[Data organization]__
+-   :material-hammer-screwdriver: __[How to use software on the cluster]__
 </div>
 [How to request a project]: cluster/cecile/data/#how-to-request-a-project-on-cecile
 [BIDS]: open-science/research-data-management/bids/
 [How to access the cluster]: cluster/cecile/access/
 [Data organization]: cluster/cecile/data/
+[How to use software on the cluster]: cluster/cecile/software/
 
 <div class="grid cards" markdown>
 -   :material-frequently-asked-questions:  &nbsp; __[Frequently Asked Questions]__
