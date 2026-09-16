@@ -26,8 +26,10 @@ Ipsy docs is a work in progress collection of resources, tutorials and guideline
 
 <div class="grid cards" markdown>
 -   :material-folder-account:  &nbsp; __[How to request a project]__
+-   __[BIDS]__
 </div>
 [How to request a project]: cluster/cecile/data/#how-to-request-a-project-on-cecile
+[BIDS]: open-science/research-data-management/bids/
 
 <div class="grid cards" markdown>
 -   :material-frequently-asked-questions:  &nbsp; __[Frequently Asked Questions]__
