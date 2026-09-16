@@ -8,17 +8,9 @@ Ipsy docs is a work in progress collection of resources, tutorials and guideline
 
 <div class="grid cards" markdown>
 
--   :material-file-document-check:  &nbsp; __[Open science]__
+-   :material-file-document-check:  &nbsp; __[Open science]__ - Provides guidance for research data management throughout your project 
 
-    ---
-    Provides guidance for research data management throughout your project 
-
--   :fontawesome-solid-server:  &nbsp; __[Computational cluster]__
-
-    ---
-
-    Provides documentation and support for a fair and efficient use of the computational cluster
-
+-   :fontawesome-solid-server:  &nbsp; __[Computational cluster]__ - Provides documentation and support for a fair and efficient use of the computational cluster
 </div>
 
 [Open science]: open-science/research-data-management/getting-started/
