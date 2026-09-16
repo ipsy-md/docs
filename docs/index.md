@@ -8,35 +8,32 @@ Ipsy docs is a work in progress collection of resources, tutorials and guideline
 
 <div class="grid cards" markdown>
 
--   :material-file-document-check:  &nbsp; __[Open science]__ - Provides guidance for research data management throughout your project 
+-   :material-file-document-check: __[Open science]__: Provides guidance for research data management 
 
--   :fontawesome-solid-server:  &nbsp; __[Computational cluster]__ - Provides documentation and support for a fair and efficient use of the computational cluster
+-   :fontawesome-solid-server: __[Computational cluster]__: Provides documentation and support for a fair and efficient use of the computational cluster
 </div>
 
 [Open science]: open-science/research-data-management/getting-started/
 [Computational cluster]: cluster
 
 <div class="grid cards" markdown>
--   :material-folder-account:  &nbsp; __[How to request a project]__
+-   :material-folder-account: __[How to request a project]__
 -   __[BIDS]__
 -   :material-key: __[How to access the cluster]__
 -   :material-file-tree: __[Data organization]__
 -   :material-hammer-screwdriver: __[How to use software on the cluster]__
+-   __[How to use Slurm]__
+-   :material-frequently-asked-questions: __[Frequently Asked Questions]__
+-   :material-account-cancel: __[Leaving the cluster]__
 </div>
 [How to request a project]: cluster/cecile/data/#how-to-request-a-project-on-cecile
 [BIDS]: open-science/research-data-management/bids/
 [How to access the cluster]: cluster/cecile/access/
 [Data organization]: cluster/cecile/data/
 [How to use software on the cluster]: cluster/cecile/software/
-
-<div class="grid cards" markdown>
--   :material-frequently-asked-questions:  &nbsp; __[Frequently Asked Questions]__
--   :material-account-cancel: &nbsp; __[Leaving the cluster]__
-</div>
+[How to use Slurm]: cluster/cecile/slurm/
 [Frequently Asked Questions]: cluster/cecile/faq-cluster/
 [Leaving the cluster]: cluster/#what-to-do-when-you-are-leaving-ipsy
 
-!!! note "Before starting"
-    These pages require little prior knowledge, even if you are an experienced researcher, we recommend you to go through them and to read carefully the sections dedicated to the cluster usage, data and backups.
 
 
