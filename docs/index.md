@@ -18,7 +18,7 @@ Ipsy docs is a work in progress collection of resources, tutorials and guideline
 
 <div class="grid cards" markdown>
 -   :material-folder-account: __[How to request a project]__
--   :material-table_star: __[BIDS]__
+-   :material-table-star: __[BIDS]__
 -   :material-key: __[How to access the cluster]__
 -   :material-file-tree: __[Data organization]__
 -   :material-hammer-screwdriver: __[How to use software on the cluster]__
