@@ -22,7 +22,7 @@ Ipsy docs is a work in progress collection of resources, tutorials and guideline
 -   :material-key: __[How to access the cluster]__
 -   :material-file-tree: __[Data organization]__
 -   :material-hammer-screwdriver: __[How to use software on the cluster]__
--   __[How to use Slurm]__
+-   :material-rocket-launch: __[How to use Slurm]__
 -   :material-frequently-asked-questions: __[Frequently Asked Questions]__
 -   :material-account-cancel: __[Leaving the cluster]__
 </div>
