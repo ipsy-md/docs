@@ -19,8 +19,7 @@ Ipsy docs is a work in progress collection of resources, tutorials and guideline
     ---
     
     Documentation and support for a fair and efficient use of the computational cluster
-
-</div>    
+</div>
 [Open science]: open-science/research-data-management/getting-started/
 [Computational cluster]: cluster
 
