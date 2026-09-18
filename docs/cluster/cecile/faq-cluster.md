@@ -6,7 +6,7 @@ If you have a very common problem it might be covered in this FAQ section, if yo
 
 - **I can't access the cluster from outside the university.**
 
-    If you are outside the university network you can access Cecile only though [eduVPN](https://www.urz.ovgu.de/en/vpn-path-204,616.html).
+    If you are outside the university network you can access Cecile only via [eduVPN](https://www.urz.ovgu.de/en/vpn-path-204,616.html).
 
 - **I mistyped my password a few times and I cannot login on Cecile any longer**
 
