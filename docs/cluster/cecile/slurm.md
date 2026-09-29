@@ -178,7 +178,7 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
-    #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
+    #SBATCH --time=00:01:00          # max amount of time (D-HH:MM:SS)
     #SBATCH --output=logs/%x-%A-%a.out   # printed output
     #SBATCH --error=logs/%x-%A-%a.err    # errors
 
@@ -204,7 +204,7 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
-    #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
+    #SBATCH --time=00:01:00          # max amount of time (D-HH:MM:SS)
     #SBATCH --output=logs/%x-%A-%a.out   # printed output
     #SBATCH --error=logs/%x-%A-%a.err    # errors
 
@@ -228,7 +228,7 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G                 # memory per cpu
-    #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
+    #SBATCH --time=00:01:00          # max amount of time (D-HH:MM:SS)
     #SBATCH --output=logs/%x-%A-%a.out  # printed output
     #SBATCH --error=logs/%x-%A-%a.err   # errors
 
@@ -357,7 +357,7 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
-    #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
+    #SBATCH --time=00:01:00          # max amount of time (D-HH:MM:SS)
     #SBATCH --output=logs/%x-%A-%a.out # printed output
     #SBATCH --error=logs/%x-%A-%a.err  # errors
     #SBATCH --array 0-4
@@ -383,7 +383,7 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
-    #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
+    #SBATCH --time=00:01:00          # max amount of time (D-HH:MM:SS)
     #SBATCH --output=logs/%x-%A-%a.out # printed output
     #SBATCH --error=logs/%x-%A-%a.err  # errors
     #SBATCH --array 0-4
@@ -411,7 +411,7 @@ Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount
     #SBATCH --ntasks=1               # number of tasks
     #SBATCH --cpus-per-task=1        # cpu per task
     #SBATCH --mem=4G         # memory per cpu
-    #SBATCH --time=00:01:00          # max amount of time (D:HH:MM:SS)
+    #SBATCH --time=00:01:00          # max amount of time (D-HH:MM:SS)
     #SBATCH --output=logs/%x-%A-%a.out # printed output
     #SBATCH --error=logs/%x-%A-%a.err  # errors
     #SBATCH --array 0-4
