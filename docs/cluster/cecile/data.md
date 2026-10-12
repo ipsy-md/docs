@@ -242,7 +242,7 @@ For modalities, such as **eye-tracking**, for which there is not yet a consensus
     - `rawdata`: It comprises the BIDS converted data, the relative `.json` files.</b>  
     - `derivatives`: It comprises different sub-folders which represent the macro-steps of you analysis, e.g. reaction_times, curve_fitting etc. These folders should follow the BIDS convention as well, and **must contain only processed data and no code**.</b>
     - `code`: It includes sub-folders that **mirror** the `derivatives` sub-folder names. They **must contain only the code relative to each step, and no data at all**. It must also include a sub-folder containing the code for the BIDS convertion.</b>   
-    - `stimuli`: It includes a sub-folder for the experimental code and the stimuli (e.g. images), if any.</b>  
+    - `stimuli`: It includes a sub-folder for stimuli (e.g. images) that belong to the experiment code, if any.</b>  
 
     ```
     /data/projects/
