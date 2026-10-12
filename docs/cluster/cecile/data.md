@@ -148,7 +148,7 @@ In `derivatives`, unlike `rawdata`, you have the freedom to create sub-folders f
 !!! tip "Good naming practices"
     As you know files and folders naming is an essential aspect of BIDS and the FAIR principles, we suggest you to look into this very helpful [page](https://book.the-turing-way.org/project-design/info-management/filenaming) to learn about good naming practices and machine readable names.  
 
-For modalities, such as **eye-tracking**, for which there is not yet a consensus for BIDS, we recommend to use the same structure as for the other modalities and to convert the data into BIDS format anyway. [Here](https://github.com/bids-standard/bids-specification/pull/1128) you can follow the discussion around BIDS for eye-tracking.
+For modalities for which there is not yet a consensus for BIDS, we recommend to check, on the BIDS website, whether a [BEP (BIDS Extension Proposal)](https://bids-specification.readthedocs.io/en/stable/extensions.html) for you specific modality exists and to assess the status of the proposal. In case the proposal is in an advance state you can decide to adopt the guidelines of the proposal to convert your data. 
 
 !!! Danger "Sides effects of using a different structure"
     Failing to mantain this structure might create future issues for assigning less canonical permissions. Not adopting BIDS would make your dataset not easily interoperable and ultimately it would not be following the FAIR principles.
@@ -161,8 +161,8 @@ For modalities, such as **eye-tracking**, for which there is not yet a consensus
     A prototypical fMRI dataset:
 
     - `project-metadata.json`: This file is created by the cluster admin, it contains general metadata about the project.</b>  
-    - `sourcedata`: It comprises the raw data (unprocessed data), in this case raw dicom files.</b>  
-    - `rawdata`: It comprises the BIDS converted niftis, the relative `.json` files and `.tsv` files.</b>  
+    - `sourcedata`: It comprises unprocessed data, in this case raw dicom files.</b>  
+    - `rawdata`: It comprises the BIDS converted niftis and the relative `.json` sicear files and `.tsv` files.</b>  
     - `derivatives`: It comprises different sub-folders which represent the macro-steps of you analysis, e.g. `spm-preproc`, `spm-first_level` etc. These folders should follow the BIDS convention as well, and **must contain only data and no code**.</b>  
     - `code`: It includes sub-folders that **mirror** the `derivatives` sub-folder names. They **must contain only the code relative to each step, and no data at all**. It must also include a sub-folder containing the code for the BIDS convertion.</b>   
     - `stimuli`: It includes a subfolder for the experimental stimuli (e.g. images), if any.</b>  
@@ -200,8 +200,8 @@ For modalities, such as **eye-tracking**, for which there is not yet a consensus
     A prototypical EEG/MEG dataset:
 
     - `project-metadata.json`: This file is created by the cluster admin, it contains general metadata about the project.</b>
-    - `sourcedata`: It comprises the raw data (unprocessed data), for example .bdf files.</b>  
-    - `rawdata`: It comprises the BIDS converted data, the relative `.json` files and `.tsv` files.</b>  
+    - `sourcedata`: It comprises unprocessed data, for example .bdf files.</b>  
+    - `rawdata`: It comprises the BIDS converted data and the relative `.json` sidecar files and `.tsv` files.</b>  
     - `derivatives`: It comprises different sub-folders which represent the macro-steps of you analysis, e.g. eeglab-preproc, eeglab-erp etc. These folders should follow the BIDS convention as well, and **must contain only processed data and no code**.</b>  
     - `code`: It includes sub-folders that **mirror** the `derivatives` sub-folder names. They **must contain only the code relative to each step, and no data at all**. It must also include a sub-folder containing the code for the BIDS convertion.</b>   
     - `stimuli`: It includes a subfolder for the experimental stimuli (e.g. images), if any.</b>  
@@ -238,8 +238,8 @@ For modalities, such as **eye-tracking**, for which there is not yet a consensus
     A prototypical behavioral dataset:
 
     - `project-metadata.json`: This file is created by the cluster admin, it contains general metadata about the project.</b>
-    - `sourcedata`: It comprises the raw data (unprocessed data) in whatever file type you have acquired them.</b>  
-    - `rawdata`: It comprises the BIDS converted data, the relative `.json` files.</b>  
+    - `sourcedata`: It comprises the unprocessed data in whatever file type you have acquired them.</b>  
+    - `rawdata`: It comprises the BIDS converted data and the relative `.json` sidecar files.</b>  
     - `derivatives`: It comprises different sub-folders which represent the macro-steps of you analysis, e.g. reaction_times, curve_fitting etc. These folders should follow the BIDS convention as well, and **must contain only processed data and no code**.</b>
     - `code`: It includes sub-folders that **mirror** the `derivatives` sub-folder names. They **must contain only the code relative to each step, and no data at all**. It must also include a sub-folder containing the code for the BIDS convertion.</b>   
     - `stimuli`: It includes a sub-folder for stimuli (e.g. images) that belong to the experiment code, if any.</b>  
