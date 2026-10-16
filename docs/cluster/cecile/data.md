@@ -547,6 +547,9 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
     !!! warning "Use `rsync` for large datasets"
         Do not use Open OnDemand to transfer big datasets, we recommend you to use `rsync` instead which guarantees data integrity using [checksum](https://en.wikipedia.org/wiki/Checksum) procedures.
 
+## Backups
+
+The system takes daily snapshots of data stored in `home`, `groups`, `projects` and `archive`. Snapshots are then daily moved into storage backups and secured for multiple potential disk failures. Consider that the only directory that is never backed up is `scratch`.
 
 ## How to retrieve lost data
 
@@ -554,13 +557,12 @@ We recommend to use `rsync` to transfer files from/to Cecile. `rsync` is a power
 
     In case you have lost data within the last seven days, you can retrieve them by yourself. It is sufficient to go the following folder called `.zfs/snapshot` within the folder in which your data were previously hosted and transfer the data back to their previous location. Data transfer can be easily done using `cp` or `rsync`.
 
+    !!! warning "Data created and lost before the next snapshots are taken cannot be retrieved"
+        Given that data snapshots are taken once a day, if you loose data that were created on the same day, after the daily snapshots were taken, you will be unable to retrieve your data.
+
 === "Data lost more than 7 days ago"
 
-    You cannot retrieve such data by yourself, please contact `manuela.khun at ovgu.de`
-
-=== "How backups work"
-
-    Backups of `home`, `group`, `project` and `archive` are done daily by moving the `snapsthots` to the backup storage. The only folder that is never backed up is `scratch`.
+    You cannot retrieve data lost for more than 7 days, in this case you must contact `cecile-admins-l@ovgu.de` to retrieve your data.
 
 ## Data storage quotas
 
