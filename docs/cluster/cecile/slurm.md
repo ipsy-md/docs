@@ -579,6 +579,7 @@ As for data storage, also jobs need some restrictions in order to guarantee a fa
     scancel -U <username> # all jobs that to the specified user will be cancelled
 
     ```
+
 - Check available partitions and relative limitations 
     
     ```bash
