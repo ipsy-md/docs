@@ -551,29 +551,53 @@ As for data storage, also jobs need some restrictions in order to guarantee a fa
 
 ## Slurm basic commands
 
-```bash
-sinfo # shows you current information about the system
-```
+- Check information about the system
 
-```bash
-squeue # shows the current jobs status
+    ```bash
+    sinfo 
+    ```
+- Check the status of your jobs
 
-squeue -U <username> # it provides job status for a given user
-```
+    ```bash
+    squeue
 
-```bash
-sbatch <job_script># launch a job or an array job 
-```
+    squeue -U <username> # it provides job status for a given user
+    ```
+- Launch an batch job
 
-```bash
-scancel <job_ID> # it cancels jobs
+    ```bash
+    sbatch <job_script>
+    ```
+- Cancel a job or a group (array) of jobs
 
-scancel -U <username> # all jobs belonging to that user will be cancelled
-```
+    ```bash
+    scancel <job_ID> 
 
-```bash
-scontrol show partition compute # allows you to see partitions present and limitations 
-```
+    scancel -U <username> # all jobs that to the specified user will be cancelled
+    ```
+- Check available partitions and relative limitations 
+    
+    ```bash
+    scontrol show partition compute 
+    ```
+
+- Two ways of checking statistics about your jobs
+
+    ```bash
+    # job-id is the id of your job
+    seff <job-id>
+    ``` 
+    Note: if you run `seff` when your job is still running, estimates will be unreliable. 
+
+    ```bash
+    sacct -j <job-id> --format=jobid,jobname,reqmem,maxrss,elapsed,timelimit,state
+    ```
+
+- Check which jobs have failed
+
+    ```bash
+    sacct -u <username> -s F  
+    ```
 
 ## Interactive jobs with Open OnDemand
 
