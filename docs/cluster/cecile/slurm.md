@@ -556,6 +556,7 @@ As for data storage, also jobs need some restrictions in order to guarantee a fa
     ```bash
     sinfo 
     ```
+
 - Check the status of your jobs
 
     ```bash
@@ -563,17 +564,20 @@ As for data storage, also jobs need some restrictions in order to guarantee a fa
 
     squeue -U <username> # it provides job status for a given user
     ```
+
 - Launch an batch job
 
     ```bash
     sbatch <job_script>
     ```
+
 - Cancel a job or a group (array) of jobs
 
     ```bash
     scancel <job_ID> 
 
     scancel -U <username> # all jobs that to the specified user will be cancelled
+
     ```
 - Check available partitions and relative limitations 
     
