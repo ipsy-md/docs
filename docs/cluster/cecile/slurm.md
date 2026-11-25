@@ -94,6 +94,12 @@ Here it is how you turn the previous questions in parameters for slurm script.
 - `#SBATCH --output=logs/%x-%A-%a.out`: here you specify where job printed output should be saved, specifically in the folder `slurm-logs`. 
 - `#SBATCH --error=logs/%x-%A-%a.err`: here you specify where job related errors should be saved, again in the folder `logs`.
 
+
+!!! note "Sending jobs information to your email"
+    As shown in the code snippet above, slurm allows you to send emails containing information about the jobs you have submitted.
+    You can set it to send an email when a job starts, ends or fails (see above). 
+    One of the most useful use cases of this feature is to set `#SBATCH --mail-type=FAIL` that sends emails only in case of job failure.
+
 Instead of `--mem` you could also use `--mem-per-cpu` which specifies the amount of RAM you request per CPU.
 
 !!! Warning "Be aware of insufficient memory and time allocation"
